@@ -1,10 +1,10 @@
-// 1. CONFIGURATION
+// CONFIG
 var USER = "aidenbblood-star";
-var REPO = "Mygames"; 
+var REPO = "Mygames"; // The repo where your actual game FOLDERS are
 var BRANCH = "main";
 
-// 2. THE UPDATED LIST (D-Z Included)
-var manualList = [
+// YOUR LIST
+var manualList =  [
     // A-C (Existing)
     'cl1','cl10bullets','cl10minutestildawn','cl1on1soccer','cl1v1lol','cl2048','cl3dash','clageofwar','clamongus','clbadicecream','clbasketballstars','clbloonstd5','clbobtherobber','clburritobison','clcactusmccoy','clcatmario','clceleste','clchess','clcommandandconquer',
     
@@ -21,51 +21,36 @@ var manualList = [
     'cltag','cltank-trouble','cltemple-run-2','clterraria','cltetris','clthe-binding-of-isaac','clthe-final-earth','clthe-henry-stickmin-collection','clthe-last-stand','clthe-sims','clthe-worlds-hardest-game','clthrill-rush','cltic-tac-toe','cltiny-fishing','cltom-and-jerry','cltomb-of-the-mask','cltoon-cup','cltotally-accurate-battle-simulator','cltower-defense','cltower-of-hell','cltown-of-salem','cltunnel-rush','clultimate-knockout','clunblocked-games-66','cluno','clvex-3','clvex-4','clvex-5','clvex-6','clvex-7','clwater-marbles','clwheelie-bike','clworld-of-goo','clwormate-io','clworms-zone','clxiaoxiao','clx-trial-racing','clyahtzee','clyoutube','clzelda','clzombie-derby','clzombie-tsunami'
 ];
 
-// 3. UI BUILDING LOGIC (Using the improved header logic)
+
 function buildStash() {
     const container = document.getElementById('sections-container');
     if (!container) return; 
     container.innerHTML = "";
-
     const groups = {};
 
     manualList.forEach(folder => {
-        let cleanName = folder.replace(/^cl/i, '');
+        let cleanName = folder.replace(/^cl/i, ''); // Strip 'cl' so headers aren't all 'C'
         let firstChar = cleanName.charAt(0).toUpperCase();
         let letter = /^[0-9]/.test(firstChar) ? "0-9" : firstChar;
-
         if (!groups[letter]) groups[letter] = [];
         groups[letter].push({ folder, cleanName });
     });
 
-    const sortedKeys = Object.keys(groups).sort((a, b) => {
-        if (a === "0-9") return -1;
-        if (b === "0-9") return 1;
-        return a.localeCompare(b);
-    });
-
-    sortedKeys.forEach(letter => {
+    Object.keys(groups).sort().forEach(letter => {
         const section = document.createElement('div');
         section.id = `section-${letter}`;
-        section.innerHTML = `
-            <div class="letter-header" style="color: #fff; font-size: 14px; font-weight: bold; text-align: center; margin: 20px 0;">${letter}</div>
-            <div class="buttons-container" id="btns-${letter}" style="display: flex; flex-direction: column; gap: 8px;"></div>
-        `;
+        section.innerHTML = `<div class="letter-header">${letter}</div><div id="btns-${letter}"></div>`;
         container.appendChild(section);
 
-        groups[letter].sort((a, b) => a.cleanName.localeCompare(b.cleanName))
-        .forEach(game => {
+        groups[letter].sort((a, b) => a.cleanName.localeCompare(b.cleanName)).forEach(game => {
             const btn = document.createElement('input');
             btn.type = "button";
             btn.value = game.cleanName.toUpperCase();
             btn.className = "game-btn";
-            
-            const gameUrl = `https://cdn.jsdelivr.net/gh/${USER}/${REPO}@${BRANCH}/${game.folder}/index.html`;
-            btn.onclick = () => window.location.href = gameUrl;
-
+            btn.onclick = () => window.location.href = `https://cdn.jsdelivr.net/gh/${USER}/${REPO}@${BRANCH}/${game.folder}/index.html`;
             document.getElementById(`btns-${letter}`).appendChild(btn);
         });
     });
 }
 
-window.addEventListener('load', buildStash);
+

@@ -1041,7 +1041,7 @@ function buildStash() {
             const fileName = game.gameUrl.split('/').pop();
             
             // THE FIX: /combine/gh/ forces the browser to play the game instead of showing code
-            let finalUrl = `https://cdn.jsdelivr.net{myUser}/${myRepo}@${currentHash}/UGS-Files/${fileName}`;
+            let finalUrl = `https://cdn.jsdelivr.net/gh/${myUser}/${myRepo}@${currentHash}/UGS-Files/${fileName}`;
             
             window.open(finalUrl, '_blank');
         };
@@ -1051,4 +1051,7 @@ function buildStash() {
 
     }); // Closes forEach
 } // Closes buildStash
+
+
+
 

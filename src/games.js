@@ -1001,7 +1001,7 @@ const allGames = [
 ];
     
     // ... paste the other 999 here
-];
+
 
 function buildStash() {
     const container = document.getElementById('sections-container');

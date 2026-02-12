@@ -1,5 +1,5 @@
 // PASTE YOUR GENERATED 1,000 GAME LIST HERE:
-const allGames = [const allGames = [
+const allGames = [
 { name: "cl1", gameUrl: "https://cdn.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@main/UGS-Files/cl1.html" },
 { name: "cl10bullets", gameUrl: "https://cdn.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@main/UGS-Files/cl10bullets.html" },
 { name: "cl10minutestildawn", gameUrl: "https://cdn.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@main/UGS-Files/cl10minutestildawn.html" },

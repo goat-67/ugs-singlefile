@@ -1038,7 +1038,7 @@ function buildStash() {
             const fileName = game.gameUrl.split('/').pop();
             
             // THE BYPASS: Forces jsDelivr to play the game instead of showing code
-            let finalUrl = `https://cdn.jsdelivr.net{currentHash}/UGS-Files/${fileName}`;
+            let finalUrl = `https://cdn.jsdelivr.net/gh/${currentHash}/UGS-Files/${fileName}`;
             window.open(finalUrl, '_blank');
         };
 

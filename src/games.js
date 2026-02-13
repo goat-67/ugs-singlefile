@@ -1055,7 +1055,7 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-    // 3. THE SEARCH (Hides Headers + Buttons)
+        // 3. THE "INVINCIBLE" SEARCH (Truly hides headers)
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.toLowerCase().trim();
@@ -1063,20 +1063,27 @@ function buildStash() {
 
             sections.forEach(sec => {
                 const buttons = sec.querySelectorAll('.game-btn');
-                let hasVisibleMatch = false;
+                let matchesFound = 0;
 
                 buttons.forEach(btn => {
                     const isMatch = btn.innerText.toLowerCase().includes(val);
+                    // Hide or show the button
                     btn.style.display = isMatch ? "block" : "none";
-                    if (isMatch) hasVisibleMatch = true;
+                    
+                    // Count how many buttons are ACTUALLY visible
+                    if (isMatch) matchesFound++;
                 });
 
-                // This line kills the header if no games match
-                sec.style.display = hasVisibleMatch ? "block" : "none";
+                // HIDE THE WHOLE SECTION if zero buttons are visible
+                if (matchesFound > 0) {
+                    sec.style.display = "block";
+                } else {
+                    sec.style.display = "none";
+                }
             });
         };
     }
-}
+
 
 
 

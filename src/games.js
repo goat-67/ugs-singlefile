@@ -1052,36 +1052,38 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-     // 3. THE FINAL HEADER-FIX SEARCH
-if (searchBar) {
-    searchBar.oninput = () => {
-        const val = searchBar.value.toLowerCase().trim();
-        // Target the parent divs (e.g., id="section-A")
-        const sections = document.querySelectorAll('div[id^="section-"]');
+         // 3. DYNAMIC HEADER SEARCH
+    if (searchBar) {
+        searchBar.oninput = () => {
+            const val = searchBar.value.trim();
+            const firstChar = val.charAt(0).toUpperCase(); // Get first letter of search
+            const sections = document.querySelectorAll('div[id^="section-"]');
 
-        sections.forEach(sec => {
-            const buttons = sec.querySelectorAll('.game-btn');
-            let visibleCount = 0; // Reset for each section
+            sections.forEach(sec => {
+                const buttons = sec.querySelectorAll('.game-btn');
+                const header = sec.querySelector('.letter-header');
+                let hasMatch = false;
 
-            buttons.forEach(btn => {
-                // If search is empty, show everything; otherwise, filter
-                const isMatch = val === "" || btn.innerText.toLowerCase().includes(val);
-                btn.style.display = isMatch ? "block" : "none";
-                
-                // Only count the button if it's actually visible
-                if (isMatch) visibleCount++;
-            });
+                buttons.forEach(btn => {
+                    const match = val === "" || btn.innerText.toLowerCase().includes(val.toLowerCase());
+                    btn.style.display = match ? "block" : "none";
+                    if (match) hasMatch = true;
+                });
 
-            // HIDE THE WHOLE SECTION if zero buttons are visible
-            // This forces the "A", "B", etc. header inside to vanish too
-            if (val === "" || visibleCount > 0) {
+                // Update header text to the first letter of the search
+                if (header && val !== "") {
+                    header.textContent = firstChar;
+                } else if (header && val === "") {
+                    // Reset to original letter (from ID) if search is empty
+                    header.textContent = sec.id.split('-')[1];
+                }
+
+                // Keep everything visible as requested
                 sec.style.display = "block";
-            } else {
-                sec.style.display = "none";
-            }
-        });
-    };
-}
+            });
+        };
+    }
+
 
     } // This closes the buildStash function
 

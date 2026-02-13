@@ -1010,7 +1010,6 @@ function buildStash() {
     const searchBar = document.getElementById('game-search');
     if (!container) return;
     
-    // Clear container once at the start
     container.innerHTML = '';
     
     // 1. Sort games A-Z
@@ -1026,6 +1025,7 @@ function buildStash() {
             section = document.createElement('div');
             section.id = `section-${letter}`;
             section.style.width = "100%";
+            // Ensure the header is inside the section div
             section.innerHTML = `<div class="letter-header">${letter}</div>`;
             container.appendChild(section);
         }
@@ -1037,44 +1037,46 @@ function buildStash() {
         btn.onclick = () => {
             const currentHash = window.GAME_HASH || "main";
             const fileName = game.gameUrl.split('/').pop();
-            const finalUrl = `https://fastly.jsdelivr.net/gh/${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
+            
+            // FIXED URL: Added back myUser and myRepo (replace these if they differ)
+            const finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
 
             fetch(finalUrl)
-                .then(r => r.ok ? r.text() : Promise.reject('Not found'))
+                .then(r => r.ok ? r.text() : Promise.reject('File not found'))
                 .then(html => {
                     const newWin = window.open("about:blank", "_blank");
-                    if (newWin) { newWin.document.open(); newWin.document.write(html); newWin.document.close(); }
-                }).catch(console.error);
+                    if (newWin) { 
+                        newWin.document.open(); 
+                        newWin.document.write(html); 
+                        newWin.document.close(); 
+                    }
+                }).catch(err => alert("Error loading game: " + err));
         };
         section.appendChild(btn); 
     });
 
-    // 3. ADD SEARCH LOGIC DIRECTLY TO THE BAR
+    // 3. THE "ULTIMATE" SEARCH (Handles headers correctly)
     if (searchBar) {
-        searchBar.addEventListener('input', (e) => {
-            const val = e.target.value.toLowerCase();
-            
-            // Filter sections (A, B, C...)
-            document.querySelectorAll('div[id^="section-"]').forEach(sec => {
-                let hasVisible = false;
-                
-                // Filter buttons inside that section
-                sec.querySelectorAll('.game-btn').forEach(btn => {
+        searchBar.oninput = () => {
+            const val = searchBar.value.toLowerCase();
+            const sections = document.querySelectorAll('div[id^="section-"]');
+
+            sections.forEach(sec => {
+                const buttons = sec.querySelectorAll('.game-btn');
+                let hasMatch = false;
+
+                buttons.forEach(btn => {
                     const match = btn.innerText.toLowerCase().includes(val);
                     btn.style.display = match ? "block" : "none";
-                    if (match) hasVisible = true;
+                    if (match) hasMatch = true;
                 });
-                
-                // Hide header if no games match
-                sec.style.display = hasVisible ? "block" : "none";
+
+                // This specifically hides the "A", "B", "C" header sections
+                sec.style.display = hasMatch ? "block" : "none";
             });
-        });
+        };
     }
 }
-
-// Automatically build when the script loads
-
-
 
 
 

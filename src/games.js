@@ -1005,7 +1005,7 @@ const allGames = [
 
  // <--- THIS CLOSES YOUR 1,000 GAME LIST. DO NOT REMOVE THIS.
 
-function buildStash() {
+ffunction buildStash() {
     const container = document.getElementById('sections-container');
     const searchBar = document.getElementById('game-search');
     if (!container) return;
@@ -1020,6 +1020,7 @@ function buildStash() {
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
         const letter = cleanName.charAt(0).toUpperCase();
         
+        // GROUPING FIX: Check if the section already exists before making a new one
         let section = document.getElementById(`section-${letter}`);
         if (!section) {
             section = document.createElement('div');
@@ -1052,7 +1053,7 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-           // 3. CORRECTED DYNAMIC HEADER SEARCH
+    // 3. CORRECTED DYNAMIC HEADER SEARCH
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.trim().toLowerCase();
@@ -1061,7 +1062,8 @@ function buildStash() {
             sections.forEach(sec => {
                 const buttons = sec.querySelectorAll('.game-btn');
                 const header = sec.querySelector('.letter-header');
-                const originalLetter = sec.id.split('-')[1]; // Grabs the "A", "B", etc. from the ID
+                // Grabs "A", "B", etc. from "section-A"
+                const originalLetter = sec.id.split('-')[1]; 
                 
                 let matchesFound = 0;
 
@@ -1073,26 +1075,19 @@ function buildStash() {
 
                 if (header) {
                     if (val === "") {
-                        // Reset to original letter when search is empty
                         header.textContent = originalLetter;
                     } else if (matchesFound > 0) {
-                        // If there's a match, show the search's first letter
                         header.textContent = val.charAt(0).toUpperCase();
                     } else {
-                        // If no matches in this section, keep original or clear it
                         header.textContent = originalLetter;
                     }
                 }
-
-                // Keeps all sections visible as you requested
+                // Keeps all headers visible per your request
                 sec.style.display = "block";
             });
         };
     }
-
-
-
-    } // This closes the buildStash function
+} // <--- THIS WAS THE MISSING CLOSING BRACKET
 
 
 

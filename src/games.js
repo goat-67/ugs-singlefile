@@ -1033,22 +1033,37 @@ function buildStash() {
         btn.innerText = cleanName; 
         
         btn.onclick = () => {
-            // This pulls the hash you set in your index.html automatically
-            const currentHash = window.GAME_HASH || "fadd0e1e7873fcf48d2635a8ebea913c49f088f3";
+            const currentHash = window.GAME_HASH || "main";
             const fileName = game.gameUrl.split('/').pop();
             
-            // THE BYPASS: Forces jsDelivr to play the game instead of showing code
-            let finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@main/UGS-Files/${fileName}`;
-            window.open(finalUrl, '_blank');
+            // FIXED URL: Added the /gh/user/repo@ part back in
+            const finalUrl = `https://fastly.jsdelivr.net/gh/${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
+
+            fetch(finalUrl)
+                .then(response => {
+                    if (!response.ok) throw new Error('Game file could not be found.');
+                    return response.text();
+                })
+                .then(htmlContent => {
+                    const newWin = window.open("about:blank", "_blank");
+                    if (newWin) {
+                        newWin.document.open();
+                        newWin.document.write(htmlContent); 
+                        newWin.document.close();
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("Error: Check if your GitHub folder is named 'UGS-Files' or 'UGS Files'");
+                });
         };
 
-               // 4. ADD TO PAGE: Without this, buttons are invisible!
+        // 4. ADD TO PAGE
         section.appendChild(btn); 
     });
-} // <--- THIS BRACKET WAS MISSING! It closes the buildStash function.
+}
 
-buildStash(); // <--- THIS RUNS THE CODE! Without this, the function just sits there.
-
+buildStash();
 
 
 

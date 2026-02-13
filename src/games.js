@@ -1007,14 +1007,17 @@ const allGames = [
 
 function buildStash() {
     const container = document.getElementById('sections-container');
+    const searchBar = document.getElementById('game-search');
     if (!container) return;
+    
+    // Clear container once at the start
     container.innerHTML = '';
     
     // 1. Sort games A-Z
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
+    // 2. Create All Games & Sections
     allGames.forEach(game => {
-        // 2. Clean Name Logic
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
         const letter = cleanName.charAt(0).toUpperCase();
         
@@ -1027,7 +1030,6 @@ function buildStash() {
             container.appendChild(section);
         }
 
-        // 3. Create Button
         const btn = document.createElement('button');
         btn.className = 'game-btn';
         btn.innerText = cleanName; 
@@ -1035,33 +1037,44 @@ function buildStash() {
         btn.onclick = () => {
             const currentHash = window.GAME_HASH || "main";
             const fileName = game.gameUrl.split('/').pop();
-            
-            // FIXED URL: Added the /gh/user/repo@ part back in
-            const finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
+            const finalUrl = `https://fastly.jsdelivr.net/gh/${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
 
             fetch(finalUrl)
-                .then(response => {
-                    if (!response.ok) throw new Error('Game file could not be found.');
-                    return response.text();
-                })
-                .then(htmlContent => {
+                .then(r => r.ok ? r.text() : Promise.reject('Not found'))
+                .then(html => {
                     const newWin = window.open("about:blank", "_blank");
-                    if (newWin) {
-                        newWin.document.open();
-                        newWin.document.write(htmlContent); 
-                        newWin.document.close();
-                    }
-                })
-                .catch(err => {
-                    console.error(err);
-                    alert("Error: Check if your GitHub folder is named 'UGS-Files' or 'UGS Files'");
-                });
+                    if (newWin) { newWin.document.open(); newWin.document.write(html); newWin.document.close(); }
+                }).catch(console.error);
         };
-
-        // 4. ADD TO PAGE
         section.appendChild(btn); 
     });
+
+    // 3. ADD SEARCH LOGIC DIRECTLY TO THE BAR
+    if (searchBar) {
+        searchBar.addEventListener('input', (e) => {
+            const val = e.target.value.toLowerCase();
+            
+            // Filter sections (A, B, C...)
+            document.querySelectorAll('div[id^="section-"]').forEach(sec => {
+                let hasVisible = false;
+                
+                // Filter buttons inside that section
+                sec.querySelectorAll('.game-btn').forEach(btn => {
+                    const match = btn.innerText.toLowerCase().includes(val);
+                    btn.style.display = match ? "block" : "none";
+                    if (match) hasVisible = true;
+                });
+                
+                // Hide header if no games match
+                sec.style.display = hasVisible ? "block" : "none";
+            });
+        });
+    }
 }
+
+// Automatically build when the script loads
+
+
 
 
 

@@ -1037,7 +1037,7 @@ function buildStash() {
             const fileName = game.gameUrl.split('/').pop();
             
             // FIXED URL: Added the /gh/user/repo@ part back in
-            const finalUrl = `https://fastly.jsdelivr.net/gh/${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
+            const finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
 
             fetch(finalUrl)
                 .then(response => {

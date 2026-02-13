@@ -1025,7 +1025,6 @@ function buildStash() {
             section = document.createElement('div');
             section.id = `section-${letter}`;
             section.style.width = "100%";
-            // Header is inside the section div so we can hide the whole thing
             section.innerHTML = `<div class="letter-header">${letter}</div>`;
             container.appendChild(section);
         }
@@ -1037,8 +1036,6 @@ function buildStash() {
         btn.onclick = () => {
             const currentHash = window.GAME_HASH || "main";
             const fileName = game.gameUrl.split('/').pop();
-            
-            // Fixed the URL to include your user and repo correctly
             const finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
 
             fetch(finalUrl)
@@ -1055,7 +1052,7 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-        // 3. THE "INVINCIBLE" SEARCH (Truly hides headers)
+    // 3. THE "INVINCIBLE" SEARCH
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.toLowerCase().trim();
@@ -1066,16 +1063,14 @@ function buildStash() {
                 let matchesFound = 0;
 
                 buttons.forEach(btn => {
-                    const isMatch = btn.innerText.toLowerCase().includes(val);
-                    // Hide or show the button
+                    // If search is empty, show everything. Otherwise, check match.
+                    const isMatch = val === "" || btn.innerText.toLowerCase().includes(val);
                     btn.style.display = isMatch ? "block" : "none";
-                    
-                    // Count how many buttons are ACTUALLY visible
                     if (isMatch) matchesFound++;
                 });
 
-                // HIDE THE WHOLE SECTION if zero buttons are visible
-                if (matchesFound > 0) {
+                // Show section if matches exist or if search is empty
+                if (val === "" || matchesFound > 0) {
                     sec.style.display = "block";
                 } else {
                     sec.style.display = "none";
@@ -1083,6 +1078,7 @@ function buildStash() {
             });
         };
     }
+} // <--- THIS WAS MISSING. DO NOT FORGET THIS BRACKET!
 
 
 

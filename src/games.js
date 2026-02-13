@@ -1011,22 +1011,19 @@ function buildStash() {
     if (!container) return;
     
     container.innerHTML = '';
-    
-    // 1. Sort games A-Z
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
-    // 2. Create All Games & Sections
+    // 1. Grouping Logic for Letters and Numbers
     allGames.forEach(game => {
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
-        const letter = cleanName.charAt(0).toUpperCase();
+        const firstChar = cleanName.charAt(0).toUpperCase();
         
-        // GROUPING FIX: Check if the section already exists before making a new one
-        let section = document.getElementById(`section-${letter}`);
+        let section = document.getElementById(`section-${firstChar}`);
         if (!section) {
             section = document.createElement('div');
-            section.id = `section-${letter}`;
+            section.id = `section-${firstChar}`;
             section.style.width = "100%";
-            section.innerHTML = `<div class="letter-header">${letter}</div>`;
+            section.innerHTML = `<div class="letter-header">${firstChar}</div>`;
             container.appendChild(section);
         }
 
@@ -1037,6 +1034,7 @@ function buildStash() {
         btn.onclick = () => {
             const currentHash = window.GAME_HASH || "main";
             const fileName = game.gameUrl.split('/').pop();
+            // FIXED URL: Added missing path and $ symbol
             const finalUrl = `https://fastly.jsdelivr.net/gh/aidenbblood-star/ugs-singlefile@${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
 
             fetch(finalUrl)
@@ -1053,7 +1051,7 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-    // 3. CORRECTED DYNAMIC HEADER SEARCH
+    // 2. Dynamic Search
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.trim().toLowerCase();
@@ -1062,9 +1060,7 @@ function buildStash() {
             sections.forEach(sec => {
                 const buttons = sec.querySelectorAll('.game-btn');
                 const header = sec.querySelector('.letter-header');
-                // Grabs "A", "B", etc. from "section-A"
-                const originalLetter = sec.id.split('-')[1]; 
-                
+                const originalChar = sec.id.replace('section-', ''); 
                 let matchesFound = 0;
 
                 buttons.forEach(btn => {
@@ -1074,24 +1070,12 @@ function buildStash() {
                 });
 
                 if (header) {
-                    if (val === "") {
-                        header.textContent = originalLetter;
-                    } else if (matchesFound > 0) {
-                        header.textContent = val.charAt(0).toUpperCase();
-                    } else {
-                        header.textContent = originalLetter;
-                    }
+                    header.textContent = (val !== "" && matchesFound > 0) ? val.charAt(0).toUpperCase() : originalChar;
                 }
-                // Keeps all headers visible per your request
-                sec.style.display = "block";
+                sec.style.display = "block"; 
             });
         };
     }
-} // <--- THIS WAS THE MISSING CLOSING BRACKET
-
-
-
-
-
+} // ONLY ONE BRACKET HERE
 
 

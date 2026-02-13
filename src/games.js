@@ -1052,32 +1052,37 @@ function buildStash() {
         section.appendChild(btn); 
     });
 
-      // 3. THE FINAL HEADER-FIX SEARCH
-    if (searchBar) {
-        searchBar.oninput = () => {
-            const val = searchBar.value.toLowerCase().trim();
-            const sections = document.querySelectorAll('div[id^="section-"]');
+     // 3. THE FINAL HEADER-FIX SEARCH
+if (searchBar) {
+    searchBar.oninput = () => {
+        const val = searchBar.value.toLowerCase().trim();
+        // Target the parent divs (e.g., id="section-A")
+        const sections = document.querySelectorAll('div[id^="section-"]');
 
-            sections.forEach(sec => {
-                const buttons = sec.querySelectorAll('.game-btn');
-                let matchesFound = 0;
+        sections.forEach(sec => {
+            const buttons = sec.querySelectorAll('.game-btn');
+            let visibleCount = 0; // Reset for each section
 
-                buttons.forEach(btn => {
-                    const isMatch = val === "" || btn.innerText.toLowerCase().includes(val);
-                    btn.style.display = isMatch ? "block" : "none";
-                    if (isMatch) matchesFound++;
-                });
-
-                // This is the key: If matchesFound is 0, hide the ENTIRE DIV
-                // which includes the header inside it.
-                if (val === "" || matchesFound > 0) {
-                    sec.style.display = "block";
-                } else {
-                    sec.style.display = "none";
-                }
+            buttons.forEach(btn => {
+                // If search is empty, show everything; otherwise, filter
+                const isMatch = val === "" || btn.innerText.toLowerCase().includes(val);
+                btn.style.display = isMatch ? "block" : "none";
+                
+                // Only count the button if it's actually visible
+                if (isMatch) visibleCount++;
             });
-        };
-    }
+
+            // HIDE THE WHOLE SECTION if zero buttons are visible
+            // This forces the "A", "B", etc. header inside to vanish too
+            if (val === "" || visibleCount > 0) {
+                sec.style.display = "block";
+            } else {
+                sec.style.display = "none";
+            }
+        });
+    };
+}
+
     } // This closes the buildStash function
 
 

@@ -1010,22 +1010,27 @@ function buildStash() {
     const searchBar = document.getElementById('game-search');
     if (!container) return;
 
-    // Clear and sort
+    // Clear and sort the full game list
     container.innerHTML = '';
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
     // 1. BUILD THE UI
     allGames.forEach(game => {
-        // Strip 'cl' prefix if it exists for the display name
+        // Strip 'cl' prefix for display and logic
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
-        const firstChar = cleanName.charAt(0).toUpperCase();
+        let firstChar = cleanName.charAt(0).toUpperCase();
 
-        // Find or Create Section
+        // Group all games starting with a digit under the "#" header
+        if (/\d/.test(firstChar)) {
+            firstChar = "#";
+        }
+
+        // Find or Create the Section
         let section = document.getElementById(`section-${firstChar}`);
         if (!section) {
             section = document.createElement('div');
             section.id = `section-${firstChar}`;
-            section.className = 'game-section'; // Useful for CSS
+            section.className = 'game-section';
             section.style.width = "100%";
             section.innerHTML = `<div class="letter-header">${firstChar}</div>`;
             container.appendChild(section);
@@ -1057,7 +1062,7 @@ function buildStash() {
         section.appendChild(btn);
     });
 
-    // 2. SEARCH LOGIC
+    // 2. STABLE SEARCH LOGIC
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.trim().toLowerCase();
@@ -1065,20 +1070,27 @@ function buildStash() {
 
             sections.forEach(sec => {
                 const buttons = sec.querySelectorAll('.game-btn');
+                const header = sec.querySelector('.letter-header');
+                const originalChar = sec.id.replace('section-', '');
                 let visibleCount = 0;
 
                 buttons.forEach(btn => {
-                    // Match based on the displayed cleanName
+                    // Check if the name contains the search term anywhere
                     const isMatch = val === "" || btn.innerText.toLowerCase().includes(val);
                     btn.style.display = isMatch ? "block" : "none";
                     if (isMatch) visibleCount++;
                 });
 
-                // Visibility Toggle: Hide the entire section if no games inside match
-                // If search is empty, visibleCount will be > 0, so section shows.
+                // Keep header as original (e.g., "#" or "A") so "12minibattles" stays in place
+                if (header) {
+                    header.textContent = originalChar;
+                }
+
+                // Hide section if empty, show if games match
                 sec.style.display = (visibleCount > 0) ? "block" : "none";
             });
         };
     }
 }
+
 

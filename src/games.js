@@ -1010,10 +1010,10 @@ function buildStash() {
     const searchBar = document.getElementById('game-search');
     if (!container) return;
 
+    // 1. INITIAL BUILD
     container.innerHTML = '';
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
-    // 1. BUILD UI (Individual headers for every number)
     allGames.forEach(game => {
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
         const firstChar = cleanName.charAt(0).toUpperCase();
@@ -1022,6 +1022,7 @@ function buildStash() {
         if (!section) {
             section = document.createElement('div');
             section.id = `section-${firstChar}`;
+            section.className = 'game-section';
             section.style.width = "100%";
             section.innerHTML = `<div class="letter-header">${firstChar}</div>`;
             container.appendChild(section);
@@ -1046,36 +1047,35 @@ function buildStash() {
         section.appendChild(btn);
     });
 
-    // 2. HEADER-ONLY SEARCH LOGIC
+    // 2. SEARCH LOGIC
     if (searchBar) {
         searchBar.oninput = () => {
-            const val = searchBar.value.trim().toUpperCase(); // Capitalize search
+            const val = searchBar.value.trim().toLowerCase();
             const sections = document.querySelectorAll('div[id^="section-"]');
 
             sections.forEach(sec => {
-                const headerText = sec.id.replace('section-', '').toUpperCase();
-                
-                // IF search is empty: show everything
-                // IF search matches the header EXACTLY: show that section
-                // IF search is more than 1 char: check if game names START with the string
-                const isHeaderMatch = val === "" || headerText === val;
-                
                 const buttons = sec.querySelectorAll('.game-btn');
+                const header = sec.querySelector('.letter-header');
+                const originalChar = sec.id.replace('section-', '');
                 let visibleCount = 0;
 
                 buttons.forEach(btn => {
-                    const btnText = btn.innerText.toUpperCase();
-                    // Show button if it's an exact header match OR if name starts with the search
-                    const isMatch = val === "" || headerText === val || btnText.startsWith(val);
+                    const gameName = btn.innerText.toLowerCase();
+                    // Match if search is empty OR game name contains the search term
+                    const isMatch = val === "" || gameName.includes(val);
+                    
                     btn.style.display = isMatch ? "block" : "none";
                     if (isMatch) visibleCount++;
                 });
 
-                // Hide the whole section unless it's the specific header you typed
-                sec.style.display = (visibleCount > 0 && (val === "" || headerText === val || buttons[0].innerText.toUpperCase().startsWith(val))) ? "block" : "none";
+                // ALWAYS keep the header text the same as the original character
+                if (header) {
+                    header.textContent = originalChar;
+                }
+
+                // Show the section only if it has matching games inside
+                sec.style.display = (visibleCount > 0) ? "block" : "none";
             });
         };
     }
 }
-
-

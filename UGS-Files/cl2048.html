@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>2048 Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2048 - Ultimate Stash Version</title>
     <style>
-        /* CSS: Styles the board and the tile colors */
-        body { background: #faf8ef; font-family: "Clear Sans", Arial, sans-serif; display: flex; flex-direction: column; align-items: center; }
-        .game-container { width: 400px; height: 400px; background: #bbada0; border-radius: 6px; position: relative; padding: 15px; box-sizing: border-box; }
-        .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 15px; width: 100%; height: 100%; }
-        .cell { background: rgba(238, 228, 218, 0.35); border-radius: 3px; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; font-size: 35px; font-weight: bold; color: #776e65; }
+        body { background: #faf8ef; color: #776e65; font-family: "Clear Sans", Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
+        .heading { width: 300px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        h1 { font-size: 40px; margin: 0; }
+        .score-box { background: #bbada0; padding: 5px 15px; border-radius: 3px; color: white; text-align: center; }
+        .game-container { background: #bbada0; width: 320px; height: 320px; padding: 10px; border-radius: 6px; position: relative; box-sizing: border-box; touch-action: none; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; width: 100%; height: 100%; }
+        .cell { background: rgba(238, 228, 218, 0.35); border-radius: 3px; width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; transition: all 0.1s ease-in-out; }
         
-        /* Tile Colors based on number */
-        .tile-2 { background: #eee4da; }
-        .tile-4 { background: #ede0c8; }
+        /* Tile Colors */
+        .tile-2 { background: #eee4da; color: #776e65; }
+        .tile-4 { background: #ede0c8; color: #776e65; }
         .tile-8 { background: #f2b179; color: #f9f6f2; }
         .tile-16 { background: #f59563; color: #f9f6f2; }
         .tile-32 { background: #f67c5f; color: #f9f6f2; }
         .tile-64 { background: #f65e3b; color: #f9f6f2; }
-        .tile-128 { background: #edcf72; color: #f9f6f2; font-size: 30px; }
-        .tile-256 { background: #edcc61; color: #f9f6f2; font-size: 30px; }
-        .tile-512 { background: #edc850; color: #f9f6f2; font-size: 30px; }
-        .tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 25px; }
-        .tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 25px; }
+        .tile-128 { background: #edcf72; color: #f9f6f2; font-size: 20px; }
+        .tile-256 { background: #edcc61; color: #f9f6f2; font-size: 20px; }
+        .tile-512 { background: #edc850; color: #f9f6f2; font-size: 20px; }
+        .tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 16px; }
+        .tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 16px; }
     </style>
 </head>
 <body>
-    <h1>2048</h1>
-    <p>Score: <span id="score">0</span></p>
+    <div class="heading">
+        <h1>2048</h1>
+        <div class="score-box">
+            <div style="font-size: 10px; text-transform: uppercase;">Score</div>
+            <div id="score">0</div>
+        </div>
+    </div>
     <div class="game-container">
         <div class="grid" id="grid"></div>
     </div>
+    <p>Use <b>Arrow Keys</b> to merge tiles!</p>
 
     <script>
-        /* JS: Handles movement and game logic */
         const gridDisplay = document.getElementById('grid');
         const scoreDisplay = document.getElementById('score');
-        let board = Array(4).fill().map(() => Array(4).fill(0));
+        let board = [];
         let score = 0;
 
         function init() {
+            board = Array(4).fill().map(() => Array(4).fill(0));
+            gridDisplay.innerHTML = '';
             for (let i = 0; i < 16; i++) {
                 const cell = document.createElement('div');
                 cell.classList.add('cell');
@@ -65,14 +75,48 @@
             scoreDisplay.textContent = score;
         }
 
-        // Add simplified slide logic for Arrow Keys here
-        document.addEventListener('keydown', (e) => {
-            // Simplified logic: filter zeros, merge pairs, add random tile
-            if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.key)) {
-                // (Logic would go here to shift board based on key)
+        function slide(row) {
+            let arr = row.filter(val => val);
+            for (let i = 0; i < arr.length - 1; i++) {
+                if (arr[i] === arr[i + 1]) {
+                    arr[i] *= 2;
+                    score += arr[i];
+                    arr.splice(i + 1, 1);
+                }
+            }
+            while (arr.length < 4) arr.push(0);
+            return arr;
+        }
+
+        function move(direction) {
+            let oldBoard = JSON.stringify(board);
+            for (let i = 0; i < 4; i++) {
+                let row = [];
+                if (direction === 'L' || direction === 'R') {
+                    row = board[i];
+                    if (direction === 'R') row.reverse();
+                    let newRow = slide(row);
+                    if (direction === 'R') newRow.reverse();
+                    board[i] = newRow;
+                } else {
+                    for (let j = 0; j < 4; j++) row.push(board[j][i]);
+                    if (direction === 'D') row.reverse();
+                    let newRow = slide(row);
+                    if (direction === 'D') newRow.reverse();
+                    for (let j = 0; j < 4; j++) board[j][i] = newRow[j];
+                }
+            }
+            if (oldBoard !== JSON.stringify(board)) {
                 addTile();
                 render();
             }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') move('L');
+            if (e.key === 'ArrowRight') move('R');
+            if (e.key === 'ArrowUp') move('U');
+            if (e.key === 'ArrowDown') move('D');
         });
 
         init();

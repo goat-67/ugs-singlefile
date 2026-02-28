@@ -6775,7 +6775,7 @@ const allGames = [
   },
   {
     "name": "clslope",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslope.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@694b197b66e65929c88a73f4f4bca9f898beef78/UGS-Files/clslope.html"
   },
   {
     "name": "clslope2player",

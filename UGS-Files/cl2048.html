@@ -3,181 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>2048 - Pro Version</title>
+    <title>2048</title>
     <style>
-        :root { --bg: #faf8ef; --grid-bg: #bbada0; --cell-bg: rgba(238, 228, 218, 0.35); --text-dark: #776e65; --text-light: #f9f6f2; }
-        body { background: var(--bg); color: var(--text-dark); font-family: "Clear Sans", Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
-        
-        .header { width: 320px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
-        .score-container { background: var(--grid-bg); padding: 10px 20px; border-radius: 6px; color: white; text-align: center; min-width: 60px; }
-        
-        .game-container { position: relative; background: var(--grid-bg); width: 320px; height: 320px; padding: 10px; border-radius: 6px; box-sizing: border-box; }
+        :root { --bg: #faf8ef; --grid-bg: #bbada0; --cell-bg: rgba(238, 228, 218, 0.35); --text-dark: #776e65; }
+        body { background: var(--bg); color: var(--text-dark); font-family: "Clear Sans", sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
+        .header { width: 340px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .score-container { background: var(--grid-bg); padding: 5px 20px; border-radius: 6px; color: white; text-align: center; }
+        .game-container { position: relative; background: var(--grid-bg); width: 340px; height: 340px; padding: 10px; border-radius: 6px; box-sizing: border-box; }
         .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; width: 100%; height: 100%; }
-        .cell { background: var(--cell-bg); border-radius: 4px; width: 65px; height: 65px; }
+        .grid-cell { background: var(--cell-bg); border-radius: 4px; width: 72.5px; height: 72.5px; }
         
-        /* The Actual Tiles */
+        /* THE SLIDE MAGIC: We use 'transform' for performance and 'transition' for smoothness */
         .tile { 
-            position: absolute; width: 65px; height: 65px; border-radius: 4px;
+            position: absolute; width: 72.5px; height: 72.5px; border-radius: 4px;
             display: flex; align-items: center; justify-content: center;
-            font-size: 28px; font-weight: bold;
-            transition: all 0.1s ease-in-out; /* This makes it SLIDE */
+            font-size: 32px; font-weight: bold;
+            transition: transform 100ms ease-in-out; 
             z-index: 10;
         }
 
-        /* Pop effect for merging */
-        .tile-merged { animation: pop 0.2s ease-in-out; }
-        @keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } }
+        .tile-new { animation: appear 200ms ease-out; }
+        .tile-merged { animation: pop 200ms ease-in-out; z-index: 20; }
+        @keyframes appear { 0% { opacity: 0; transform: scale(0); } 100% { opacity: 1; transform: scale(1); } }
+        @keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
 
-        /* Game Over Overlay */
         #game-over {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(238, 228, 218, 0.73); z-index: 100;
-            display: none; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px;
+            position: absolute; inset: 0; background: rgba(238, 228, 218, 0.8);
+            display: none; flex-direction: column; align-items: center; justify-content: center; z-index: 100; border-radius: 6px;
         }
-        .retry-btn { 
-            background: #8f7a66; color: white; border: none; padding: 10px 20px; 
-            border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 18px; margin-top: 20px;
-        }
+        .btn { background: #8f7a66; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 18px; }
 
-        /* Colors */
-        .t2 { background: #eee4da; color: var(--text-dark); }
-        .t4 { background: #ede0c8; color: var(--text-dark); }
-        .t8 { background: #f2b179; color: var(--text-light); }
-        .t16 { background: #f59563; color: var(--text-light); }
-        .t32 { background: #f67c5f; color: var(--text-light); }
-        .t64 { background: #f65e3b; color: var(--text-light); }
-        .t128 { background: #edcf72; color: var(--text-light); font-size: 24px; }
-        .t256 { background: #edcc61; color: var(--text-light); font-size: 24px; }
-        .t512 { background: #edc850; color: var(--text-light); font-size: 24px; }
-        .t1024 { background: #edc53f; color: var(--text-light); font-size: 18px; }
-        .t2048 { background: #edc22e; color: var(--text-light); font-size: 18px; }
+        /* Original Colors */
+        .t2 { background: #eee4da; color: #776e65; }
+        .t4 { background: #ede0c8; color: #776e65; }
+        .t8 { background: #f2b179; color: white; }
+        .t16 { background: #f59563; color: white; }
+        .t32 { background: #f67c5f; color: white; }
+        .t64 { background: #f65e3b; color: white; }
+        .t128 { background: #edcf72; color: white; font-size: 28px; }
+        .t256 { background: #edcc61; color: white; font-size: 28px; }
+        .t512 { background: #edc850; color: white; font-size: 28px; }
+        .t1024 { background: #edc53f; color: white; font-size: 22px; }
+        .t2048 { background: #edc22e; color: white; font-size: 22px; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1 style="margin:0; font-size: 48px;">2048</h1>
         <div class="score-container">
-            <div style="font-size: 12px; text-transform: uppercase;">Score</div>
-            <div id="score" style="font-size: 20px; font-weight: bold;">0</div>
+            <div style="font-size: 12px;">SCORE</div>
+            <div id="score" style="font-size: 24px; font-weight: bold;">0</div>
         </div>
     </div>
-
-    <div class="game-container" id="container">
+    <div class="game-container">
         <div id="game-over">
-            <h2 style="font-size: 30px; margin: 0;">Game Over!</h2>
-            <button class="retry-btn" onclick="resetGame()">Try Again</button>
+            <h1 style="margin-bottom: 15px;">Game Over!</h1>
+            <button class="btn" onclick="init()">Try Again</button>
         </div>
         <div class="grid">
-            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
+            <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
         </div>
         <div id="tile-layer"></div>
     </div>
 
     <script>
-        let board = Array(4).fill().map(() => Array(4).fill(0));
-        let score = 0;
-        const tileLayer = document.getElementById('tile-layer');
-        const scoreDisplay = document.getElementById('score');
-        const gameOverScreen = document.getElementById('game-over');
+        let board = Array(16).fill(null), score = 0;
+        const layer = document.getElementById('tile-layer');
+        const scoreEl = document.getElementById('score');
 
-        function resetGame() {
-            board = Array(4).fill().map(() => Array(4).fill(0));
-            score = 0;
-            gameOverScreen.style.display = 'none';
-            addTile(); addTile(); render();
+        function init() {
+            layer.innerHTML = ''; board = Array(16).fill(null); score = 0;
+            scoreEl.innerText = 0; document.getElementById('game-over').style.display = 'none';
+            addTile(); addTile();
         }
 
         function addTile() {
-            let empty = [];
-            board.forEach((r, ri) => r.forEach((v, ci) => { if(v===0) empty.push({ri, ci}); }));
+            let empty = board.map((v, i) => v === null ? i : null).filter(v => v !== null);
             if (empty.length) {
-                let {ri, ci} = empty[Math.floor(Math.random() * empty.length)];
-                board[ri][ci] = Math.random() > 0.1 ? 2 : 4;
+                let idx = empty[Math.floor(Math.random() * empty.length)];
+                let val = Math.random() > 0.1 ? 2 : 4;
+                let el = document.createElement('div');
+                el.className = `tile t${val} tile-new`;
+                el.innerText = val;
+                setPos(el, idx);
+                layer.appendChild(el);
+                board[idx] = { val, el };
             }
         }
 
-        function render() {
-            tileLayer.innerHTML = '';
-            board.forEach((row, r) => {
-                row.forEach((val, c) => {
-                    if (val !== 0) {
-                        const div = document.createElement('div');
-                        div.className = `tile t${val}`;
-                        div.textContent = val;
-                        // Calculate position: (gap 10px + cell 65px) * index + container padding 10px
-                        div.style.top = `${r * 75 + 10}px`;
-                        div.style.left = `${c * 75 + 10}px`;
-                        tileLayer.appendChild(div);
-                    }
-                });
-            });
-            scoreDisplay.textContent = score;
-            if (isGameOver()) gameOverScreen.style.display = 'flex';
-        }
-
-        function isGameOver() {
-            for (let r = 0; r < 4; r++) {
-                for (let c = 0; c < 4; c++) {
-                    if (board[r][c] === 0) return false;
-                    if (c < 3 && board[r][c] === board[r][c+1]) return false;
-                    if (r < 3 && board[r][c] === board[r+1][c]) return false;
-                }
-            }
-            return true;
+        function setPos(el, idx) {
+            const x = (idx % 4) * 82.5 + 10;
+            const y = Math.floor(idx / 4) * 82.5 + 10;
+            el.style.transform = `translate(${x}px, ${y}px)`;
         }
 
         function move(dir) {
             let moved = false;
-            let oldBoard = JSON.stringify(board);
+            for (let i = 0; i < 4; i++) {
+                let indices = [];
+                for (let j = 0; j < 4; j++) {
+                    if (dir === 'L') indices.push(i * 4 + j);
+                    if (dir === 'R') indices.push(i * 4 + (3 - j));
+                    if (dir === 'U') indices.push(j * 4 + i);
+                    if (dir === 'D') indices.push((3 - j) * 4 + i);
+                }
 
-            const slide = (row) => {
-                let filtered = row.filter(x => x);
-                for (let i = 0; i < filtered.length - 1; i++) {
-                    if (filtered[i] === filtered[i+1]) {
-                        filtered[i] *= 2;
-                        score += filtered[i];
-                        filtered.splice(i+1, 1);
+                let line = indices.map(idx => board[idx]).filter(v => v);
+                let newLine = [];
+                for (let j = 0; j < line.length; j++) {
+                    if (line[j+1] && line[j].val === line[j+1].val) {
+                        let combinedVal = line[j].val * 2;
+                        score += combinedVal;
+                        // Move both to the same spot, then remove one
+                        setPos(line[j].el, indices[newLine.length]);
+                        setPos(line[j+1].el, indices[newLine.length]);
+                        let stay = line[j].el;
+                        let leave = line[j+1].el;
+                        setTimeout(() => {
+                            leave.remove();
+                            stay.innerText = combinedVal;
+                            stay.className = `tile t${combinedVal} tile-merged`;
+                        }, 100);
+                        newLine.push({ val: combinedVal, el: stay });
+                        j++;
+                        moved = true;
+                    } else {
+                        setPos(line[j].el, indices[newLine.length]);
+                        if (board[indices[newLine.length]] !== line[j]) moved = true;
+                        newLine.push(line[j]);
                     }
                 }
-                while (filtered.length < 4) filtered.push(0);
-                return filtered;
-            };
-
-            if (dir === 'L' || dir === 'R') {
-                for (let r = 0; r < 4; r++) {
-                    let row = [...board[r]];
-                    if (dir === 'R') row.reverse();
-                    let newRow = slide(row);
-                    if (dir === 'R') newRow.reverse();
-                    board[r] = newRow;
-                }
-            } else {
-                for (let c = 0; c < 4; c++) {
-                    let col = [board[0][c], board[1][c], board[2][c], board[3][c]];
-                    if (dir === 'D') col.reverse();
-                    let newCol = slide(col);
-                    if (dir === 'D') newCol.reverse();
-                    for (let r = 0; r < 4; r++) board[r][c] = newCol[r];
-                }
+                indices.forEach((idx, k) => board[idx] = newLine[k] || null);
             }
+            if (moved) {
+                scoreEl.innerText = score;
+                setTimeout(addTile, 120);
+                setTimeout(checkGameOver, 200);
+            }
+        }
 
-            if (oldBoard !== JSON.stringify(board)) {
-                addTile();
-                render();
+        function checkGameOver() {
+            if (!board.includes(null)) {
+                let over = true;
+                for (let i = 0; i < 16; i++) {
+                    if (i % 4 < 3 && board[i].val === board[i+1].val) over = false;
+                    if (i < 12 && board[i].val === board[i+4].val) over = false;
+                }
+                if (over) document.getElementById('game-over').style.display = 'flex';
             }
         }
 
         window.addEventListener('keydown', e => {
-            if (e.key === 'ArrowLeft') move('L');
-            if (e.key === 'ArrowRight') move('R');
-            if (e.key === 'ArrowUp') move('U');
-            if (e.key === 'ArrowDown') move('D');
+            if (e.key.includes('Arrow')) { e.preventDefault(); move(e.key[5][0]); }
         });
 
-        resetGame();
+        init();
     </script>
 </body>
 </html>

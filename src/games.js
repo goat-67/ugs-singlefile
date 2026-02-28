@@ -6,22 +6,6 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl1.html"
   },
   {
-    "name": "cl10bullets",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10bullets.html"
-  },
-  {
-    "name": "cl10minutestildawn",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10minutestildawn.html"
-  },
-  {
-    "name": "cl10morebullets",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10morebullets.html"
-  },
-  {
-    "name": "cl12minibattles",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl12minibattles.html"
-  },
-  {
     "name": "cl1on1soccer",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl1on1soccer.html"
   },
@@ -34,28 +18,12 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl1v1tennis.html"
   },
   {
-    "name": "cl2048",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2048.html"
-  },
-  {
-    "name": "cl2048cupcakes",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2048cupcakes.html"
-  },
-  {
-    "name": "cl20smallmazes",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl20smallmazes.html"
-  },
-  {
-    "name": "cl234playergame",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl234playergame.html"
+    "name": "cl2doom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2doom.html"
   },
   {
     "name": "cl2Dshooting",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2Dshooting.html"
-  },
-  {
-    "name": "cl2doom",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2doom.html"
   },
   {
     "name": "cl3dash",
@@ -90,16 +58,40 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl3slices2.html"
   },
   {
-    "name": "cl40xescape",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl40xescape.html"
-  },
-  {
     "name": "cl4thandgoal",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl4thandgoal.html"
   },
   {
-    "name": "cl500calibercontractz",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl500calibercontractz.html"
+    "name": "cl8ballclassic",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl8ballclassic.html"
+  },
+  {
+    "name": "cl8ballpool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl8ballpool.html"
+  },
+  {
+    "name": "cl10bullets",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10bullets.html"
+  },
+  {
+    "name": "cl10minutestildawn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10minutestildawn.html"
+  },
+  {
+    "name": "cl10morebullets",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl10morebullets.html"
+  },
+  {
+    "name": "cl12minibattles",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl12minibattles.html"
+  },
+  {
+    "name": "cl20smallmazes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl20smallmazes.html"
+  },
+  {
+    "name": "cl40xescape",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl40xescape.html"
   },
   {
     "name": "cl60secondsburgerrun",
@@ -114,18 +106,6 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl64in1nes.html"
   },
   {
-    "name": "cl8ballclassic",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl8ballclassic.html"
-  },
-  {
-    "name": "cl8ballpool",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl8ballpool.html"
-  },
-  {
-    "name": "cl9007199254740992",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl9007199254740992.html"
-  },
-  {
     "name": "cl99balls",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl99balls.html"
   },
@@ -134,416 +114,24 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl99nightsitf.html"
   },
   {
-    "name": "clADOFAI",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clADOFAI.html"
+    "name": "cl234playergame",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl234playergame.html"
   },
   {
-    "name": "clADarkRoom",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clADarkRoom.html"
+    "name": "cl500calibercontractz",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl500calibercontractz.html"
   },
   {
-    "name": "clAdventureCapatalist",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clAdventureCapatalist.html"
+    "name": "cl2048",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2048.html"
   },
   {
-    "name": "clAwesomePirates",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clAwesomePirates.html"
+    "name": "cl2048cupcakes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl2048cupcakes.html"
   },
   {
-    "name": "clB3313",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clB3313.html"
-  },
-  {
-    "name": "clBFDIBranches",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBFDIBranches.html"
-  },
-  {
-    "name": "clBMX2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBMX2.html"
-  },
-  {
-    "name": "clBTD1",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBTD1.html"
-  },
-  {
-    "name": "clBig Time Butter Baron",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBig_Time_Butter_Baron.html"
-  },
-  {
-    "name": "clBountyOfOne",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBountyOfOne.html"
-  },
-  {
-    "name": "clBrawlstars",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBrawlstars.html"
-  },
-  {
-    "name": "clBusterJam",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBusterJam.html"
-  },
-  {
-    "name": "clCartoonNetworkTableTennisUltimateTournament",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCartoonNetworkTableTennisUltimateTournament.html"
-  },
-  {
-    "name": "clCellToSingularity",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCellToSingularity.html"
-  },
-  {
-    "name": "clCircloO2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCircloO2.html"
-  },
-  {
-    "name": "clCrystalCastles",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCrystalCastles.html"
-  },
-  {
-    "name": "clDragonBallZTheLegacyofGoku",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonBallZTheLegacyofGoku.html"
-  },
-  {
-    "name": "clDragonQuestIX",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonQuestIX.html"
-  },
-  {
-    "name": "clDragonxclient",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonxclient.html"
-  },
-  {
-    "name": "clEaglerCraftTech",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglerCraftTech.html"
-  },
-  {
-    "name": "clEaglercraft Alpha 126 Offline",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Alpha-126-Offline.html"
-  },
-  {
-    "name": "clEaglercraft Beta 13 Offline",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Beta-13-Offline.html"
-  },
-  {
-    "name": "clEaglercraft Indev Offline (1)",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline (1).html"
-  },
-  {
-    "name": "clEaglercraft Indev Offline",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline.html"
-  },
-  {
-    "name": "clEaglercraftL 19 v0 7 0 Offline Signed",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftL_19_v0_7_0_Offline_Signed.html"
-  },
-  {
-    "name": "clEaglercraftX188u29",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftX188u29.html"
-  },
-  {
-    "name": "clEaglercraftZ 1112",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftZ_1112.html"
-  },
-  {
-    "name": "clFF3",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFF3.html"
-  },
-  {
-    "name": "clFFsonic1",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic1.html"
-  },
-  {
-    "name": "clFFsonic2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic2.html"
-  },
-  {
-    "name": "clFFsonic3",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic3.html"
-  },
-  {
-    "name": "clFFsonic4",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic4.html"
-  },
-  {
-    "name": "clFFsonic5",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic5.html"
-  },
-  {
-    "name": "clFFsonic61",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic61.html"
-  },
-  {
-    "name": "clFFsonic62",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic62.html"
-  },
-  {
-    "name": "clFIFA07",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA07.html"
-  },
-  {
-    "name": "clFIFA10",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA10.html"
-  },
-  {
-    "name": "clFIFA11",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA11.html"
-  },
-  {
-    "name": "clFIFA2000(1)",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA2000(1).html"
-  },
-  {
-    "name": "clFIFA99",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA99.html"
-  },
-  {
-    "name": "clFIFAinternationalsoccer",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAinternationalsoccer.html"
-  },
-  {
-    "name": "clFIFAroadtoworldcup98",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAroadtoworldcup98.html"
-  },
-  {
-    "name": "clFIFAsoccer06",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer06.html"
-  },
-  {
-    "name": "clFIFAsoccer95",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer95.html"
-  },
-  {
-    "name": "clFIFAsoccer96",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer96.html"
-  },
-  {
-    "name": "clFIFAsoccer97",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer97.html"
-  },
-  {
-    "name": "clFIFAstreet2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAstreet2.html"
-  },
-  {
-    "name": "clFNAF",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF.html"
-  },
-  {
-    "name": "clFNAF2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF2.html"
-  },
-  {
-    "name": "clFNAF3",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF3.html"
-  },
-  {
-    "name": "clFNAF4",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF4.html"
-  },
-  {
-    "name": "clGXclient",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGXclient.html"
-  },
-  {
-    "name": "clGettothetopalthoughthereisnotop",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGettothetopalthoughthereisnotop.html"
-  },
-  {
-    "name": "clGoldenSunTheLostAge",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGoldenSunTheLostAge.html"
-  },
-  {
-    "name": "clHaroldsbadday",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHaroldsbadday.html"
-  },
-  {
-    "name": "clHelios Offline (1)",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHelios-Offline (1).html"
-  },
-  {
-    "name": "clHiNoHomo",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHiNoHomo.html"
-  },
-  {
-    "name": "clHil ClimbRacing2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHil ClimbRacing2.html"
-  },
-  {
-    "name": "clJUMP",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clJUMP.html"
-  },
-  {
-    "name": "clKenGriffeyJrPresentsMajorLeagueBaseball",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clKenGriffeyJrPresentsMajorLeagueBaseball.html"
-  },
-  {
-    "name": "clMarioisMissingDoneRight",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarioisMissingDoneRight.html"
-  },
-  {
-    "name": "clMarvelSuperHeroesArcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelSuperHeroesArcade.html"
-  },
-  {
-    "name": "clMarvelVsCapcomPS1",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelVsCapcomPS1.html"
-  },
-  {
-    "name": "clMarvelVsStreetFighter",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelVsStreetFighter.html"
-  },
-  {
-    "name": "clMetalSonicHyperdrive",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMetalSonicHyperdrive.html"
-  },
-  {
-    "name": "clMinceraft I NotMine V6",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMinceraft-I-NotMine_V6.html"
-  },
-  {
-    "name": "clNBAhangtime",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNBAhangtime.html"
-  },
-  {
-    "name": "clNBAjam",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNBAjam.html"
-  },
-  {
-    "name": "clNautilusOS",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNautilusOS.html"
-  },
-  {
-    "name": "clNewSuperMarioWorld2AroundtheWorld",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNewSuperMarioWorld2AroundtheWorld.html"
-  },
-  {
-    "name": "clNicktoonsFreezeFrameFrenzy",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNicktoonsFreezeFrameFrenzy.html"
-  },
-  {
-    "name": "clNutsandBoltsScrewingPuzzle",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNutsandBoltsScrewingPuzzle.html"
-  },
-  {
-    "name": "clOrangeRoulette",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clOrangeRoulette.html"
-  },
-  {
-    "name": "clPaperMarioDSE",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPaperMarioDSE.html"
-  },
-  {
-    "name": "clPokeThetaEmeraldEX",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokeThetaEmeraldEX.html"
-  },
-  {
-    "name": "clPokemonemeraldrouge",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokemonemeraldrouge.html"
-  },
-  {
-    "name": "clPokemonrocketedition",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokemonrocketedition.html"
-  },
-  {
-    "name": "clPokémonstunningsteel",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokémonstunningsteel.html"
-  },
-  {
-    "name": "clSINGLEFILE",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSINGLEFILE.html"
-  },
-  {
-    "name": "clSM64Land",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSM64Land.html"
-  },
-  {
-    "name": "clSSF2Arcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSSF2Arcade.html"
-  },
-  {
-    "name": "clSSF2TArcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSSF2TArcade.html"
-  },
-  {
-    "name": "clScamptonTheGreatFightRecreate",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clScamptonTheGreatFightRecreate.html"
-  },
-  {
-    "name": "clSkyRiders",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSkyRiders.html"
-  },
-  {
-    "name": "clSonic1ScoreRush",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonic1ScoreRush.html"
-  },
-  {
-    "name": "clSonic2ScoreRush",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonic2ScoreRush.html"
-  },
-  {
-    "name": "clSonicHellfireSaga",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonicHellfireSaga.html"
-  },
-  {
-    "name": "clSpongebobPowerKartGrandPrix",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSpongebobPowerKartGrandPrix.html"
-  },
-  {
-    "name": "clStickmanKingdomclash",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStickmanKingdomclash.html"
-  },
-  {
-    "name": "clStreetFighter1Arcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter1Arcade.html"
-  },
-  {
-    "name": "clStreetFighter2Arcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2Arcade.html"
-  },
-  {
-    "name": "clStreetFighter2CEArcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2CEArcade.html"
-  },
-  {
-    "name": "clStreetFighter2HFArcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2HFArcade.html"
-  },
-  {
-    "name": "clSuperMarioWorldThe SecretOfThe7GoldenStatues",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSuperMarioWorldThe SecretOfThe7GoldenStatues.html"
-  },
-  {
-    "name": "clTaikonoTatsujin",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clTaikonoTatsujin.html"
-  },
-  {
-    "name": "clTuff Client Offline WASM",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clTuff_Client_Offline_WASM.html"
-  },
-  {
-    "name": "clUZG",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clUZG.html"
-  },
-  {
-    "name": "clUltimatecardrivingsimulator",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clUltimatecardrivingsimulator.html"
-  },
-  {
-    "name": "clXMenChildrenOfTheAtomArcade",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXMenChildrenOfTheAtomArcade.html"
-  },
-  {
-    "name": "clXMenVSStreetFighter",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXMenVSStreetFighter.html"
-  },
-  {
-    "name": "clXevious",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXevious.html"
-  },
-  {
-    "name": "clYoshisStrangeQuest",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clYoshisStrangeQuest.html"
-  },
-  {
-    "name": "clZetaClient",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clZetaClient.html"
+    "name": "cl9007199254740992",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl9007199254740992.html"
   },
   {
     "name": "clabandoned3",
@@ -590,6 +178,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clachillies2.html"
   },
   {
+    "name": "clADarkRoom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clADarkRoom.html"
+  },
+  {
     "name": "cladatewithdeath",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cladatewithdeath.html"
   },
@@ -602,6 +194,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cladifferentsnowgrave.html"
   },
   {
+    "name": "clADOFAI",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clADOFAI.html"
+  },
+  {
     "name": "cladvancewars",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cladvancewars.html"
   },
@@ -612,6 +208,10 @@ const allGames = [
   {
     "name": "cladventneon",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cladventneon.html"
+  },
+  {
+    "name": "clAdventureCapatalist",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clAdventureCapatalist.html"
   },
   {
     "name": "cladventurecapitalist",
@@ -734,11 +334,11 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clancientsins.html"
   },
   {
-    "name": "clangry birdsspace",
+    "name": "clangry-birdsspace",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clangry-birdsspace.html"
   },
   {
-    "name": "clangrybirds space",
+    "name": "clangrybirds-space",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clangrybirds-space.html"
   },
   {
@@ -858,6 +458,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/claviamastersbuggy.html"
   },
   {
+    "name": "clAwesomePirates",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clAwesomePirates.html"
+  },
+  {
     "name": "clawesomeplanes",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clawesomeplanes.html"
   },
@@ -868,6 +472,10 @@ const allGames = [
   {
     "name": "clawesometanks2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clawesometanks2.html"
+  },
+  {
+    "name": "clB3313",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clB3313.html"
   },
   {
     "name": "clbabeltower",
@@ -1030,12 +638,12 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbasketballfrvr.html"
   },
   {
-    "name": "clbasketballlegends(1)",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbasketballlegends(1).html"
-  },
-  {
     "name": "clbasketballlegends",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbasketballlegends.html"
+  },
+  {
+    "name": "clbasketballlegends(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbasketballlegends(1).html"
   },
   {
     "name": "clbasketballstars",
@@ -1136,6 +744,14 @@ const allGames = [
   {
     "name": "clbfdia5b",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbfdia5b.html"
+  },
+  {
+    "name": "clBFDIBranches",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBFDIBranches.html"
+  },
+  {
+    "name": "clBig_Time_Butter_Baron",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBig_Time_Butter_Baron.html"
   },
   {
     "name": "clbigflappytowertinysquare",
@@ -1278,6 +894,26 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloons2.html"
   },
   {
+    "name": "clbloonspp1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp1.html"
+  },
+  {
+    "name": "clbloonspp2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp2.html"
+  },
+  {
+    "name": "clbloonspp3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp3.html"
+  },
+  {
+    "name": "clbloonspp4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp4.html"
+  },
+  {
+    "name": "clbloonspp5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp5.html"
+  },
+  {
     "name": "clbloonsTD1",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonsTD1.html"
   },
@@ -1302,26 +938,6 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonsTD6scratch.html"
   },
   {
-    "name": "clbloonspp1",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp1.html"
-  },
-  {
-    "name": "clbloonspp2",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp2.html"
-  },
-  {
-    "name": "clbloonspp3",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp3.html"
-  },
-  {
-    "name": "clbloonspp4",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp4.html"
-  },
-  {
-    "name": "clbloonspp5",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloonspp5.html"
-  },
-  {
     "name": "clbloxorz",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbloxorz.html"
   },
@@ -1332,6 +948,10 @@ const allGames = [
   {
     "name": "clblumgirocket",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clblumgirocket.html"
+  },
+  {
+    "name": "clBMX2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBMX2.html"
   },
   {
     "name": "clbntts",
@@ -1398,6 +1018,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbouncymotors.html"
   },
   {
+    "name": "clBountyOfOne",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBountyOfOne.html"
+  },
+  {
     "name": "clbowlalt",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbowlalt.html"
   },
@@ -1414,7 +1038,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clboxheadnightmare.html"
   },
   {
-    "name": "clboxinglive 2",
+    "name": "clboxinglive-2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clboxinglive-2.html"
   },
   {
@@ -1430,8 +1054,16 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbrainrot.html"
   },
   {
+    "name": "clBrawlstars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBrawlstars.html"
+  },
+  {
     "name": "clbridgerace",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbridgerace.html"
+  },
+  {
+    "name": "clBTD1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBTD1.html"
   },
   {
     "name": "clbtd5",
@@ -1518,16 +1150,20 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clbushidoblade.html"
   },
   {
+    "name": "clBusterJam",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clBusterJam.html"
+  },
+  {
     "name": "clcactusmccoy",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcactusmccoy.html"
   },
   {
-    "name": "clcactusmccoy2(1)",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcactusmccoy2(1).html"
-  },
-  {
     "name": "clcactusmccoy2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcactusmccoy2.html"
+  },
+  {
+    "name": "clcactusmccoy2(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcactusmccoy2(1).html"
   },
   {
     "name": "clcannonballs3d",
@@ -1568,6 +1204,10 @@ const allGames = [
   {
     "name": "clcarstuntsdriving",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcarstuntsdriving.html"
+  },
+  {
+    "name": "clCartoonNetworkTableTennisUltimateTournament",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCartoonNetworkTableTennisUltimateTournament.html"
   },
   {
     "name": "clcastlebloodline",
@@ -1638,6 +1278,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcellardoor.html"
   },
   {
+    "name": "clCellToSingularity",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCellToSingularity.html"
+  },
+  {
     "name": "clchainofmemories",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clchainofmemories.html"
   },
@@ -1692,6 +1336,10 @@ const allGames = [
   {
     "name": "clchuzzle",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clchuzzle.html"
+  },
+  {
+    "name": "clCircloO2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCircloO2.html"
   },
   {
     "name": "clciviballs",
@@ -1834,7 +1482,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcontra3.html"
   },
   {
-    "name": "clcookie clicker",
+    "name": "clcookie-clicker",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcookie-clicker.html"
   },
   {
@@ -1976,6 +1624,10 @@ const allGames = [
   {
     "name": "clcrunchball3000",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clcrunchball3000.html"
+  },
+  {
+    "name": "clCrystalCastles",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clCrystalCastles.html"
   },
   {
     "name": "clcs1.6",
@@ -2166,7 +1818,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldiamondhollow2.html"
   },
   {
-    "name": "cldiddykong racing",
+    "name": "cldiddykong-racing",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldiddykong-racing.html"
   },
   {
@@ -2330,6 +1982,18 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldragonballadvance.html"
   },
   {
+    "name": "clDragonBallZTheLegacyofGoku",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonBallZTheLegacyofGoku.html"
+  },
+  {
+    "name": "clDragonQuestIX",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonQuestIX.html"
+  },
+  {
+    "name": "clDragonxclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clDragonxclient.html"
+  },
+  {
     "name": "cldrawclimber",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldrawclimber.html"
   },
@@ -2466,8 +2130,28 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldynamiteheaddy.html"
   },
   {
+    "name": "clEaglercraft-Alpha-126-Offline",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Alpha-126-Offline.html"
+  },
+  {
+    "name": "clEaglercraft-Beta-13-Offline",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Beta-13-Offline.html"
+  },
+  {
+    "name": "clEaglercraft-Indev-Offline (1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline (1).html"
+  },
+  {
+    "name": "clEaglercraft-Indev-Offline",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraft-Indev-Offline.html"
+  },
+  {
     "name": "cleaglercraft152",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cleaglercraft152.html"
+  },
+  {
+    "name": "clEaglercraftL_19_v0_7_0_Offline_Signed",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftL_19_v0_7_0_Offline_Signed.html"
   },
   {
     "name": "cleaglercraftlite",
@@ -2488,6 +2172,18 @@ const allGames = [
   {
     "name": "cleaglercraftsky",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cleaglercraftsky.html"
+  },
+  {
+    "name": "clEaglerCraftTech",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglerCraftTech.html"
+  },
+  {
+    "name": "clEaglercraftX188u29",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftX188u29.html"
+  },
+  {
+    "name": "clEaglercraftZ_1112",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clEaglercraftZ_1112.html"
   },
   {
     "name": "cleaglerforge",
@@ -2622,7 +2318,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clescalatingduel.html"
   },
   {
-    "name": "clescaperoad 2",
+    "name": "clescaperoad-2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clescaperoad-2.html"
   },
   {
@@ -2746,6 +2442,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfeedus5.html"
   },
   {
+    "name": "clFF3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFF3.html"
+  },
+  {
     "name": "clff6",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clff6.html"
   },
@@ -2754,8 +2454,84 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clffmysticquest.html"
   },
   {
+    "name": "clFFsonic1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic1.html"
+  },
+  {
+    "name": "clFFsonic2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic2.html"
+  },
+  {
+    "name": "clFFsonic3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic3.html"
+  },
+  {
+    "name": "clFFsonic4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic4.html"
+  },
+  {
+    "name": "clFFsonic5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic5.html"
+  },
+  {
+    "name": "clFFsonic61",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic61.html"
+  },
+  {
+    "name": "clFFsonic62",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFFsonic62.html"
+  },
+  {
+    "name": "clFIFA07",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA07.html"
+  },
+  {
+    "name": "clFIFA10",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA10.html"
+  },
+  {
+    "name": "clFIFA11",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA11.html"
+  },
+  {
+    "name": "clFIFA99",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA99.html"
+  },
+  {
     "name": "clfifa2000",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfifa2000.html"
+  },
+  {
+    "name": "clFIFA2000(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFA2000(1).html"
+  },
+  {
+    "name": "clFIFAinternationalsoccer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAinternationalsoccer.html"
+  },
+  {
+    "name": "clFIFAroadtoworldcup98",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAroadtoworldcup98.html"
+  },
+  {
+    "name": "clFIFAsoccer06",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer06.html"
+  },
+  {
+    "name": "clFIFAsoccer95",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer95.html"
+  },
+  {
+    "name": "clFIFAsoccer96",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer96.html"
+  },
+  {
+    "name": "clFIFAsoccer97",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAsoccer97.html"
+  },
+  {
+    "name": "clFIFAstreet2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFIFAstreet2.html"
   },
   {
     "name": "clfinalearth2",
@@ -2768,6 +2544,10 @@ const allGames = [
   {
     "name": "clfinalfantasyII",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfinalfantasyII.html"
+  },
+  {
+    "name": "clfinalfantasytactics",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfinalfantasytactics.html"
   },
   {
     "name": "clfinalfantasyVI",
@@ -2788,10 +2568,6 @@ const allGames = [
   {
     "name": "clfinalfantasyVIItheothertetrr",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfinalfantasyVIItheothertetrr.html"
-  },
-  {
-    "name": "clfinalfantasytactics",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfinalfantasytactics.html"
   },
   {
     "name": "clfinalninja",
@@ -2878,6 +2654,22 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnac2.html"
   },
   {
+    "name": "clFNAF",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF.html"
+  },
+  {
+    "name": "clFNAF2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF2.html"
+  },
+  {
+    "name": "clFNAF3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF3.html"
+  },
+  {
+    "name": "clFNAF4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clFNAF4.html"
+  },
+  {
     "name": "clfnaf4halloween",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnaf4halloween.html"
   },
@@ -2904,10 +2696,6 @@ const allGames = [
   {
     "name": "clfnaw",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnaw.html"
-  },
-  {
-    "name": "clfnfTWIDDLEFINGER",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfTWIDDLEFINGER.html"
   },
   {
     "name": "clfnfagoti",
@@ -3134,7 +2922,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfshaggyxmatt.html"
   },
   {
-    "name": "clfnfshucks v2",
+    "name": "clfnfshucks-v2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfshucks-v2.html"
   },
   {
@@ -3166,6 +2954,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnftricky.html"
   },
   {
+    "name": "clfnfTWIDDLEFINGER",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfTWIDDLEFINGER.html"
+  },
+  {
     "name": "clfnfundertale",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfundertale.html"
   },
@@ -3178,7 +2970,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfvstabi.html"
   },
   {
-    "name": "clfnfwednesday infedility",
+    "name": "clfnfwednesday-infedility",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clfnfwednesday-infedility.html"
   },
   {
@@ -3342,6 +3134,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgetontop.html"
   },
   {
+    "name": "clGettothetopalthoughthereisnotop",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGettothetopalthoughthereisnotop.html"
+  },
+  {
     "name": "clgetyoked",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgetyoked.html"
   },
@@ -3402,6 +3198,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgoldensunnds.html"
   },
   {
+    "name": "clGoldenSunTheLostAge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGoldenSunTheLostAge.html"
+  },
+  {
     "name": "clgoldminer",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgoldminer.html"
   },
@@ -3446,7 +3246,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgorescriptclassic.html"
   },
   {
-    "name": "clgrandactionsimulator ny",
+    "name": "clgrandactionsimulator-ny",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgrandactionsimulator-ny.html"
   },
   {
@@ -3466,12 +3266,12 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny2.html"
   },
   {
-    "name": "clgranny22",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny22.html"
-  },
-  {
     "name": "clgranny3",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny3.html"
+  },
+  {
+    "name": "clgranny22",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny22.html"
   },
   {
     "name": "clgrannycreepy",
@@ -3502,7 +3302,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgravitymod.html"
   },
   {
-    "name": "clgrey box testing",
+    "name": "clgrey-box-testing",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgrey-box-testing.html"
   },
   {
@@ -3538,12 +3338,12 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgta2.html"
   },
   {
-    "name": "clgta22",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgta22.html"
-  },
-  {
     "name": "clgta2alt",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgta2alt.html"
+  },
+  {
+    "name": "clgta22",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgta22.html"
   },
   {
     "name": "clgtaalt",
@@ -3562,7 +3362,7 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clguesstheiranswer.html"
   },
   {
-    "name": "clgun spin",
+    "name": "clgun-spin",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgun-spin.html"
   },
   {
@@ -3602,6 +3402,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgunsmoke.html"
   },
   {
+    "name": "clGXclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clGXclient.html"
+  },
+  {
     "name": "clgymstack",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgymstack.html"
   },
@@ -3630,16 +3434,16 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhandsofwar (1).html"
   },
   {
+    "name": "clhandsofwar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhandsofwar.html"
+  },
+  {
     "name": "clhandsofwar(1)",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhandsofwar(1).html"
   },
   {
     "name": "clhandsofwar(2)",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhandsofwar(2).html"
-  },
-  {
-    "name": "clhandsofwar",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhandsofwar.html"
   },
   {
     "name": "clhandulum",
@@ -3660,6 +3464,10 @@ const allGames = [
   {
     "name": "clhardwaretycoon",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhardwaretycoon.html"
+  },
+  {
+    "name": "clHaroldsbadday",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHaroldsbadday.html"
   },
   {
     "name": "clharvestio",
@@ -3688,6 +3496,10 @@ const allGames = [
   {
     "name": "clhei$t",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhei$t.html"
+  },
+  {
+    "name": "clHelios-Offline (1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHelios-Offline (1).html"
   },
   {
     "name": "clhelixjump",
@@ -3726,8 +3538,16 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhighwaytraffic3d.html"
   },
   {
+    "name": "clHil ClimbRacing2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHil ClimbRacing2.html"
+  },
+  {
     "name": "clhillclimbracinglite",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clhillclimbracinglite.html"
+  },
+  {
+    "name": "clHiNoHomo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clHiNoHomo.html"
   },
   {
     "name": "clhipsterkickball",
@@ -3992,8 +3812,4993 @@ const allGames = [
   {
     "name": "cljetpackjoyride",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljetpackjoyride.html"
+  },
+  {
+    "name": "cljetrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljetrush.html"
+  },
+  {
+    "name": "cljetskiracing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljetskiracing.html"
+  },
+  {
+    "name": "cljmocraft",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljmocraft.html"
+  },
+  {
+    "name": "cljohnnytrigger",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljohnnytrigger.html"
+  },
+  {
+    "name": "cljohnnyupgrade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljohnnyupgrade.html"
+  },
+  {
+    "name": "cljourneyarcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljourneyarcade.html"
+  },
+  {
+    "name": "cljourneydownhill",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljourneydownhill.html"
+  },
+  {
+    "name": "cljsvecx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljsvecx.html"
+  },
+  {
+    "name": "clJUMP",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clJUMP.html"
+  },
+  {
+    "name": "cljumpingshell",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljumpingshell.html"
+  },
+  {
+    "name": "cljustfalllol",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljustfalllol.html"
+  },
+  {
+    "name": "cljusthitthebutton",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljusthitthebutton.html"
+  },
+  {
+    "name": "cljustinclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljustinclient.html"
+  },
+  {
+    "name": "cljustoneboss",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cljustoneboss.html"
+  },
+  {
+    "name": "clkaizomarioworld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkaizomarioworld.html"
+  },
+  {
+    "name": "clkalikan",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkalikan.html"
+  },
+  {
+    "name": "clkapi",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkapi.html"
+  },
+  {
+    "name": "clkaratebros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkaratebros.html"
+  },
+  {
+    "name": "clkarlson",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkarlson.html"
+  },
+  {
+    "name": "clkartbros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkartbros.html"
+  },
+  {
+    "name": "clKenGriffeyJrPresentsMajorLeagueBaseball",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clKenGriffeyJrPresentsMajorLeagueBaseball.html"
+  },
+  {
+    "name": "clkeroseneclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkeroseneclient.html"
+  },
+  {
+    "name": "clkillerinstinct",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkillerinstinct.html"
+  },
+  {
+    "name": "clkillover",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkillover.html"
+  },
+  {
+    "name": "clkilltheiceagebabyadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkilltheiceagebabyadventure.html"
+  },
+  {
+    "name": "clkingdomheartsdays",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkingdomheartsdays.html"
+  },
+  {
+    "name": "clkingdomheartsrecoded",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkingdomheartsrecoded.html"
+  },
+  {
+    "name": "clkingdomheartsrecodedalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkingdomheartsrecodedalt.html"
+  },
+  {
+    "name": "clkirby64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirby64.html"
+  },
+  {
+    "name": "clkirbyandtheamzingmirror",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbyandtheamzingmirror.html"
+  },
+  {
+    "name": "clkirbysadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysadventure.html"
+  },
+  {
+    "name": "clkirbysdreamland",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysdreamland.html"
+  },
+  {
+    "name": "clkirbysdreamland3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysdreamland3.html"
+  },
+  {
+    "name": "clkirbysoftandwet",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysoftandwet.html"
+  },
+  {
+    "name": "clkirbysqueaksquad",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysqueaksquad.html"
+  },
+  {
+    "name": "clkirbysuperstar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysuperstar.html"
+  },
+  {
+    "name": "clkirbysuperstarultra",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkirbysuperstarultra.html"
+  },
+  {
+    "name": "clkittencannon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkittencannon.html"
+  },
+  {
+    "name": "clklifur",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clklifur.html"
+  },
+  {
+    "name": "clknifehit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clknifehit.html"
+  },
+  {
+    "name": "clknightmaretower",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clknightmaretower.html"
+  },
+  {
+    "name": "clkonkrio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkonkrio.html"
+  },
+  {
+    "name": "clkoopasrevenge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkoopasrevenge.html"
+  },
+  {
+    "name": "clkourio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clkourio.html"
+  },
+  {
+    "name": "cllaceysflashgames",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllaceysflashgames.html"
+  },
+  {
+    "name": "cllambdaclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllambdaclient.html"
+  },
+  {
+    "name": "cllastfirered",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllastfirered.html"
+  },
+  {
+    "name": "cllasthorizon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllasthorizon.html"
+  },
+  {
+    "name": "cllaststand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllaststand.html"
+  },
+  {
+    "name": "cllaststand2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllaststand2.html"
+  },
+  {
+    "name": "clleaderstrike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clleaderstrike.html"
+  },
+  {
+    "name": "clleapandavoid2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clleapandavoid2.html"
+  },
+  {
+    "name": "cllearntofly",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllearntofly.html"
+  },
+  {
+    "name": "cllearntofly2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllearntofly2.html"
+  },
+  {
+    "name": "cllearntofly3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllearntofly3.html"
+  },
+  {
+    "name": "cllearntoflyidle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllearntoflyidle.html"
+  },
+  {
+    "name": "cllegobatman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegobatman.html"
+  },
+  {
+    "name": "cllegobatman2superheroes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegobatman2superheroes.html"
+  },
+  {
+    "name": "cllegoindianajones",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegoindianajones.html"
+  },
+  {
+    "name": "cllegoindianajones2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegoindianajones2.html"
+  },
+  {
+    "name": "cllegoninjago",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegoninjago.html"
+  },
+  {
+    "name": "cllegostarwars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegostarwars.html"
+  },
+  {
+    "name": "cllegostarwars2gba",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegostarwars2gba.html"
+  },
+  {
+    "name": "cllegostarwarsgba",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegostarwarsgba.html"
+  },
+  {
+    "name": "cllemmings",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllemmings.html"
+  },
+  {
+    "name": "clleveldevil",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clleveldevil.html"
+  },
+  {
+    "name": "clleverwarriors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clleverwarriors.html"
+  },
+  {
+    "name": "cllightitup",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllightitup.html"
+  },
+  {
+    "name": "cllilrunmo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllilrunmo.html"
+  },
+  {
+    "name": "cllinerider",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllinerider.html"
+  },
+  {
+    "name": "cllinktothepast",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllinktothepast.html"
+  },
+  {
+    "name": "cllittlealchemy2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllittlealchemy2.html"
+  },
+  {
+    "name": "cllittlerunmo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllittlerunmo.html"
+  },
+  {
+    "name": "cllockthedoor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllockthedoor.html"
+  },
+  {
+    "name": "clloderunner",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clloderunner.html"
+  },
+  {
+    "name": "cllonewolf",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllonewolf.html"
+  },
+  {
+    "name": "cllosangelesshark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllosangelesshark.html"
+  },
+  {
+    "name": "cllowknight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllowknight.html"
+  },
+  {
+    "name": "clloz1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clloz1.html"
+  },
+  {
+    "name": "cllozlinkawakening",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllozlinkawakening.html"
+  },
+  {
+    "name": "cllozminishcap",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllozminishcap.html"
+  },
+  {
+    "name": "cllozoracleofseasons",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllozoracleofseasons.html"
+  },
+  {
+    "name": "cllozspirittracks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllozspirittracks.html"
+  },
+  {
+    "name": "clluckyblocks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clluckyblocks.html"
+  },
+  {
+    "name": "cllummm",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllummm.html"
+  },
+  {
+    "name": "clmadalinstuntcars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadalinstuntcars.html"
+  },
+  {
+    "name": "clmadalinstuntcarsgood",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadalinstuntcarsgood.html"
+  },
+  {
+    "name": "clmadalinstuntcarsmultiplayerfixed",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadalinstuntcarsmultiplayerfixed.html"
+  },
+  {
+    "name": "clmadden93",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadden93.html"
+  },
+  {
+    "name": "clmadden94",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadden94.html"
+  },
+  {
+    "name": "clmadden95",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadden95.html"
+  },
+  {
+    "name": "clmadden96",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadden96.html"
+  },
+  {
+    "name": "clmadden99",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadden99.html"
+  },
+  {
+    "name": "clmaddenfootball",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddenfootball.html"
+  },
+  {
+    "name": "clmaddenfootball64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddenfootball64.html"
+  },
+  {
+    "name": "clmaddennfl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddennfl.html"
+  },
+  {
+    "name": "clmaddennfl2000",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddennfl2000.html"
+  },
+  {
+    "name": "clmaddennfl2001",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddennfl2001.html"
+  },
+  {
+    "name": "clmaddennfl2002",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddennfl2002.html"
+  },
+  {
+    "name": "clmaddy98",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaddy98.html"
+  },
+  {
+    "name": "clmadness-retaliation",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadness-retaliation.html"
+  },
+  {
+    "name": "clmadnessaccelerant",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessaccelerant.html"
+  },
+  {
+    "name": "clmadnesscombatdefense",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnesscombatdefense.html"
+  },
+  {
+    "name": "clmadnesscombatnexus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnesscombatnexus.html"
+  },
+  {
+    "name": "clmadnessgemini",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessgemini.html"
+  },
+  {
+    "name": "clmadnesshydraulic",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnesshydraulic.html"
+  },
+  {
+    "name": "clmadnessinteractive",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessinteractive.html"
+  },
+  {
+    "name": "clmadnessoffcolor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessoffcolor.html"
+  },
+  {
+    "name": "clmadnesspremediation",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnesspremediation.html"
+  },
+  {
+    "name": "clmadnessretaliation",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessretaliation.html"
+  },
+  {
+    "name": "clmadnesss2010",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnesss2010.html"
+  },
+  {
+    "name": "clmadnessstand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadnessstand.html"
+  },
+  {
+    "name": "clmadskillsmotocross2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadskillsmotocross2.html"
+  },
+  {
+    "name": "clmadstick",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadstick.html"
+  },
+  {
+    "name": "clmadstuntcars2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmadstuntcars2.html"
+  },
+  {
+    "name": "clmagetoweridle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmagetoweridle.html"
+  },
+  {
+    "name": "clmagictiles3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmagictiles3.html"
+  },
+  {
+    "name": "clmajorasmask",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmajorasmask.html"
+  },
+  {
+    "name": "clmakesureitsclosed",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmakesureitsclosed.html"
+  },
+  {
+    "name": "clmanagod",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmanagod.html"
+  },
+  {
+    "name": "clmarbleracer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarbleracer.html"
+  },
+  {
+    "name": "clmari0",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmari0.html"
+  },
+  {
+    "name": "clmario3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmario3.html"
+  },
+  {
+    "name": "clmario64webgl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmario64webgl.html"
+  },
+  {
+    "name": "clmarioandluigisuperstarsaga",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarioandluigisuperstarsaga.html"
+  },
+  {
+    "name": "clmariobuilder64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariobuilder64.html"
+  },
+  {
+    "name": "clmariocombat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariocombat.html"
+  },
+  {
+    "name": "clmariogolf",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariogolf.html"
+  },
+  {
+    "name": "clMarioisMissingDoneRight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarioisMissingDoneRight.html"
+  },
+  {
+    "name": "clmariokart64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariokart64.html"
+  },
+  {
+    "name": "clmariokartds",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariokartds.html"
+  },
+  {
+    "name": "clmariokartsupercircuit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariokartsupercircuit.html"
+  },
+  {
+    "name": "clmariolostlevels",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariolostlevels.html"
+  },
+  {
+    "name": "clmariomadness",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariomadness.html"
+  },
+  {
+    "name": "clmariominusrabbids",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariominusrabbids.html"
+  },
+  {
+    "name": "clmariopaint",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariopaint.html"
+  },
+  {
+    "name": "clmarioparty",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarioparty.html"
+  },
+  {
+    "name": "clmarioparty2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarioparty2.html"
+  },
+  {
+    "name": "clmarioparty3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarioparty3.html"
+  },
+  {
+    "name": "clmariopartyds",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariopartyds.html"
+  },
+  {
+    "name": "clmariosmysterymeat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariosmysterymeat.html"
+  },
+  {
+    "name": "clmariotennis",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariotennis.html"
+  },
+  {
+    "name": "clmariovsluigi",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmariovsluigi.html"
+  },
+  {
+    "name": "clMarvelSuperHeroesArcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelSuperHeroesArcade.html"
+  },
+  {
+    "name": "clMarvelVsCapcomPS1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelVsCapcomPS1.html"
+  },
+  {
+    "name": "clMarvelVsStreetFighter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMarvelVsStreetFighter.html"
+  },
+  {
+    "name": "clmarvelvsstreetfighterjp",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarvelvsstreetfighterjp.html"
+  },
+  {
+    "name": "clmaskedforcesunlimited",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaskedforcesunlimited.html"
+  },
+  {
+    "name": "clmastermindworldconquerer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmastermindworldconquerer.html"
+  },
+  {
+    "name": "clmatrixrampage",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmatrixrampage.html"
+  },
+  {
+    "name": "clmattv2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmattv2.html"
+  },
+  {
+    "name": "clmaxpayne",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaxpayne.html"
+  },
+  {
+    "name": "clmcfpsfbhd",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmcfpsfbhd.html"
+  },
+  {
+    "name": "clmcraerally",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmcraerally.html"
+  },
+  {
+    "name": "clmeatboy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmeatboy.html"
+  },
+  {
+    "name": "clmeatboyflash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmeatboyflash.html"
+  },
+  {
+    "name": "clmedalofhonor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmedalofhonor.html"
+  },
+  {
+    "name": "clmedievalshark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmedievalshark.html"
+  },
+  {
+    "name": "clmedievil",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmedievil.html"
+  },
+  {
+    "name": "clmegachess",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegachess.html"
+  },
+  {
+    "name": "clmegaclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaclient.html"
+  },
+  {
+    "name": "clmegaman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman.html"
+  },
+  {
+    "name": "clmegaman2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman2.html"
+  },
+  {
+    "name": "clmegaman2gba",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman2gba.html"
+  },
+  {
+    "name": "clmegaman3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman3.html"
+  },
+  {
+    "name": "clmegaman4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman4.html"
+  },
+  {
+    "name": "clmegaman5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman5.html"
+  },
+  {
+    "name": "clmegaman6",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman6.html"
+  },
+  {
+    "name": "clmegaman7",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman7.html"
+  },
+  {
+    "name": "clmegaman8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaman8.html"
+  },
+  {
+    "name": "clmegamanlegends",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanlegends.html"
+  },
+  {
+    "name": "clmegamanlegends2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanlegends2.html"
+  },
+  {
+    "name": "clmegamanx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanx.html"
+  },
+  {
+    "name": "clmegamanx2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanx2.html"
+  },
+  {
+    "name": "clmegamanx3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanx3.html"
+  },
+  {
+    "name": "clmegamanx4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanx4.html"
+  },
+  {
+    "name": "clmegamanzero",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanzero.html"
+  },
+  {
+    "name": "clmegamanzx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegamanzx.html"
+  },
+  {
+    "name": "clmegaminer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmegaminer.html"
+  },
+  {
+    "name": "clmelonplayground",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmelonplayground.html"
+  },
+  {
+    "name": "clmeowuwu",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmeowuwu.html"
+  },
+  {
+    "name": "clmergeroundracers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmergeroundracers.html"
+  },
+  {
+    "name": "clmetalgear",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalgear.html"
+  },
+  {
+    "name": "clmetalgearsolid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalgearsolid.html"
+  },
+  {
+    "name": "clmetalgearsolidps",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalgearsolidps.html"
+  },
+  {
+    "name": "clmetalslug",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalslug.html"
+  },
+  {
+    "name": "clmetalslug2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalslug2.html"
+  },
+  {
+    "name": "clmetalslugadvance",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalslugadvance.html"
+  },
+  {
+    "name": "clmetalslugmission1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalslugmission1.html"
+  },
+  {
+    "name": "clmetalslugmission2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetalslugmission2.html"
+  },
+  {
+    "name": "clMetalSonicHyperdrive",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMetalSonicHyperdrive.html"
+  },
+  {
+    "name": "clmetroid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetroid.html"
+  },
+  {
+    "name": "clmetroid2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetroid2.html"
+  },
+  {
+    "name": "clmetroidfusion",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetroidfusion.html"
+  },
+  {
+    "name": "clmetroidzeromission",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmetroidzeromission.html"
+  },
+  {
+    "name": "clmiamishark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmiamishark.html"
+  },
+  {
+    "name": "clmicromages",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmicromages.html"
+  },
+  {
+    "name": "clmightyknight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmightyknight.html"
+  },
+  {
+    "name": "clmightyknight2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmightyknight2.html"
+  },
+  {
+    "name": "clmimic",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmimic.html"
+  },
+  {
+    "name": "clMinceraft-I-NotMine_V6",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clMinceraft-I-NotMine_V6.html"
+  },
+  {
+    "name": "clmindscape",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmindscape.html"
+  },
+  {
+    "name": "clminecraft1-8-8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminecraft1-8-8.html"
+  },
+  {
+    "name": "clminecraftshooter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminecraftshooter.html"
+  },
+  {
+    "name": "clmineshooter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmineshooter.html"
+  },
+  {
+    "name": "clminesweeperplus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminesweeperplus.html"
+  },
+  {
+    "name": "clminhero",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminhero.html"
+  },
+  {
+    "name": "clminicrossword",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminicrossword.html"
+  },
+  {
+    "name": "clminimart",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminimart.html"
+  },
+  {
+    "name": "clminishooters",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminishooters.html"
+  },
+  {
+    "name": "clminitooth",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clminitooth.html"
+  },
+  {
+    "name": "clmiraginewar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmiraginewar.html"
+  },
+  {
+    "name": "clmisslecommand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmisslecommand.html"
+  },
+  {
+    "name": "clmk4ampedup",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmk4ampedup.html"
+  },
+  {
+    "name": "clmktrilogyps1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmktrilogyps1.html"
+  },
+  {
+    "name": "clmmwilywars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmmwilywars.html"
+  },
+  {
+    "name": "clmobcontrolhtml5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmobcontrolhtml5.html"
+  },
+  {
+    "name": "clmobiusrevolution",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmobiusrevolution.html"
+  },
+  {
+    "name": "clmomoscrushers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmomoscrushers.html"
+  },
+  {
+    "name": "clmoneyrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmoneyrush.html"
+  },
+  {
+    "name": "clmonkeymart",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmonkeymart.html"
+  },
+  {
+    "name": "clmonkeymartenc",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmonkeymartenc.html"
+  },
+  {
+    "name": "clmonsterderby",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmonsterderby.html"
+  },
+  {
+    "name": "clmonstertracks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmonstertracks.html"
+  },
+  {
+    "name": "clmonstertruckportstunt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmonstertruckportstunt.html"
+  },
+  {
+    "name": "clmortalkombat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat.html"
+  },
+  {
+    "name": "clmortalkombat2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat2.html"
+  },
+  {
+    "name": "clmortalkombat2a",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat2a.html"
+  },
+  {
+    "name": "clmortalkombat3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat3.html"
+  },
+  {
+    "name": "clmortalkombat3a",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat3a.html"
+  },
+  {
+    "name": "clmortalkombat4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombat4.html"
+  },
+  {
+    "name": "clmortalkombata",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombata.html"
+  },
+  {
+    "name": "clmortalkombatadvance",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortalkombatadvance.html"
+  },
+  {
+    "name": "clmortkom4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmortkom4.html"
+  },
+  {
+    "name": "clmotherload",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotherload.html"
+  },
+  {
+    "name": "clmotoroadrash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotoroadrash.html"
+  },
+  {
+    "name": "clmotox3m2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3m2.html"
+  },
+  {
+    "name": "clmotox3m3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3m3.html"
+  },
+  {
+    "name": "clmotox3mm",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3mm.html"
+  },
+  {
+    "name": "clmotox3mpoolparty",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3mpoolparty.html"
+  },
+  {
+    "name": "clmotox3mspookyland",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3mspookyland.html"
+  },
+  {
+    "name": "clmotox3mwinter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmotox3mwinter.html"
+  },
+  {
+    "name": "clmountainbikeracer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmountainbikeracer.html"
+  },
+  {
+    "name": "clmrracer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmrracer.html"
+  },
+  {
+    "name": "clmspacman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmspacman.html"
+  },
+  {
+    "name": "clmspacman(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmspacman(1).html"
+  },
+  {
+    "name": "clmultitask",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmultitask.html"
+  },
+  {
+    "name": "clmutilate-a-doll",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmutilate-a-doll.html"
+  },
+  {
+    "name": "clmxoffroadmaster",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmxoffroadmaster.html"
+  },
+  {
+    "name": "clmyfriendpedro",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmyfriendpedro.html"
+  },
+  {
+    "name": "clmyfriendpedroarena",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmyfriendpedroarena.html"
+  },
+  {
+    "name": "clmyteardrop",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmyteardrop.html"
+  },
+  {
+    "name": "cln",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cln.html"
+  },
+  {
+    "name": "clnarc",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnarc.html"
+  },
+  {
+    "name": "clnaturalselection",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnaturalselection.html"
+  },
+  {
+    "name": "clNautilusOS",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNautilusOS.html"
+  },
+  {
+    "name": "clNBAhangtime",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNBAhangtime.html"
+  },
+  {
+    "name": "clNBAjam",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNBAjam.html"
+  },
+  {
+    "name": "clnbajamTE",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnbajamTE.html"
+  },
+  {
+    "name": "clnbalive2000",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnbalive2000.html"
+  },
+  {
+    "name": "clnbalive2003",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnbalive2003.html"
+  },
+  {
+    "name": "clnblox",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnblox.html"
+  },
+  {
+    "name": "clneonblaster",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clneonblaster.html"
+  },
+  {
+    "name": "clneonrider",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clneonrider.html"
+  },
+  {
+    "name": "clnesworldchampion",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnesworldchampion.html"
+  },
+  {
+    "name": "clnetattack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnetattack.html"
+  },
+  {
+    "name": "clneverendinglegacy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clneverendinglegacy.html"
+  },
+  {
+    "name": "clnewgroundsrumble",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnewgroundsrumble.html"
+  },
+  {
+    "name": "clnewsupermariobros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnewsupermariobros.html"
+  },
+  {
+    "name": "clNewSuperMarioWorld2AroundtheWorld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNewSuperMarioWorld2AroundtheWorld.html"
+  },
+  {
+    "name": "clnewyorkshark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnewyorkshark.html"
+  },
+  {
+    "name": "clnextdoor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnextdoor.html"
+  },
+  {
+    "name": "clnflblitz",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnflblitz.html"
+  },
+  {
+    "name": "clnfscarbonowncity",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnfscarbonowncity.html"
+  },
+  {
+    "name": "clnfsmostwanted",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnfsmostwanted.html"
+  },
+  {
+    "name": "clnfsporcheunleashed",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnfsporcheunleashed.html"
+  },
+  {
+    "name": "clnfsunderground",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnfsunderground.html"
+  },
+  {
+    "name": "clnfsunderground2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnfsunderground2.html"
+  },
+  {
+    "name": "clngon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clngon.html"
+  },
+  {
+    "name": "clngon(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clngon(1).html"
+  },
+  {
+    "name": "clnhl98",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnhl98.html"
+  },
+  {
+    "name": "clnhl2002",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnhl2002.html"
+  },
+  {
+    "name": "clnhlhitz2003",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnhlhitz2003.html"
+  },
+  {
+    "name": "clnickelodeonsuperbrawl2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnickelodeonsuperbrawl2.html"
+  },
+  {
+    "name": "clNicktoonsFreezeFrameFrenzy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNicktoonsFreezeFrameFrenzy.html"
+  },
+  {
+    "name": "clnightclubshowdown",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnightclubshowdown.html"
+  },
+  {
+    "name": "clnightfire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnightfire.html"
+  },
+  {
+    "name": "clnightshade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnightshade.html"
+  },
+  {
+    "name": "clnimrods",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnimrods.html"
+  },
+  {
+    "name": "clninjabrawl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clninjabrawl.html"
+  },
+  {
+    "name": "clninjaobbyparkor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clninjaobbyparkor.html"
+  },
+  {
+    "name": "clnintendogslab",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnintendogslab.html"
+  },
+  {
+    "name": "clnintendoworldcup",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnintendoworldcup.html"
+  },
+  {
+    "name": "clnitclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnitclient.html"
+  },
+  {
+    "name": "clnitromemustdie",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnitromemustdie.html"
+  },
+  {
+    "name": "clnomoregameasdsadfagfggdfs",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnomoregameasdsadfagfggdfs.html"
+  },
+  {
+    "name": "clnoobminer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnoobminer.html"
+  },
+  {
+    "name": "clnotyourpawn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnotyourpawn.html"
+  },
+  {
+    "name": "clnovaclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnovaclient.html"
+  },
+  {
+    "name": "clnplus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnplus.html"
+  },
+  {
+    "name": "clnubbysnumberfactory",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnubbysnumberfactory.html"
+  },
+  {
+    "name": "clnullkevin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnullkevin.html"
+  },
+  {
+    "name": "clNutsandBoltsScrewingPuzzle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clNutsandBoltsScrewingPuzzle.html"
+  },
+  {
+    "name": "clnzp",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clnzp.html"
+  },
+  {
+    "name": "clobby-99-will-lose",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobby-99-will-lose.html"
+  },
+  {
+    "name": "clobby1jumpperclick",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobby1jumpperclick.html"
+  },
+  {
+    "name": "clobbybike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobbybike.html"
+  },
+  {
+    "name": "clobbyonlyup",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobbyonlyup.html"
+  },
+  {
+    "name": "clobbyslide",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobbyslide.html"
+  },
+  {
+    "name": "clobeythegame",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clobeythegame.html"
+  },
+  {
+    "name": "clocarinaoftime",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clocarinaoftime.html"
+  },
+  {
+    "name": "cloddfuture",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cloddfuture.html"
+  },
+  {
+    "name": "clofflineparadise",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clofflineparadise.html"
+  },
+  {
+    "name": "clomeganuggetclicker",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clomeganuggetclicker.html"
+  },
+  {
+    "name": "clonebitadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clonebitadventure.html"
+  },
+  {
+    "name": "clonenightasfreddy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clonenightasfreddy.html"
+  },
+  {
+    "name": "clonepiece",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clonepiece.html"
+  },
+  {
+    "name": "clonepiecefighting",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clonepiecefighting.html"
+  },
+  {
+    "name": "cloneshotold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cloneshotold.html"
+  },
+  {
+    "name": "clonlyup",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clonlyup.html"
+  },
+  {
+    "name": "clÖoo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clÖoo.html"
+  },
+  {
+    "name": "cloperius",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cloperius.html"
+  },
+  {
+    "name": "cloppositeday",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cloppositeday.html"
+  },
+  {
+    "name": "clopposumcountry",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clopposumcountry.html"
+  },
+  {
+    "name": "clOrangeRoulette",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clOrangeRoulette.html"
+  },
+  {
+    "name": "clorbofcreation",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clorbofcreation.html"
+  },
+  {
+    "name": "clordinarysonicromhack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clordinarysonicromhack.html"
+  },
+  {
+    "name": "cloregontrail",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cloregontrail.html"
+  },
+  {
+    "name": "clormmimastickwithclsoitcanberememberedoyeahclalienhominid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clormmimastickwithclsoitcanberememberedoyeahclalienhominid.html"
+  },
+  {
+    "name": "closu",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/closu.html"
+  },
+  {
+    "name": "clourpleguy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clourpleguy.html"
+  },
+  {
+    "name": "clovo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clovo.html"
+  },
+  {
+    "name": "clovo2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clovo2.html"
+  },
+  {
+    "name": "clovodimensions",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clovodimensions.html"
+  },
+  {
+    "name": "clovofixed",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clovofixed.html"
+  },
+  {
+    "name": "clpacman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacman.html"
+  },
+  {
+    "name": "clpacmana",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacmana.html"
+  },
+  {
+    "name": "clpacmansuperfast",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacmansuperfast.html"
+  },
+  {
+    "name": "clpacmanworld3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacmanworld3.html"
+  },
+  {
+    "name": "clpacmanworldg",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacmanworldg.html"
+  },
+  {
+    "name": "clpacmanworldpsx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpacmanworldpsx.html"
+  },
+  {
+    "name": "clpapabakeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapabakeria.html"
+  },
+  {
+    "name": "clpapadonut",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapadonut.html"
+  },
+  {
+    "name": "clpapalouienighthunt2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapalouienighthunt2.html"
+  },
+  {
+    "name": "clpapalouiewhenburgersattack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapalouiewhenburgersattack.html"
+  },
+  {
+    "name": "clpapalouiewhenpizzasattack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapalouiewhenpizzasattack.html"
+  },
+  {
+    "name": "clpapalouiewhensundaesattack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapalouiewhensundaesattack.html"
+  },
+  {
+    "name": "clpapapizzagood",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapapizzagood.html"
+  },
+  {
+    "name": "clpapapizzagoody",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapapizzagoody.html"
+  },
+  {
+    "name": "clpapapizzamamamia",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapapizzamamamia.html"
+  },
+  {
+    "name": "clpapasburgerIIIAAAAA",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapasburgerIIIAAAAA.html"
+  },
+  {
+    "name": "clpapascheeseria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapascheeseria.html"
+  },
+  {
+    "name": "clpapascupcakeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapascupcakeria.html"
+  },
+  {
+    "name": "clpapasfreezeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapasfreezeria.html"
+  },
+  {
+    "name": "clpapashotdoggeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapashotdoggeria.html"
+  },
+  {
+    "name": "clpapaspancakeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapaspancakeria.html"
+  },
+  {
+    "name": "clpapaspastaria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapaspastaria.html"
+  },
+  {
+    "name": "clpapasscooperia",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapasscooperia.html"
+  },
+  {
+    "name": "clpapassushiria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapassushiria.html"
+  },
+  {
+    "name": "clpapastacomia",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapastacomia.html"
+  },
+  {
+    "name": "clpapaswingeria",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapaswingeria.html"
+  },
+  {
+    "name": "clpaperio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpaperio.html"
+  },
+  {
+    "name": "clpaperio3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpaperio3d.html"
+  },
+  {
+    "name": "clpaperiomania",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpaperiomania.html"
+  },
+  {
+    "name": "clpapermario",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapermario.html"
+  },
+  {
+    "name": "clPaperMarioDSE",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPaperMarioDSE.html"
+  },
+  {
+    "name": "clpapermariopromode",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapermariopromode.html"
+  },
+  {
+    "name": "clpapermariottyd",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpapermariottyd.html"
+  },
+  {
+    "name": "clparappatherapper",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparappatherapper.html"
+  },
+  {
+    "name": "clparappatherapperalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparappatherapperalt.html"
+  },
+  {
+    "name": "clparkingfury",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparkingfury.html"
+  },
+  {
+    "name": "clparkingfury2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparkingfury2.html"
+  },
+  {
+    "name": "clparkingfury3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparkingfury3.html"
+  },
+  {
+    "name": "clparkingrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clparkingrush.html"
+  },
+  {
+    "name": "clpartnersintime",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpartnersintime.html"
+  },
+  {
+    "name": "clpeacekeeper",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpeacekeeper.html"
+  },
+  {
+    "name": "clpeggle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpeggle.html"
+  },
+  {
+    "name": "clpenaltykicks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpenaltykicks.html"
+  },
+  {
+    "name": "clpenguindiner",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpenguindiner.html"
+  },
+  {
+    "name": "clpenguinpass",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpenguinpass.html"
+  },
+  {
+    "name": "clpepsiman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpepsiman.html"
+  },
+  {
+    "name": "clpepsimanalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpepsimanalt.html"
+  },
+  {
+    "name": "clpereelous",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpereelous.html"
+  },
+  {
+    "name": "clperfectdark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clperfectdark.html"
+  },
+  {
+    "name": "clperfecthotel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clperfecthotel.html"
+  },
+  {
+    "name": "clpersona",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpersona.html"
+  },
+  {
+    "name": "clpersona2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpersona2.html"
+  },
+  {
+    "name": "clpersona2alt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpersona2alt.html"
+  },
+  {
+    "name": "clpersonaalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpersonaalt.html"
+  },
+  {
+    "name": "clpetworld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpetworld.html"
+  },
+  {
+    "name": "clphasma",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clphasma.html"
+  },
+  {
+    "name": "clpheonixjusticeforall",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpheonixjusticeforall.html"
+  },
+  {
+    "name": "clpheonixrightaceattorny",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpheonixrightaceattorny.html"
+  },
+  {
+    "name": "clpheonixtrialsandyear",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpheonixtrialsandyear.html"
+  },
+  {
+    "name": "clpheonixtrialsandyeartrhfasd",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpheonixtrialsandyeartrhfasd.html"
+  },
+  {
+    "name": "clpibbyapocalypse",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpibbyapocalypse.html"
+  },
+  {
+    "name": "clpiclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpiclient.html"
+  },
+  {
+    "name": "clpico8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpico8.html"
+  },
+  {
+    "name": "clpico8edu",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpico8edu.html"
+  },
+  {
+    "name": "clpicodriller",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpicodriller.html"
+  },
+  {
+    "name": "clpicohot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpicohot.html"
+  },
+  {
+    "name": "clpicolife",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpicolife.html"
+  },
+  {
+    "name": "clpiconightpunkin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpiconightpunkin.html"
+  },
+  {
+    "name": "clpicosschool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpicosschool.html"
+  },
+  {
+    "name": "clpicovsbeardx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpicovsbeardx.html"
+  },
+  {
+    "name": "clpiecesofcake",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpiecesofcake.html"
+  },
+  {
+    "name": "clpikwip",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpikwip.html"
+  },
+  {
+    "name": "clpingpongchaos",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpingpongchaos.html"
+  },
+  {
+    "name": "clpinkbike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpinkbike.html"
+  },
+  {
+    "name": "clpitfall",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpitfall.html"
+  },
+  {
+    "name": "clpitof100trials",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpitof100trials.html"
+  },
+  {
+    "name": "clpixelbattlegroundsio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelbattlegroundsio.html"
+  },
+  {
+    "name": "clpixelclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelclient.html"
+  },
+  {
+    "name": "clpixelcombat2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelcombat2.html"
+  },
+  {
+    "name": "clpixelquestlostidols",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelquestlostidols.html"
+  },
+  {
+    "name": "clpixelshooter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelshooter.html"
+  },
+  {
+    "name": "clpixelspeedrun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelspeedrun.html"
+  },
+  {
+    "name": "clpixelwarfare",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpixelwarfare.html"
+  },
+  {
+    "name": "clpizzapapa",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpizzapapa.html"
+  },
+  {
+    "name": "clpizzatower",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpizzatower.html"
+  },
+  {
+    "name": "clplangman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clplangman.html"
+  },
+  {
+    "name": "clplantsvszombies",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clplantsvszombies.html"
+  },
+  {
+    "name": "clplazmaburst",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clplazmaburst.html"
+  },
+  {
+    "name": "clplinko",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clplinko.html"
+  },
+  {
+    "name": "clplonky",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clplonky.html"
+  },
+  {
+    "name": "clpogo3D",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpogo3D.html"
+  },
+  {
+    "name": "clpokeallin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeallin.html"
+  },
+  {
+    "name": "clpokebattlefact",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokebattlefact.html"
+  },
+  {
+    "name": "clpokeblack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblack.html"
+  },
+  {
+    "name": "clpokeblack2.html",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblack2.html.html"
+  },
+  {
+    "name": "clpokeblack2alt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblack2alt.html"
+  },
+  {
+    "name": "clpokeblackalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblackalt.html"
+  },
+  {
+    "name": "clpokeblazeblack2redux",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblazeblack2redux.html"
+  },
+  {
+    "name": "clpokeblue",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeblue.html"
+  },
+  {
+    "name": "clpokeclassic",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeclassic.html"
+  },
+  {
+    "name": "clpokecrown",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokecrown.html"
+  },
+  {
+    "name": "clpokecrystaladvanceredux",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokecrystaladvanceredux.html"
+  },
+  {
+    "name": "clpokecrystalclear",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokecrystalclear.html"
+  },
+  {
+    "name": "clpokediamond",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokediamond.html"
+  },
+  {
+    "name": "clpokedreamstone",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokedreamstone.html"
+  },
+  {
+    "name": "clpokeeliteredux",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeeliteredux.html"
+  },
+  {
+    "name": "clpokeelysiuma",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeelysiuma.html"
+  },
+  {
+    "name": "clpokeelysiumb",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeelysiumb.html"
+  },
+  {
+    "name": "clpokeemeraldenhanced",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldenhanced.html"
+  },
+  {
+    "name": "clpokeemeraldexceeded",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldexceeded.html"
+  },
+  {
+    "name": "clpokeemeraldhorizons",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldhorizons.html"
+  },
+  {
+    "name": "clpokeemeraldimperium",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldimperium.html"
+  },
+  {
+    "name": "clpokeemeraldrandom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldrandom.html"
+  },
+  {
+    "name": "clpokeemeraldrogue",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldrogue.html"
+  },
+  {
+    "name": "clpokeemeraldz",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeemeraldz.html"
+  },
+  {
+    "name": "clpokefiregold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokefiregold.html"
+  },
+  {
+    "name": "clpokeflora",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeflora.html"
+  },
+  {
+    "name": "clpokefuseddimension",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokefuseddimension.html"
+  },
+  {
+    "name": "clpokegaia",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokegaia.html"
+  },
+  {
+    "name": "clpokegschronicles",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokegschronicles.html"
+  },
+  {
+    "name": "clpokeheartgold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeheartgold.html"
+  },
+  {
+    "name": "clpokelightplatinum",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokelightplatinum.html"
+  },
+  {
+    "name": "clpokeliquidcrysta",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeliquidcrysta.html"
+  },
+  {
+    "name": "clpokemegamoemon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemegamoemon.html"
+  },
+  {
+    "name": "clpokemonamnesia",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonamnesia.html"
+  },
+  {
+    "name": "clpokemonclover",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonclover.html"
+  },
+  {
+    "name": "clpokemoncrystal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemoncrystal.html"
+  },
+  {
+    "name": "clpokemonemerald",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemerald.html"
+  },
+  {
+    "name": "clpokemonemeraldcrest",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemeraldcrest.html"
+  },
+  {
+    "name": "clpokemonemeraldimperium",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemeraldimperium.html"
+  },
+  {
+    "name": "clpokemonemeraldkaizo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemeraldkaizo.html"
+  },
+  {
+    "name": "clpokemonemeraldmini",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemeraldmini.html"
+  },
+  {
+    "name": "clPokemonemeraldrouge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokemonemeraldrouge.html"
+  },
+  {
+    "name": "clpokemonemeraldseaglass",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonemeraldseaglass.html"
+  },
+  {
+    "name": "clpokemonenergizedemerald",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonenergizedemerald.html"
+  },
+  {
+    "name": "clpokemonevolvedsfdgsdfs",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonevolvedsfdgsdfs.html"
+  },
+  {
+    "name": "clpokemonfirered",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonfirered.html"
+  },
+  {
+    "name": "clpokemonfireredandleafgreenplusedition",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonfireredandleafgreenplusedition.html"
+  },
+  {
+    "name": "clpokemonfireredrandomized",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonfireredrandomized.html"
+  },
+  {
+    "name": "clpokemongold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemongold.html"
+  },
+  {
+    "name": "clpokemonkaizoironfirered",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonkaizoironfirered.html"
+  },
+  {
+    "name": "clpokemonlazarus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonlazarus.html"
+  },
+  {
+    "name": "clpokemonleafgreen",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonleafgreen.html"
+  },
+  {
+    "name": "clpokemonmodernemerald",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonmodernemerald.html"
+  },
+  {
+    "name": "clpokemonmysterydungeon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonmysterydungeon.html"
+  },
+  {
+    "name": "clpokemonquetzal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonquetzal.html"
+  },
+  {
+    "name": "clpokemonroaringred",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonroaringred.html"
+  },
+  {
+    "name": "clPokemonrocketedition",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokemonrocketedition.html"
+  },
+  {
+    "name": "clpokemonruby",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonruby.html"
+  },
+  {
+    "name": "clpokemonsapphire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonsapphire.html"
+  },
+  {
+    "name": "clpokemonshinsigma",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonshinsigma.html"
+  },
+  {
+    "name": "clpokemonsilver",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonsilver.html"
+  },
+  {
+    "name": "clpokemonsnap",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonsnap.html"
+  },
+  {
+    "name": "clpokemonstadium",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonstadium.html"
+  },
+  {
+    "name": "clPokémonstunningsteel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokémonstunningsteel.html"
+  },
+  {
+    "name": "clpokemontowerdefense",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemontowerdefense.html"
+  },
+  {
+    "name": "clpokemonultimatefusion",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonultimatefusion.html"
+  },
+  {
+    "name": "clpokemonunbound",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemonunbound.html"
+  },
+  {
+    "name": "clpokemysteryexplorersofsky",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokemysteryexplorersofsky.html"
+  },
+  {
+    "name": "clpokenameless",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokenameless.html"
+  },
+  {
+    "name": "clpokeodyssey",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeodyssey.html"
+  },
+  {
+    "name": "clpokepath",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokepath.html"
+  },
+  {
+    "name": "clpokepearl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokepearl.html"
+  },
+  {
+    "name": "clpokeperfectfirered",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeperfectfirered.html"
+  },
+  {
+    "name": "clpokepisces",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokepisces.html"
+  },
+  {
+    "name": "clpokeplatinum",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeplatinum.html"
+  },
+  {
+    "name": "clpokeplatinumrandomized",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeplatinumrandomized.html"
+  },
+  {
+    "name": "clpokerechargedpink",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerechargedpink.html"
+  },
+  {
+    "name": "clpokerechargedyellow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerechargedyellow.html"
+  },
+  {
+    "name": "clpokerecordkeepers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerecordkeepers.html"
+  },
+  {
+    "name": "clpokered",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokered.html"
+  },
+  {
+    "name": "clpokerocketedition",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerocketedition.html"
+  },
+  {
+    "name": "clpokerowe",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerowe.html"
+  },
+  {
+    "name": "clpokeruby",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeruby.html"
+  },
+  {
+    "name": "clpokerunandbun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokerunandbun.html"
+  },
+  {
+    "name": "clpokescorchedsilver",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokescorchedsilver.html"
+  },
+  {
+    "name": "clpokesoulsilver",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokesoulsilver.html"
+  },
+  {
+    "name": "clpokethepit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokethepit.html"
+  },
+  {
+    "name": "clPokeThetaEmeraldEX",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clPokeThetaEmeraldEX.html"
+  },
+  {
+    "name": "clpoketoomanytypes2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpoketoomanytypes2.html"
+  },
+  {
+    "name": "clpoketourmaline",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpoketourmaline.html"
+  },
+  {
+    "name": "clpokeultraviolet",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeultraviolet.html"
+  },
+  {
+    "name": "clpokeunovaemerald",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeunovaemerald.html"
+  },
+  {
+    "name": "clpokevega",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokevega.html"
+  },
+  {
+    "name": "clpokevoltwhite2redux",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokevoltwhite2redux.html"
+  },
+  {
+    "name": "clpokevoyager",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokevoyager.html"
+  },
+  {
+    "name": "clpokewhite",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokewhite.html"
+  },
+  {
+    "name": "clpokewhite2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokewhite2.html"
+  },
+  {
+    "name": "clpokewhite2alt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokewhite2alt.html"
+  },
+  {
+    "name": "clpokeyellow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpokeyellow.html"
+  },
+  {
+    "name": "clpolicepursuit2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpolicepursuit2.html"
+  },
+  {
+    "name": "clpolishedcrystal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpolishedcrystal.html"
+  },
+  {
+    "name": "clpolytrackbutnotflagged",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpolytrackbutnotflagged.html"
+  },
+  {
+    "name": "clpomgetsinternet",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpomgetsinternet.html"
+  },
+  {
+    "name": "clpoorbunny",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpoorbunny.html"
+  },
+  {
+    "name": "clpopeyepapi",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpopeyepapi.html"
+  },
+  {
+    "name": "clporklike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clporklike.html"
+  },
+  {
+    "name": "clportal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clportal.html"
+  },
+  {
+    "name": "clportal2d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clportal2d.html"
+  },
+  {
+    "name": "clportaldefendersfastbreak",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clportaldefendersfastbreak.html"
+  },
+  {
+    "name": "clportaldefendersTD",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clportaldefendersTD.html"
+  },
+  {
+    "name": "clportalflash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clportalflash.html"
+  },
+  {
+    "name": "clporter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clporter.html"
+  },
+  {
+    "name": "clpossessquest",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpossessquest.html"
+  },
+  {
+    "name": "clpostal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpostal.html"
+  },
+  {
+    "name": "clpotatomanseeksthetroof",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpotatomanseeksthetroof.html"
+  },
+  {
+    "name": "clpou",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpou.html"
+  },
+  {
+    "name": "clpowerslave",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpowerslave.html"
+  },
+  {
+    "name": "clpraxisfighterx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpraxisfighterx.html"
+  },
+  {
+    "name": "clprebronzeage",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clprebronzeage.html"
+  },
+  {
+    "name": "clprecivilationbronzeage",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clprecivilationbronzeage.html"
+  },
+  {
+    "name": "clprehistoricshark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clprehistoricshark.html"
+  },
+  {
+    "name": "clprimary",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clprimary.html"
+  },
+  {
+    "name": "clprismclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clprismclient.html"
+  },
+  {
+    "name": "clpuckman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpuckman.html"
+  },
+  {
+    "name": "clpullfrog",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpullfrog.html"
+  },
+  {
+    "name": "clpunchout",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpunchout.html"
+  },
+  {
+    "name": "clpunchthedrump",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpunchthedrump.html"
+  },
+  {
+    "name": "clpunchthetrump",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpunchthetrump.html"
+  },
+  {
+    "name": "clpuppethockey",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpuppethockey.html"
+  },
+  {
+    "name": "clpuppetmaster",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpuppetmaster.html"
+  },
+  {
+    "name": "clpushyourluck",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpushyourluck.html"
+  },
+  {
+    "name": "clpuyopuyofever",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpuyopuyofever.html"
+  },
+  {
+    "name": "clpvz",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpvz.html"
+  },
+  {
+    "name": "clpvz2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpvz2.html"
+  },
+  {
+    "name": "clpvz2gardenless",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpvz2gardenless.html"
+  },
+  {
+    "name": "clpyrotoad",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clpyrotoad.html"
+  },
+  {
+    "name": "clqbert",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clqbert.html"
+  },
+  {
+    "name": "clquake2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clquake2.html"
+  },
+  {
+    "name": "clquake3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clquake3.html"
+  },
+  {
+    "name": "clquake64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clquake64.html"
+  },
+  {
+    "name": "clquickieworld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clquickieworld.html"
+  },
+  {
+    "name": "clqwop",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clqwop.html"
+  },
+  {
+    "name": "clracemaster3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clracemaster3d.html"
+  },
+  {
+    "name": "clracingarena",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clracingarena.html"
+  },
+  {
+    "name": "clradicalred",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clradicalred.html"
+  },
+  {
+    "name": "clradracer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clradracer.html"
+  },
+  {
+    "name": "clraftwars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clraftwars.html"
+  },
+  {
+    "name": "clraftwars2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clraftwars2.html"
+  },
+  {
+    "name": "clragdoll-io",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdoll-io.html"
+  },
+  {
+    "name": "clragdollachivement",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdollachivement.html"
+  },
+  {
+    "name": "clragdollarchers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdollarchers.html"
+  },
+  {
+    "name": "clragdolldrop",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdolldrop.html"
+  },
+  {
+    "name": "clragdollhit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdollhit.html"
+  },
+  {
+    "name": "clragdollrunners",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdollrunners.html"
+  },
+  {
+    "name": "clragdollsoccer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragdollsoccer.html"
+  },
+  {
+    "name": "clragollhit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clragollhit.html"
+  },
+  {
+    "name": "clrainbowsix",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrainbowsix.html"
+  },
+  {
+    "name": "clrainbowsixalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrainbowsixalt.html"
+  },
+  {
+    "name": "clravenbase",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clravenbase.html"
+  },
+  {
+    "name": "clray1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clray1.html"
+  },
+  {
+    "name": "clray2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clray2.html"
+  },
+  {
+    "name": "clrayman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrayman.html"
+  },
+  {
+    "name": "clraze",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clraze.html"
+  },
+  {
+    "name": "clraze2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clraze2.html"
+  },
+  {
+    "name": "clraze3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clraze3.html"
+  },
+  {
+    "name": "clre3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clre3.html"
+  },
+  {
+    "name": "clreachthecore",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clreachthecore.html"
+  },
+  {
+    "name": "clrealflightsim",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrealflightsim.html"
+  },
+  {
+    "name": "clrebornclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrebornclient.html"
+  },
+  {
+    "name": "clrebuild",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrebuild.html"
+  },
+  {
+    "name": "clrebuild2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrebuild2.html"
+  },
+  {
+    "name": "clrecoil",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrecoil.html"
+  },
+  {
+    "name": "clredalert",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredalert.html"
+  },
+  {
+    "name": "clredball",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball.html"
+  },
+  {
+    "name": "clredball2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball2.html"
+  },
+  {
+    "name": "clredball3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball3.html"
+  },
+  {
+    "name": "clredball4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball4.html"
+  },
+  {
+    "name": "clredball4(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball4(1).html"
+  },
+  {
+    "name": "clredball4vol2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball4vol2.html"
+  },
+  {
+    "name": "clredball4vol3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredball4vol3.html"
+  },
+  {
+    "name": "clredhanded",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredhanded.html"
+  },
+  {
+    "name": "clredtierunner",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredtierunner.html"
+  },
+  {
+    "name": "clredvsblue2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredvsblue2.html"
+  },
+  {
+    "name": "clredvsbluewar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clredvsbluewar.html"
+  },
+  {
+    "name": "clreignofcentipede",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clreignofcentipede.html"
+  },
+  {
+    "name": "clrenegades",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrenegades.html"
+  },
+  {
+    "name": "clresentclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresentclient.html"
+  },
+  {
+    "name": "clresidentevil",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresidentevil.html"
+  },
+  {
+    "name": "clresidentevil2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresidentevil2.html"
+  },
+  {
+    "name": "clresidentevil2d1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresidentevil2d1.html"
+  },
+  {
+    "name": "clresidentevil2d2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresidentevil2d2.html"
+  },
+  {
+    "name": "clresizer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresizer.html"
+  },
+  {
+    "name": "clresortempire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clresortempire.html"
+  },
+  {
+    "name": "clretrobowl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clretrobowl.html"
+  },
+  {
+    "name": "clretrobowlcollege",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clretrobowlcollege.html"
+  },
+  {
+    "name": "clretrohighway",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clretrohighway.html"
+  },
+  {
+    "name": "clretropingpong",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clretropingpong.html"
+  },
+  {
+    "name": "clreturnman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clreturnman.html"
+  },
+  {
+    "name": "clreturnman2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clreturnman2.html"
+  },
+  {
+    "name": "clreturntoriddleschool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clreturntoriddleschool.html"
+  },
+  {
+    "name": "clrevolutionidle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrevolutionidle.html"
+  },
+  {
+    "name": "clrhythmheaven",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrhythmheaven.html"
+  },
+  {
+    "name": "clrhythymymheaven",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrhythymymheaven.html"
+  },
+  {
+    "name": "clricochetkills2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clricochetkills2.html"
+  },
+  {
+    "name": "clriddlemiddleschool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddlemiddleschool.html"
+  },
+  {
+    "name": "clriddleschool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddleschool.html"
+  },
+  {
+    "name": "clriddleschool2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddleschool2.html"
+  },
+  {
+    "name": "clriddleschool3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddleschool3.html"
+  },
+  {
+    "name": "clriddleschool445544444$$444$444",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddleschool445544444$$444$444.html"
+  },
+  {
+    "name": "clriddletransfer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddletransfer.html"
+  },
+  {
+    "name": "clriddletransfer2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clriddletransfer2.html"
+  },
+  {
+    "name": "clridgeracer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clridgeracer.html"
+  },
+  {
+    "name": "clristar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clristar.html"
+  },
+  {
+    "name": "clroadfighter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroadfighter.html"
+  },
+  {
+    "name": "clroadoffury",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroadoffury.html"
+  },
+  {
+    "name": "clroadofthedead",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroadofthedead.html"
+  },
+  {
+    "name": "clroadofthedead2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroadofthedead2.html"
+  },
+  {
+    "name": "clrocketjump",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketjump.html"
+  },
+  {
+    "name": "clrocketknight2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketknight2.html"
+  },
+  {
+    "name": "clrocketknightadventures",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketknightadventures.html"
+  },
+  {
+    "name": "clrocketleague",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketleague.html"
+  },
+  {
+    "name": "clrocketpult",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketpult.html"
+  },
+  {
+    "name": "clrocketsoccerderby",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrocketsoccerderby.html"
+  },
+  {
+    "name": "clrodha",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrodha.html"
+  },
+  {
+    "name": "clroguesoul",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroguesoul.html"
+  },
+  {
+    "name": "clroguesoul2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroguesoul2.html"
+  },
+  {
+    "name": "clrollerballer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrollerballer.html"
+  },
+  {
+    "name": "clrollingsky",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrollingsky.html"
+  },
+  {
+    "name": "clrollyvortex",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrollyvortex.html"
+  },
+  {
+    "name": "clrolypolymonster",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrolypolymonster.html"
+  },
+  {
+    "name": "clrooftopsnipers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrooftopsnipers.html"
+  },
+  {
+    "name": "clrooftopsnipers2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrooftopsnipers2.html"
+  },
+  {
+    "name": "clroomclicker",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clroomclicker.html"
+  },
+  {
+    "name": "clrotate",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrotate.html"
+  },
+  {
+    "name": "clrouletteknight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrouletteknight.html"
+  },
+  {
+    "name": "clruffle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clruffle.html"
+  },
+  {
+    "name": "clrun-2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrun-2.html"
+  },
+  {
+    "name": "clrun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrun.html"
+  },
+  {
+    "name": "clrun2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrun2.html"
+  },
+  {
+    "name": "clrun3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrun3.html"
+  },
+  {
+    "name": "clrunningfred",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrunningfred.html"
+  },
+  {
+    "name": "clrussiancardriver",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrussiancardriver.html"
+  },
+  {
+    "name": "clrussiansandbox",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clrussiansandbox.html"
+  },
+  {
+    "name": "clsandboxcity",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsandboxcity.html"
+  },
+  {
+    "name": "clsandboxels",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsandboxels.html"
+  },
+  {
+    "name": "clsandsofthecoliseum",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsandsofthecoliseum.html"
+  },
+  {
+    "name": "clsandstone",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsandstone.html"
+  },
+  {
+    "name": "clsandtris",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsandtris.html"
+  },
+  {
+    "name": "clsantarun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsantarun.html"
+  },
+  {
+    "name": "clsanty",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsanty.html"
+  },
+  {
+    "name": "clsaszombieassault2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsaszombieassault2.html"
+  },
+  {
+    "name": "clsatryn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsatryn.html"
+  },
+  {
+    "name": "clsaulgoodmanrun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsaulgoodmanrun.html"
+  },
+  {
+    "name": "clsausageflip",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsausageflip.html"
+  },
+  {
+    "name": "clScamptonTheGreatFightRecreate",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clScamptonTheGreatFightRecreate.html"
+  },
+  {
+    "name": "clscarletshift",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscarletshift.html"
+  },
+  {
+    "name": "clscarymazegame",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscarymazegame.html"
+  },
+  {
+    "name": "clscaryteacher3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscaryteacher3d.html"
+  },
+  {
+    "name": "clscrapmetal3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscrapmetal3.html"
+  },
+  {
+    "name": "clscrapyarddog",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscrapyarddog.html"
+  },
+  {
+    "name": "clscribblenauts",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscribblenauts.html"
+  },
+  {
+    "name": "clscubabear",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clscubabear.html"
+  },
+  {
+    "name": "clsdf",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsdf.html"
+  },
+  {
+    "name": "clseamongrel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clseamongrel.html"
+  },
+  {
+    "name": "clsecretofmana",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsecretofmana.html"
+  },
+  {
+    "name": "clsega2gg",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsega2gg.html"
+  },
+  {
+    "name": "clself",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clself.html"
+  },
+  {
+    "name": "clsentryfortress",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsentryfortress.html"
+  },
+  {
+    "name": "clserenitrove",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clserenitrove.html"
+  },
+  {
+    "name": "clserioussamadvance",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clserioussamadvance.html"
+  },
+  {
+    "name": "clservingupmadness",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clservingupmadness.html"
+  },
+  {
+    "name": "clsfk",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsfk.html"
+  },
+  {
+    "name": "clsfk2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsfk2.html"
+  },
+  {
+    "name": "clsfklaststand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsfklaststand.html"
+  },
+  {
+    "name": "clsfkleague",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsfkleague.html"
+  },
+  {
+    "name": "clshaggy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshaggy.html"
+  },
+  {
+    "name": "clshc1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshc1.html"
+  },
+  {
+    "name": "clshc2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshc2.html"
+  },
+  {
+    "name": "clshc3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshc3.html"
+  },
+  {
+    "name": "clshift",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshift.html"
+  },
+  {
+    "name": "clshift2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshift2.html"
+  },
+  {
+    "name": "clshift3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshift3.html"
+  },
+  {
+    "name": "clshinmegamitenseidevilsurvivor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshinmegamitenseidevilsurvivor.html"
+  },
+  {
+    "name": "clshortlife",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshortlife.html"
+  },
+  {
+    "name": "clshotout4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshotout4.html"
+  },
+  {
+    "name": "clshredmill",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshredmill.html"
+  },
+  {
+    "name": "clshredsauce",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshredsauce.html"
+  },
+  {
+    "name": "clshrek-2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshrek-2.html"
+  },
+  {
+    "name": "clshrubnaut",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshrubnaut.html"
+  },
+  {
+    "name": "clshwultimatem",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clshwultimatem.html"
+  },
+  {
+    "name": "clsideeffects",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsideeffects.html"
+  },
+  {
+    "name": "clsidepocket",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsidepocket.html"
+  },
+  {
+    "name": "clsierra7",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsierra7.html"
+  },
+  {
+    "name": "clsilenthill",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsilenthill.html"
+  },
+  {
+    "name": "clsilenthillalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsilenthillalt.html"
+  },
+  {
+    "name": "clsilk",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsilk.html"
+  },
+  {
+    "name": "clsiloshowdow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsiloshowdow.html"
+  },
+  {
+    "name": "clSINGLEFILE",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSINGLEFILE.html"
+  },
+  {
+    "name": "clsixwaystodie",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsixwaystodie.html"
+  },
+  {
+    "name": "clskateit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskateit.html"
+  },
+  {
+    "name": "clskibididibidygyattohiorizzingallovertheplacestillwatermangotheoryfemboydrool",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskibididibidygyattohiorizzingallovertheplacestillwatermangotheoryfemboydrool.html"
+  },
+  {
+    "name": "clskibidiinthebackrooms",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskibidiinthebackrooms.html"
+  },
+  {
+    "name": "clskibidishooter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskibidishooter.html"
+  },
+  {
+    "name": "clskong",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskong.html"
+  },
+  {
+    "name": "clskyfactory",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskyfactory.html"
+  },
+  {
+    "name": "clskyrace-3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskyrace-3d.html"
+  },
+  {
+    "name": "clSkyRiders",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSkyRiders.html"
+  },
+  {
+    "name": "clskywire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskywire.html"
+  },
+  {
+    "name": "clskywire2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clskywire2.html"
+  },
+  {
+    "name": "clsliceitall",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsliceitall.html"
+  },
+  {
+    "name": "clslideinthewoods",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslideinthewoods.html"
+  },
+  {
+    "name": "clslimelabratory",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslimelabratory.html"
+  },
+  {
+    "name": "clslipways",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslipways.html"
+  },
+  {
+    "name": "clslitherio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslitherio.html"
+  },
+  {
+    "name": "clslope",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslope.html"
+  },
+  {
+    "name": "clslope2player",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslope2player.html"
+  },
+  {
+    "name": "clslope3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslope3.html"
+  },
+  {
+    "name": "clslopeplus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslopeplus.html"
+  },
+  {
+    "name": "clslotornot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslotornot.html"
+  },
+  {
+    "name": "clslowroads",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clslowroads.html"
+  },
+  {
+    "name": "clsm63redux",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsm63redux.html"
+  },
+  {
+    "name": "clsm64hiddenstars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsm64hiddenstars.html"
+  },
+  {
+    "name": "clSM64Land",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSM64Land.html"
+  },
+  {
+    "name": "clsm64lastimpact",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsm64lastimpact.html"
+  },
+  {
+    "name": "clsmadvance2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmadvance2.html"
+  },
+  {
+    "name": "clsmadvance3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmadvance3.html"
+  },
+  {
+    "name": "clsmashkarts",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmashkarts.html"
+  },
+  {
+    "name": "clsmashkartsworking",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmashkartsworking.html"
+  },
+  {
+    "name": "clsmashremix",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmashremix.html"
+  },
+  {
+    "name": "clsmbc",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmbc.html"
+  },
+  {
+    "name": "clsmbcrossover",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmbcrossover.html"
+  },
+  {
+    "name": "clsmbgameover",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmbgameover.html"
+  },
+  {
+    "name": "clsmgds",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsmgds.html"
+  },
+  {
+    "name": "clsnailbob",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnailbob.html"
+  },
+  {
+    "name": "clsnailbob2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnailbob2.html"
+  },
+  {
+    "name": "clsnailbob3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnailbob3.html"
+  },
+  {
+    "name": "clsnailbob4space",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnailbob4space.html"
+  },
+  {
+    "name": "clsnailbob5lovestory",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnailbob5lovestory.html"
+  },
+  {
+    "name": "clsnakeis",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnakeis.html"
+  },
+  {
+    "name": "clsnakelike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnakelike.html"
+  },
+  {
+    "name": "clsnipershot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnipershot.html"
+  },
+  {
+    "name": "clsniperv2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsniperv2.html"
+  },
+  {
+    "name": "clsnowballio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowballio.html"
+  },
+  {
+    "name": "clsnowbros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowbros.html"
+  },
+  {
+    "name": "clsnowbrothers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowbrothers.html"
+  },
+  {
+    "name": "clsnowdrift",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowdrift.html"
+  },
+  {
+    "name": "clsnowrid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowrid.html"
+  },
+  {
+    "name": "clsnowrideee",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowrideee.html"
+  },
+  {
+    "name": "clsnowrider",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowrider.html"
+  },
+  {
+    "name": "clsnowridergoodygumdrops",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowridergoodygumdrops.html"
+  },
+  {
+    "name": "clsnowriderrrr",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowriderrrr.html"
+  },
+  {
+    "name": "clsnowroad",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsnowroad.html"
+  },
+  {
+    "name": "clsoccerbros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoccerbros.html"
+  },
+  {
+    "name": "clsoccerrandom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoccerrandom.html"
+  },
+  {
+    "name": "clsoccerrandomgood",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoccerrandomgood.html"
+  },
+  {
+    "name": "clsolarclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsolarclient.html"
+  },
+  {
+    "name": "clsolarsandbox",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsolarsandbox.html"
+  },
+  {
+    "name": "clsolarsmash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsolarsmash.html"
+  },
+  {
+    "name": "clsolatrobo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsolatrobo.html"
+  },
+  {
+    "name": "clsolitaire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsolitaire.html"
+  },
+  {
+    "name": "clsonic1contemporary",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic1contemporary.html"
+  },
+  {
+    "name": "clSonic1ScoreRush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonic1ScoreRush.html"
+  },
+  {
+    "name": "clsonic2pinkedition",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic2pinkedition.html"
+  },
+  {
+    "name": "clSonic2ScoreRush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonic2ScoreRush.html"
+  },
+  {
+    "name": "clsonic2timeandplace",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic2timeandplace.html"
+  },
+  {
+    "name": "clsonic3andknuckles",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic3andknuckles.html"
+  },
+  {
+    "name": "clsonic3andsally",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic3andsally.html"
+  },
+  {
+    "name": "clsonic3complete",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic3complete.html"
+  },
+  {
+    "name": "clsonic3dblastdx",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonic3dblastdx.html"
+  },
+  {
+    "name": "clsonicadvance",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicadvance.html"
+  },
+  {
+    "name": "clsonicadvance2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicadvance2.html"
+  },
+  {
+    "name": "clsonicadvance2sp",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicadvance2sp.html"
+  },
+  {
+    "name": "clsonicadvance3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicadvance3.html"
+  },
+  {
+    "name": "clsonicandashuro",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicandashuro.html"
+  },
+  {
+    "name": "clsonicandfallingstar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicandfallingstar.html"
+  },
+  {
+    "name": "clsonicandknuckles",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicandknuckles.html"
+  },
+  {
+    "name": "clsonicbattle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicbattle.html"
+  },
+  {
+    "name": "clsoniccd",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoniccd.html"
+  },
+  {
+    "name": "clsonicclassiccollection",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicclassiccollection.html"
+  },
+  {
+    "name": "clsonicclassicheroes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicclassicheroes.html"
+  },
+  {
+    "name": "clsoniccolors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoniccolors.html"
+  },
+  {
+    "name": "clsonicdeltaorigins",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicdeltaorigins.html"
+  },
+  {
+    "name": "clsoniceexeog",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsoniceexeog.html"
+  },
+  {
+    "name": "clsonicerazor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicerazor.html"
+  },
+  {
+    "name": "clsonicgg",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicgg.html"
+  },
+  {
+    "name": "clSonicHellfireSaga",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSonicHellfireSaga.html"
+  },
+  {
+    "name": "clsonicjam",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicjam.html"
+  },
+  {
+    "name": "clsonicmegamix",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicmegamix.html"
+  },
+  {
+    "name": "clsonicr",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicr.html"
+  },
+  {
+    "name": "clsonicralt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicralt.html"
+  },
+  {
+    "name": "clsonicrevert",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicrevert.html"
+  },
+  {
+    "name": "clsonicrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicrush.html"
+  },
+  {
+    "name": "clsonicrushadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicrushadventure.html"
+  },
+  {
+    "name": "clsonicscorchedquest",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicscorchedquest.html"
+  },
+  {
+    "name": "clsonicspinball",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicspinball.html"
+  },
+  {
+    "name": "clsonicthehedgehog",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicthehedgehog.html"
+  },
+  {
+    "name": "clsonicthehedgehog2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicthehedgehog2.html"
+  },
+  {
+    "name": "clsonicthehedgehog3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonicthehedgehog3.html"
+  },
+  {
+    "name": "clsonny2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsonny2.html"
+  },
+  {
+    "name": "clsotn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsotn.html"
+  },
+  {
+    "name": "clsouljumper",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsouljumper.html"
+  },
+  {
+    "name": "clspacebarclicker",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspacebarclicker.html"
+  },
+  {
+    "name": "clspacecompany",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspacecompany.html"
+  },
+  {
+    "name": "clspaceinvaders",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspaceinvaders.html"
+  },
+  {
+    "name": "clspaceiskey",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspaceiskey.html"
+  },
+  {
+    "name": "clspaceiskey2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspaceiskey2.html"
+  },
+  {
+    "name": "clspaceiskeyxmas",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspaceiskeyxmas.html"
+  },
+  {
+    "name": "clspacewarsbattleground",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspacewarsbattleground.html"
+  },
+  {
+    "name": "clspacewaves",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspacewaves.html"
+  },
+  {
+    "name": "clspeedperclick",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspeedperclick.html"
+  },
+  {
+    "name": "clspeedstars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspeedstars.html"
+  },
+  {
+    "name": "clspelunky",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspelunky.html"
+  },
+  {
+    "name": "clspewer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspewer.html"
+  },
+  {
+    "name": "clspiralroll",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clspiralroll.html"
+  },
+  {
+    "name": "clSpongebobPowerKartGrandPrix",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSpongebobPowerKartGrandPrix.html"
+  },
+  {
+    "name": "clsprunked",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsprunked.html"
+  },
+  {
+    "name": "clsprunki",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsprunki.html"
+  },
+  {
+    "name": "clsprunkiclicker",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsprunkiclicker.html"
+  },
+  {
+    "name": "clsquidplayground",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsquidplayground.html"
+  },
+  {
+    "name": "clSSF2Arcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSSF2Arcade.html"
+  },
+  {
+    "name": "clSSF2TArcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSSF2TArcade.html"
+  },
+  {
+    "name": "clstackballio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstackballio.html"
+  },
+  {
+    "name": "clstacktris",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstacktris.html"
+  },
+  {
+    "name": "clstackydash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstackydash.html"
+  },
+  {
+    "name": "clstarfox",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstarfox.html"
+  },
+  {
+    "name": "clstarfox64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstarfox64.html"
+  },
+  {
+    "name": "clstarlike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstarlike.html"
+  },
+  {
+    "name": "clstarraiders",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstarraiders.html"
+  },
+  {
+    "name": "clstateio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstateio.html"
+  },
+  {
+    "name": "clstation141",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstation141.html"
+  },
+  {
+    "name": "clstationmeltdown",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstationmeltdown.html"
+  },
+  {
+    "name": "clstationsaturn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstationsaturn.html"
+  },
+  {
+    "name": "clsteakandjake",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsteakandjake.html"
+  },
+  {
+    "name": "clstealbrainrot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstealbrainrot.html"
+  },
+  {
+    "name": "clstealbrainrotonline",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstealbrainrotonline.html"
+  },
+  {
+    "name": "clstealthassassin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstealthassassin.html"
+  },
+  {
+    "name": "clstealthmaster",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstealthmaster.html"
+  },
+  {
+    "name": "clsteelempire",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsteelempire.html"
+  },
+  {
+    "name": "clsteelsurge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsteelsurge.html"
+  },
+  {
+    "name": "clstickarchersbattle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickarchersbattle.html"
+  },
+  {
+    "name": "clstickdefenders",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickdefenders.html"
+  },
+  {
+    "name": "clstickfighter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickfighter.html"
+  },
+  {
+    "name": "clstickjetchallenge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickjetchallenge.html"
+  },
+  {
+    "name": "clstickmanandguns",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmanandguns.html"
+  },
+  {
+    "name": "clstickmanclash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmanclash.html"
+  },
+  {
+    "name": "clstickmanduel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmanduel.html"
+  },
+  {
+    "name": "clstickmangtacity",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmangtacity.html"
+  },
+  {
+    "name": "clstickmanhook",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmanhook.html"
+  },
+  {
+    "name": "clStickmanKingdomclash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStickmanKingdomclash.html"
+  },
+  {
+    "name": "clstickmankombat2d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmankombat2d.html"
+  },
+  {
+    "name": "clstickmanstealingdiamond",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmanstealingdiamond.html"
+  },
+  {
+    "name": "clstickmerge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickmerge.html"
+  },
+  {
+    "name": "clstickminairship",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickminairship.html"
+  },
+  {
+    "name": "clstickminbreakingbank",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickminbreakingbank.html"
+  },
+  {
+    "name": "clstickminescapingprison",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickminescapingprison.html"
+  },
+  {
+    "name": "clstickminfleecomplex",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickminfleecomplex.html"
+  },
+  {
+    "name": "clstickrpgcomplete",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickrpgcomplete.html"
+  },
+  {
+    "name": "clstickslasher",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickslasher.html"
+  },
+  {
+    "name": "clstickwar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickwar.html"
+  },
+  {
+    "name": "clstickwar2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstickwar2.html"
+  },
+  {
+    "name": "clstormthehouse",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstormthehouse.html"
+  },
+  {
+    "name": "clstormthehouse2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstormthehouse2.html"
+  },
+  {
+    "name": "clstormthehouse3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstormthehouse3.html"
+  },
+  {
+    "name": "clstrangejournet",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstrangejournet.html"
+  },
+  {
+    "name": "clstreangeropepolice",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreangeropepolice.html"
+  },
+  {
+    "name": "clStreetFighter1Arcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter1Arcade.html"
+  },
+  {
+    "name": "clstreetfighter2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetfighter2.html"
+  },
+  {
+    "name": "clStreetFighter2Arcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2Arcade.html"
+  },
+  {
+    "name": "clStreetFighter2CEArcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2CEArcade.html"
+  },
+  {
+    "name": "clStreetFighter2HFArcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clStreetFighter2HFArcade.html"
+  },
+  {
+    "name": "clstreetfighter2turbo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetfighter2turbo.html"
+  },
+  {
+    "name": "clstreetfighteralpha3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetfighteralpha3.html"
+  },
+  {
+    "name": "clstreetfighterumuhsomething",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetfighterumuhsomething.html"
+  },
+  {
+    "name": "clstreetofrage",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetofrage.html"
+  },
+  {
+    "name": "clstreetofrage2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetofrage2.html"
+  },
+  {
+    "name": "clstreetofrage3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstreetofrage3.html"
+  },
+  {
+    "name": "clstrikeforceheroes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstrikeforceheroes.html"
+  },
+  {
+    "name": "clstrikeforceheroes2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstrikeforceheroes2.html"
+  },
+  {
+    "name": "clstrikeforceheroes3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstrikeforceheroes3.html"
+  },
+  {
+    "name": "clstrikerdummies",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstrikerdummies.html"
+  },
+  {
+    "name": "clstylesavvy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clstylesavvy.html"
+  },
+  {
+    "name": "clsubwaysurfersbarcelona",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersbarcelona.html"
+  },
+  {
+    "name": "clsubwaysurfersbeijing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersbeijing.html"
+  },
+  {
+    "name": "clsubwaysurfersberlin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersberlin.html"
+  },
+  {
+    "name": "clsubwaysurfersbuenosaires",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersbuenosaires.html"
+  },
+  {
+    "name": "clsubwaysurfershavana",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfershavana.html"
+  },
+  {
+    "name": "clsubwaysurfershouston",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfershouston.html"
+  },
+  {
+    "name": "clsubwaysurfersiceland",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersiceland.html"
+  },
+  {
+    "name": "clsubwaysurferslondon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferslondon.html"
+  },
+  {
+    "name": "clsubwaysurfersmexico",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersmexico.html"
+  },
+  {
+    "name": "clsubwaysurfersmiami",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersmiami.html"
+  },
+  {
+    "name": "clsubwaysurfersmonaco",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersmonaco.html"
+  },
+  {
+    "name": "clsubwaysurfersneworeleans",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersneworeleans.html"
+  },
+  {
+    "name": "clsubwaysurfersneworleans",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersneworleans.html"
+  },
+  {
+    "name": "clsubwaysurferssanfrancisco (1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferssanfrancisco (1).html"
+  },
+  {
+    "name": "clsubwaysurferssanfrancisco",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferssanfrancisco.html"
+  },
+  {
+    "name": "clsubwaysurferssanfrancisco(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferssanfrancisco(1).html"
+  },
+  {
+    "name": "clsubwaysurfersstpetersburg",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurfersstpetersburg.html"
+  },
+  {
+    "name": "clsubwaysurferswinterholiday",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferswinterholiday.html"
+  },
+  {
+    "name": "clsubwaysurferszurich",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsubwaysurferszurich.html"
+  },
+  {
+    "name": "clsugarsugar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsugarsugar.html"
+  },
+  {
+    "name": "clsuika",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuika.html"
+  },
+  {
+    "name": "clsuikapico",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuikapico.html"
+  },
+  {
+    "name": "clsunandmoon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsunandmoon.html"
+  },
+  {
+    "name": "clsuperbomberman",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperbomberman.html"
+  },
+  {
+    "name": "clsuperbomberman2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperbomberman2.html"
+  },
+  {
+    "name": "clsuperbomberman3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperbomberman3.html"
+  },
+  {
+    "name": "clsuperbomberman4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperbomberman4.html"
+  },
+  {
+    "name": "clsuperbomberman5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperbomberman5.html"
+  },
+  {
+    "name": "clsuperc",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperc.html"
+  },
+  {
+    "name": "clsupercarrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupercarrush.html"
+  },
+  {
+    "name": "clsupercastlevaniaVI",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupercastlevaniaVI.html"
+  },
+  {
+    "name": "clsuperchibiknight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperchibiknight.html"
+  },
+  {
+    "name": "clsupercold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupercold.html"
+  },
+  {
+    "name": "clsuperdarkdeception",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperdarkdeception.html"
+  },
+  {
+    "name": "clsuperdiagonalmario2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperdiagonalmario2.html"
+  },
+  {
+    "name": "clsuperdromebugs",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperdromebugs.html"
+  },
+  {
+    "name": "clsuperfallingfred",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperfallingfred.html"
+  },
+  {
+    "name": "clsuperfighters",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperfighters.html"
+  },
+  {
+    "name": "clsuperhot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperhot.html"
+  },
+  {
+    "name": "clsuperhotlinemiami",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperhotlinemiami.html"
+  },
+  {
+    "name": "clsuperhouseofdeadninjas",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperhouseofdeadninjas.html"
+  },
+  {
+    "name": "clsuperislandadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperislandadventure.html"
+  },
+  {
+    "name": "clsuperliquidsoccer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperliquidsoccer.html"
+  },
+  {
+    "name": "clsupermario",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermario.html"
+  },
+  {
+    "name": "clsupermario63",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermario63.html"
+  },
+  {
+    "name": "clsupermario64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermario64.html"
+  },
+  {
+    "name": "clsupermario64ds",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermario64ds.html"
+  },
+  {
+    "name": "clsupermarioallstars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermarioallstars.html"
+  },
+  {
+    "name": "clsupermariobros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariobros.html"
+  },
+  {
+    "name": "clsupermariobros2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariobros2.html"
+  },
+  {
+    "name": "clsupermariobros2us",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariobros2us.html"
+  },
+  {
+    "name": "clsupermariobros3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariobros3.html"
+  },
+  {
+    "name": "clsupermariobros3real",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariobros3real.html"
+  },
+  {
+    "name": "clsupermariokart",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariokart.html"
+  },
+  {
+    "name": "clsupermarioland",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermarioland.html"
+  },
+  {
+    "name": "clsupermarioland2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermarioland2.html"
+  },
+  {
+    "name": "clsupermariomon",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariomon.html"
+  },
+  {
+    "name": "clsupermariorpg",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermariorpg.html"
+  },
+  {
+    "name": "clsupermarioworld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermarioworld.html"
+  },
+  {
+    "name": "clsupermarioworld2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermarioworld2.html"
+  },
+  {
+    "name": "clSuperMarioWorldThe SecretOfThe7GoldenStatues",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clSuperMarioWorldThe SecretOfThe7GoldenStatues.html"
+  },
+  {
+    "name": "clsupermetroid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermetroid.html"
+  },
+  {
+    "name": "clsupermonkeyballjr",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupermonkeyballjr.html"
+  },
+  {
+    "name": "clsupernoahsark3D",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupernoahsark3D.html"
+  },
+  {
+    "name": "clsuperoliverworld",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperoliverworld.html"
+  },
+  {
+    "name": "clsuperpickleballadventure",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperpickleballadventure.html"
+  },
+  {
+    "name": "clsuperpunchout",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperpunchout.html"
+  },
+  {
+    "name": "clsuperpuzzlefighter2turbo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperpuzzlefighter2turbo.html"
+  },
+  {
+    "name": "clsuperpuzzlefighter2turboalt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperpuzzlefighter2turboalt.html"
+  },
+  {
+    "name": "clsuperscribblenauts",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsuperscribblenauts.html"
+  },
+  {
+    "name": "clsupersmashbros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupersmashbros.html"
+  },
+  {
+    "name": "clsupersmashflash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupersmashflash.html"
+  },
+  {
+    "name": "clsupersmashflash2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupersmashflash2.html"
+  },
+  {
+    "name": "clsupersmashflash2butdifversion",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupersmashflash2butdifversion.html"
+  },
+  {
+    "name": "clsupersmashflash08",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupersmashflash08.html"
+  },
+  {
+    "name": "clsupertiltbros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupertiltbros.html"
+  },
+  {
+    "name": "clsupitdept",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupitdept.html"
+  },
+  {
+    "name": "clsupremeduelist",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsupremeduelist.html"
+  },
+  {
+    "name": "clsurvevio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsurvevio.html"
+  },
+  {
+    "name": "clsurvivalracev2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsurvivalracev2.html"
+  },
+  {
+    "name": "clsushicat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsushicat.html"
+  },
+  {
+    "name": "clsushicat2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsushicat2.html"
+  },
+  {
+    "name": "clsushiunroll",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsushiunroll.html"
+  },
+  {
+    "name": "clswerve",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswerve.html"
+  },
+  {
+    "name": "clswitchblade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswitchblade.html"
+  },
+  {
+    "name": "clswordandshieldultimateplus",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordandshieldultimateplus.html"
+  },
+  {
+    "name": "clswordfight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordfight.html"
+  },
+  {
+    "name": "clswordplay",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordplay.html"
+  },
+  {
+    "name": "clswordsandsandals",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordsandsandals.html"
+  },
+  {
+    "name": "clswordsandsandals2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordsandsandals2.html"
+  },
+  {
+    "name": "clswordsandsouls",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clswordsandsouls.html"
+  },
+  {
+    "name": "clsydneyshark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clsydneyshark.html"
+  },
+  {
+    "name": "cltabletanks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltabletanks.html"
+  },
+  {
+    "name": "cltabletennisworldtour",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltabletennisworldtour.html"
+  },
+  {
+    "name": "cltag-",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltag-.html"
+  },
+  {
+    "name": "cltagc3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltagc3.html"
+  },
+  {
+    "name": "clTaikonoTatsujin",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clTaikonoTatsujin.html"
+  },
+  {
+    "name": "cltaisei",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltaisei.html"
+  },
+  {
+    "name": "cltakeover",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltakeover.html"
+  },
+  {
+    "name": "cltallio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltallio.html"
+  },
+  {
+    "name": "cltallmanrun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltallmanrun.html"
+  },
+  {
+    "name": "cltankmayhem",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltankmayhem.html"
+  },
+  {
+    "name": "cltankpixel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltankpixel.html"
+  },
+  {
+    "name": "cltanukisunset",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltanukisunset.html"
+  },
+  {
+    "name": "cltanukisunsetuhhhhhhhh",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltanukisunsetuhhhhhhhh.html"
+  },
+  {
+    "name": "cltapper",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltapper.html"
+  },
+  {
+    "name": "cltaproad",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltaproad.html"
+  },
+  {
+    "name": "cltastyplanet",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltastyplanet.html"
+  },
+  {
+    "name": "cltboilambeternal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltboilambeternal.html"
+  },
+  {
+    "name": "cltecmobowl",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltecmobowl.html"
+  },
+  {
+    "name": "cltelephonetrouble",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltelephonetrouble.html"
+  },
+  {
+    "name": "cltelocation",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltelocation.html"
+  },
+  {
+    "name": "cltempest2000",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltempest2000.html"
+  },
+  {
+    "name": "cltempleofboom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltempleofboom.html"
+  },
+  {
+    "name": "cltemplerun2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltemplerun2.html"
+  },
+  {
+    "name": "cltempoverdose",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltempoverdose.html"
+  },
+  {
+    "name": "clteod",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clteod.html"
+  },
+  {
+    "name": "clterra",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clterra.html"
+  },
+  {
+    "name": "clterritorialio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clterritorialio.html"
+  },
+  {
+    "name": "clterritorywar",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clterritorywar.html"
+  },
+  {
+    "name": "cltetris",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltetris.html"
+  },
+  {
+    "name": "cltetrisattack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltetrisattack.html"
+  },
+  {
+    "name": "cltetrisgba",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltetrisgba.html"
+  },
+  {
+    "name": "cltetrisgrandmaster2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltetrisgrandmaster2.html"
+  },
+  {
+    "name": "clthanksforremindingmeihadtofixthis",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthanksforremindingmeihadtofixthis.html"
+  },
+  {
+    "name": "cltheclassroom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheclassroom.html"
+  },
+  {
+    "name": "cltheclassroom2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheclassroom2.html"
+  },
+  {
+    "name": "cltheclassroom3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheclassroom3.html"
+  },
+  {
+    "name": "clthedeadseat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthedeadseat.html"
+  },
+  {
+    "name": "clthedeepestsleep",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthedeepestsleep.html"
+  },
+  {
+    "name": "clthedude",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthedude.html"
+  },
+  {
+    "name": "cltheenchantedcave2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheenchantedcave2.html"
+  },
+  {
+    "name": "cltheimpossiblegame",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheimpossiblegame.html"
+  },
+  {
+    "name": "cltheincrediblemachine",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheincrediblemachine.html"
+  },
+  {
+    "name": "clthelaststand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthelaststand.html"
+  },
+  {
+    "name": "clthelaststandunioncity (1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthelaststandunioncity (1).html"
+  },
+  {
+    "name": "clthelaststandunioncity",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthelaststandunioncity.html"
+  },
+  {
+    "name": "clthemaninthewindow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthemaninthewindow.html"
+  },
+  {
+    "name": "clthemepark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthemepark.html"
+  },
+  {
+    "name": "clthepit",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthepit.html"
+  },
+  {
+    "name": "clthereisnofile",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthereisnofile.html"
+  },
+  {
+    "name": "clthermomorph",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthermomorph.html"
+  },
+  {
+    "name": "clthesodorrace",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthesodorrace.html"
+  },
+  {
+    "name": "cltheyarecoming",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltheyarecoming.html"
+  },
+  {
+    "name": "clthisistheonlylevel",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthisistheonlylevel.html"
+  },
+  {
+    "name": "clthisistheonlylevel2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthisistheonlylevel2.html"
+  },
+  {
+    "name": "clthisistheonlyleveltoo",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthisistheonlyleveltoo.html"
+  },
+  {
+    "name": "clthreegoblets",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthreegoblets.html"
+  },
+  {
+    "name": "clthrowapotato",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthrowapotato.html"
+  },
+  {
+    "name": "clthrowapotatoagain",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthrowapotatoagain.html"
+  },
+  {
+    "name": "clthwack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clthwack.html"
+  },
+  {
+    "name": "cltiberiandawn",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltiberiandawn.html"
+  },
+  {
+    "name": "cltimeshooter2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltimeshooter2.html"
+  },
+  {
+    "name": "cltimeshooter3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltimeshooter3.html"
+  },
+  {
+    "name": "cltimewarriors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltimewarriors.html"
+  },
+  {
+    "name": "cltinyfishing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltinyfishing.html"
+  },
+  {
+    "name": "cltmnt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltmnt.html"
+  },
+  {
+    "name": "cltoastarling",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltoastarling.html"
+  },
+  {
+    "name": "cltoasterball",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltoasterball.html"
+  },
+  {
+    "name": "cltombofthemass",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltombofthemass.html"
+  },
+  {
+    "name": "cltommorowandyesterday",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltommorowandyesterday.html"
+  },
+  {
+    "name": "cltomodachicollection",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltomodachicollection.html"
+  },
+  {
+    "name": "cltonyhawkskater2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltonyhawkskater2.html"
+  },
+  {
+    "name": "cltonyhawkskater4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltonyhawkskater4.html"
+  },
+  {
+    "name": "cltonyhawksunderground",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltonyhawksunderground.html"
+  },
+  {
+    "name": "cltoomanytypes",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltoomanytypes.html"
+  },
+  {
+    "name": "cltopspeedracing3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltopspeedracing3d.html"
+  },
+  {
+    "name": "cltosstheturtle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltosstheturtle.html"
+  },
+  {
+    "name": "cltotm",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltotm.html"
+  },
+  {
+    "name": "cltouhou",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltouhou.html"
+  },
+  {
+    "name": "cltouhou2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltouhou2.html"
+  },
+  {
+    "name": "cltouhou3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltouhou3.html"
+  },
+  {
+    "name": "cltouhou4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltouhou4.html"
+  },
+  {
+    "name": "cltouhou5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltouhou5.html"
+  },
+  {
+    "name": "cltowerblocks",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltowerblocks.html"
+  },
+  {
+    "name": "cltowercrash3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltowercrash3d.html"
+  },
+  {
+    "name": "cltowerwizard",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltowerwizard.html"
+  },
+  {
+    "name": "cltownscraper",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltownscraper.html"
+  },
+  {
+    "name": "cltrace",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrace.html"
+  },
+  {
+    "name": "cltrafficjam3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrafficjam3d.html"
+  },
+  {
+    "name": "cltralalerotralalaescapetungtungtungsahur",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltralalerotralalaescapetungtungtungsahur.html"
+  },
+  {
+    "name": "cltrapthecat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrapthecat.html"
+  },
+  {
+    "name": "cltrechoroustrials",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrechoroustrials.html"
+  },
+  {
+    "name": "cltrechoroustrialspart2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrechoroustrialspart2.html"
+  },
+  {
+    "name": "cltriachnid",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltriachnid.html"
+  },
+  {
+    "name": "cltripleplay2000",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltripleplay2000.html"
+  },
+  {
+    "name": "cltriviacrack",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltriviacrack.html"
+  },
+  {
+    "name": "cltrollfacequest1",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest1.html"
+  },
+  {
+    "name": "cltrollfacequest2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest2.html"
+  },
+  {
+    "name": "cltrollfacequest3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest3.html"
+  },
+  {
+    "name": "cltrollfacequest4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest4.html"
+  },
+  {
+    "name": "cltrollfacequest5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest5.html"
+  },
+  {
+    "name": "cltrollfacequest6",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest6.html"
+  },
+  {
+    "name": "cltrollfacequest7",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest7.html"
+  },
+  {
+    "name": "cltrollfacequest8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest8.html"
+  },
+  {
+    "name": "cltrollfacequest9",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest9.html"
+  },
+  {
+    "name": "cltrollfacequest10",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest10.html"
+  },
+  {
+    "name": "cltrollfacequest11",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest11.html"
+  },
+  {
+    "name": "cltrollfacequest12",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest12.html"
+  },
+  {
+    "name": "cltrollfacequest13",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrollfacequest13.html"
+  },
+  {
+    "name": "cltrucksim",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltrucksim.html"
+  },
+  {
+    "name": "cltubejumpers",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltubejumpers.html"
+  },
+  {
+    "name": "clTuff_Client_Offline_WASM",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clTuff_Client_Offline_WASM.html"
+  },
+  {
+    "name": "cltungtungtungsahurobby",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltungtungtungsahurobby.html"
+  },
+  {
+    "name": "cltunnelrush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltunnelrush.html"
+  },
+  {
+    "name": "cltunnelrushbetter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltunnelrushbetter.html"
+  },
+  {
+    "name": "clturbostars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clturbostars.html"
+  },
+  {
+    "name": "clturokdinosaurhunter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clturokdinosaurhunter.html"
+  },
+  {
+    "name": "cltwinshot (1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwinshot (1).html"
+  },
+  {
+    "name": "cltwinshot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwinshot.html"
+  },
+  {
+    "name": "cltwinshot(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwinshot(1).html"
+  },
+  {
+    "name": "cltwistedmetal",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwistedmetal.html"
+  },
+  {
+    "name": "cltwistedmetal2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwistedmetal2.html"
+  },
+  {
+    "name": "cltwoball3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cltwoball3d.html"
+  },
+  {
+    "name": "clucds",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clucds.html"
+  },
+  {
+    "name": "cluckyblockobbyEUOPHRATESRIVER",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cluckyblockobbyEUOPHRATESRIVER.html"
+  },
+  {
+    "name": "clufoswampoddysey",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clufoswampoddysey.html"
+  },
+  {
+    "name": "clultimateassassian2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clultimateassassian2.html"
+  },
+  {
+    "name": "clultimateassassian3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clultimateassassian3.html"
+  },
+  {
+    "name": "clUltimatecardrivingsimulator",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clUltimatecardrivingsimulator.html"
+  },
+  {
+    "name": "clultimatemortalkombat",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clultimatemortalkombat.html"
+  },
+  {
+    "name": "clultimatemortalkombat3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clultimatemortalkombat3.html"
+  },
+  {
+    "name": "clultrakill",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clultrakill.html"
+  },
+  {
+    "name": "clumjammerlammy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clumjammerlammy.html"
+  },
+  {
+    "name": "clumstickmangameidkiforgor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clumstickmangameidkiforgor.html"
+  },
+  {
+    "name": "cluncannycatgolf",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cluncannycatgolf.html"
+  },
+  {
+    "name": "clunderneath",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunderneath.html"
+  },
+  {
+    "name": "clundertaler",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clundertaler.html"
+  },
+  {
+    "name": "clundertaleyellow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clundertaleyellow.html"
+  },
+  {
+    "name": "clunfairmario",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunfairmario.html"
+  },
+  {
+    "name": "clunfairmarioworkquestionmark",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunfairmarioworkquestionmark.html"
+  },
+  {
+    "name": "clunfairundyne",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunfairundyne.html"
+  },
+  {
+    "name": "clunicyclehero",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunicyclehero.html"
+  },
+  {
+    "name": "clunitresdreams",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunitresdreams.html"
+  },
+  {
+    "name": "cluno",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cluno.html"
+  },
+  {
+    "name": "clunonomercy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clunonomercy.html"
+  },
+  {
+    "name": "cluntime",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cluntime.html"
+  },
+  {
+    "name": "clupgradecomplete",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clupgradecomplete.html"
+  },
+  {
+    "name": "clupgradecomplete2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clupgradecomplete2.html"
+  },
+  {
+    "name": "clupslash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clupslash.html"
+  },
+  {
+    "name": "cluwuclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cluwuclient.html"
+  },
+  {
+    "name": "clUZG",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clUZG.html"
+  },
+  {
+    "name": "clvampiresurvivors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvampiresurvivors.html"
+  },
+  {
+    "name": "clvanguard",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvanguard.html"
+  },
+  {
+    "name": "clvaportrails",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvaportrails.html"
+  },
+  {
+    "name": "clvex",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex.html"
+  },
+  {
+    "name": "clvex2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex2.html"
+  },
+  {
+    "name": "clvex3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex3.html"
+  },
+  {
+    "name": "clvex3xmas",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex3xmas.html"
+  },
+  {
+    "name": "clvex4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex4.html"
+  },
+  {
+    "name": "clvex5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex5.html"
+  },
+  {
+    "name": "clvex6",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex6.html"
+  },
+  {
+    "name": "clvex7",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex7.html"
+  },
+  {
+    "name": "clvex8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvex8.html"
+  },
+  {
+    "name": "clvexchallenges",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvexchallenges.html"
+  },
+  {
+    "name": "clvexx3m",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvexx3m.html"
+  },
+  {
+    "name": "clvexx3m2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvexx3m2.html"
+  },
+  {
+    "name": "clvillager",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvillager.html"
+  },
+  {
+    "name": "clvincentmansionofthedead",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvincentmansionofthedead.html"
+  },
+  {
+    "name": "clvisitor",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvisitor.html"
+  },
+  {
+    "name": "clvolleyrandom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvolleyrandom.html"
+  },
+  {
+    "name": "clvollyballchallenge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvollyballchallenge.html"
+  },
+  {
+    "name": "clvortex",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvortex.html"
+  },
+  {
+    "name": "clvsnonsense",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvsnonsense.html"
+  },
+  {
+    "name": "clvvvvvv",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clvvvvvv.html"
+  },
+  {
+    "name": "clwaluigitacostand",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwaluigitacostand.html"
+  },
+  {
+    "name": "clwarfare1944",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwarfare1944.html"
+  },
+  {
+    "name": "clwarioland4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwarioland4.html"
+  },
+  {
+    "name": "clwariowarediy",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwariowarediy.html"
+  },
+  {
+    "name": "clwariowareinc",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwariowareinc.html"
+  },
+  {
+    "name": "clwartheknight",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwartheknight.html"
+  },
+  {
+    "name": "clwaterpoolio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwaterpoolio.html"
+  },
+  {
+    "name": "clwavedash",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwavedash.html"
+  },
+  {
+    "name": "clwaverace64",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwaverace64.html"
+  },
+  {
+    "name": "clwaverun",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwaverun.html"
+  },
+  {
+    "name": "clwebecomewhatwebehold",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwebecomewhatwebehold.html"
+  },
+  {
+    "name": "clwebfishing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwebfishing.html"
+  },
+  {
+    "name": "clweltling",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clweltling.html"
+  },
+  {
+    "name": "clwermhole",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwermhole.html"
+  },
+  {
+    "name": "clwhackthetheif",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwhackthetheif.html"
+  },
+  {
+    "name": "clwhackyourboss",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwhackyourboss.html"
+  },
+  {
+    "name": "clwhackyourcomputer",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwhackyourcomputer.html"
+  },
+  {
+    "name": "clwheeliebike",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheeliebike.html"
+  },
+  {
+    "name": "clwheely",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely.html"
+  },
+  {
+    "name": "clwheely2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely2.html"
+  },
+  {
+    "name": "clwheely3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely3.html"
+  },
+  {
+    "name": "clwheely4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely4.html"
+  },
+  {
+    "name": "clwheely5",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely5.html"
+  },
+  {
+    "name": "clwheely6",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely6.html"
+  },
+  {
+    "name": "clwheely7",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely7.html"
+  },
+  {
+    "name": "clwheely8",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwheely8.html"
+  },
+  {
+    "name": "clwilywars",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwilywars.html"
+  },
+  {
+    "name": "clwindowsdoors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwindowsdoors.html"
+  },
+  {
+    "name": "clwinterfalling",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwinterfalling.html"
+  },
+  {
+    "name": "clwipeout2097",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwipeout2097.html"
+  },
+  {
+    "name": "clwipeout2097alt",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwipeout2097alt.html"
+  },
+  {
+    "name": "clwitchcrafttd",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwitchcrafttd.html"
+  },
+  {
+    "name": "clwolfenstein",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwolfenstein.html"
+  },
+  {
+    "name": "clwolfenstein3d",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwolfenstein3d.html"
+  },
+  {
+    "name": "clwoodworm",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwoodworm.html"
+  },
+  {
+    "name": "clwordle",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwordle.html"
+  },
+  {
+    "name": "clworldcup98",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clworldcup98.html"
+  },
+  {
+    "name": "clworldshardestgame",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clworldshardestgame.html"
+  },
+  {
+    "name": "clworldshardestgame2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clworldshardestgame2.html"
+  },
+  {
+    "name": "clworldshardestgame3",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clworldshardestgame3.html"
+  },
+  {
+    "name": "clworldshardestgame4",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clworldshardestgame4.html"
+  },
+  {
+    "name": "clwrassling",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwrassling.html"
+  },
+  {
+    "name": "clwrestlebros",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwrestlebros.html"
+  },
+  {
+    "name": "clwurstclient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clwurstclient.html"
+  },
+  {
+    "name": "clXevious",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXevious.html"
+  },
+  {
+    "name": "clXMenChildrenOfTheAtomArcade",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXMenChildrenOfTheAtomArcade.html"
+  },
+  {
+    "name": "clXMenVSStreetFighter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clXMenVSStreetFighter.html"
+  },
+  {
+    "name": "clyanderesimulator",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyanderesimulator.html"
+  },
+  {
+    "name": "clyarsrevenge",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyarsrevenge.html"
+  },
+  {
+    "name": "clyellow",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyellow.html"
+  },
+  {
+    "name": "clyohohoio",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyohohoio.html"
+  },
+  {
+    "name": "clYoshisStrangeQuest",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clYoshisStrangeQuest.html"
+  },
+  {
+    "name": "clyouarelucky",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyouarelucky.html"
+  },
+  {
+    "name": "clyouvs100skibidi",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyouvs100skibidi.html"
+  },
+  {
+    "name": "clyouvs100skibidi(1)",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyouvs100skibidi(1).html"
+  },
+  {
+    "name": "clyumenikki",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clyumenikki.html"
+  },
+  {
+    "name": "clzdoom",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzdoom.html"
+  },
+  {
+    "name": "clzelda2thelegendoflink",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzelda2thelegendoflink.html"
+  },
+  {
+    "name": "clzeldaminishcap",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzeldaminishcap.html"
+  },
+  {
+    "name": "clzenword",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzenword.html"
+  },
+  {
+    "name": "clZetaClient",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clZetaClient.html"
+  },
+  {
+    "name": "clzoinkz",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzoinkz.html"
+  },
+  {
+    "name": "clzombieexploder",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombieexploder.html"
+  },
+  {
+    "name": "clzombieroad",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombieroad.html"
+  },
+  {
+    "name": "clzombierush",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombierush.html"
+  },
+  {
+    "name": "clzombiesatemyneighboors",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombiesatemyneighboors.html"
+  },
+  {
+    "name": "clzombopaclypse2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombopaclypse2.html"
+  },
+  {
+    "name": "clzombotron",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombotron.html"
+  },
+  {
+    "name": "clzombotron2",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombotron2.html"
+  },
+  {
+    "name": "clzombotronreboot",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzombotronreboot.html"
+  },
+  {
+    "name": "clzrist",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzrist.html"
+  },
+  {
+    "name": "clzuma",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzuma.html"
+  },
+  {
+    "name": "clzumashooter",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clzumashooter.html"
+  },
+  {
+    "name": "clʘ",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clʘ.html"
   }
 ];
+
     
     // ... paste the other 999 here
 

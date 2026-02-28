@@ -2,124 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>2048 - Ultimate Stash Version</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>2048 - Pro Version</title>
     <style>
-        body { background: #faf8ef; color: #776e65; font-family: "Clear Sans", Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
-        .heading { width: 300px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        h1 { font-size: 40px; margin: 0; }
-        .score-box { background: #bbada0; padding: 5px 15px; border-radius: 3px; color: white; text-align: center; }
-        .game-container { background: #bbada0; width: 320px; height: 320px; padding: 10px; border-radius: 6px; position: relative; box-sizing: border-box; touch-action: none; }
-        .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; width: 100%; height: 100%; }
-        .cell { background: rgba(238, 228, 218, 0.35); border-radius: 3px; width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; transition: all 0.1s ease-in-out; }
+        :root { --bg: #faf8ef; --grid-bg: #bbada0; --cell-bg: rgba(238, 228, 218, 0.35); --text-dark: #776e65; --text-light: #f9f6f2; }
+        body { background: var(--bg); color: var(--text-dark); font-family: "Clear Sans", Arial, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
         
-        /* Tile Colors */
-        .tile-2 { background: #eee4da; color: #776e65; }
-        .tile-4 { background: #ede0c8; color: #776e65; }
-        .tile-8 { background: #f2b179; color: #f9f6f2; }
-        .tile-16 { background: #f59563; color: #f9f6f2; }
-        .tile-32 { background: #f67c5f; color: #f9f6f2; }
-        .tile-64 { background: #f65e3b; color: #f9f6f2; }
-        .tile-128 { background: #edcf72; color: #f9f6f2; font-size: 20px; }
-        .tile-256 { background: #edcc61; color: #f9f6f2; font-size: 20px; }
-        .tile-512 { background: #edc850; color: #f9f6f2; font-size: 20px; }
-        .tile-1024 { background: #edc53f; color: #f9f6f2; font-size: 16px; }
-        .tile-2048 { background: #edc22e; color: #f9f6f2; font-size: 16px; }
+        .header { width: 320px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .score-container { background: var(--grid-bg); padding: 10px 20px; border-radius: 6px; color: white; text-align: center; min-width: 60px; }
+        
+        .game-container { position: relative; background: var(--grid-bg); width: 320px; height: 320px; padding: 10px; border-radius: 6px; box-sizing: border-box; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; width: 100%; height: 100%; }
+        .cell { background: var(--cell-bg); border-radius: 4px; width: 65px; height: 65px; }
+        
+        /* The Actual Tiles */
+        .tile { 
+            position: absolute; width: 65px; height: 65px; border-radius: 4px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; font-weight: bold;
+            transition: all 0.1s ease-in-out; /* This makes it SLIDE */
+            z-index: 10;
+        }
+
+        /* Pop effect for merging */
+        .tile-merged { animation: pop 0.2s ease-in-out; }
+        @keyframes pop { 0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } }
+
+        /* Game Over Overlay */
+        #game-over {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(238, 228, 218, 0.73); z-index: 100;
+            display: none; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px;
+        }
+        .retry-btn { 
+            background: #8f7a66; color: white; border: none; padding: 10px 20px; 
+            border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 18px; margin-top: 20px;
+        }
+
+        /* Colors */
+        .t2 { background: #eee4da; color: var(--text-dark); }
+        .t4 { background: #ede0c8; color: var(--text-dark); }
+        .t8 { background: #f2b179; color: var(--text-light); }
+        .t16 { background: #f59563; color: var(--text-light); }
+        .t32 { background: #f67c5f; color: var(--text-light); }
+        .t64 { background: #f65e3b; color: var(--text-light); }
+        .t128 { background: #edcf72; color: var(--text-light); font-size: 24px; }
+        .t256 { background: #edcc61; color: var(--text-light); font-size: 24px; }
+        .t512 { background: #edc850; color: var(--text-light); font-size: 24px; }
+        .t1024 { background: #edc53f; color: var(--text-light); font-size: 18px; }
+        .t2048 { background: #edc22e; color: var(--text-light); font-size: 18px; }
     </style>
 </head>
 <body>
-    <div class="heading">
-        <h1>2048</h1>
-        <div class="score-box">
-            <div style="font-size: 10px; text-transform: uppercase;">Score</div>
-            <div id="score">0</div>
+    <div class="header">
+        <h1 style="margin:0; font-size: 48px;">2048</h1>
+        <div class="score-container">
+            <div style="font-size: 12px; text-transform: uppercase;">Score</div>
+            <div id="score" style="font-size: 20px; font-weight: bold;">0</div>
         </div>
     </div>
-    <div class="game-container">
-        <div class="grid" id="grid"></div>
+
+    <div class="game-container" id="container">
+        <div id="game-over">
+            <h2 style="font-size: 30px; margin: 0;">Game Over!</h2>
+            <button class="retry-btn" onclick="resetGame()">Try Again</button>
+        </div>
+        <div class="grid">
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        </div>
+        <div id="tile-layer"></div>
     </div>
-    <p>Use <b>Arrow Keys</b> to merge tiles!</p>
 
     <script>
-        const gridDisplay = document.getElementById('grid');
-        const scoreDisplay = document.getElementById('score');
-        let board = [];
+        let board = Array(4).fill().map(() => Array(4).fill(0));
         let score = 0;
+        const tileLayer = document.getElementById('tile-layer');
+        const scoreDisplay = document.getElementById('score');
+        const gameOverScreen = document.getElementById('game-over');
 
-        function init() {
+        function resetGame() {
             board = Array(4).fill().map(() => Array(4).fill(0));
-            gridDisplay.innerHTML = '';
-            for (let i = 0; i < 16; i++) {
-                const cell = document.createElement('div');
-                cell.classList.add('cell');
-                gridDisplay.appendChild(cell);
-            }
+            score = 0;
+            gameOverScreen.style.display = 'none';
             addTile(); addTile(); render();
         }
 
         function addTile() {
             let empty = [];
-            board.forEach((row, r) => row.forEach((val, c) => { if (val === 0) empty.push({r, c}); }));
+            board.forEach((r, ri) => r.forEach((v, ci) => { if(v===0) empty.push({ri, ci}); }));
             if (empty.length) {
-                let {r, c} = empty[Math.floor(Math.random() * empty.length)];
-                board[r][c] = Math.random() > 0.1 ? 2 : 4;
+                let {ri, ci} = empty[Math.floor(Math.random() * empty.length)];
+                board[ri][ci] = Math.random() > 0.1 ? 2 : 4;
             }
         }
 
         function render() {
-            const cells = document.querySelectorAll('.cell');
-            board.flat().forEach((val, i) => {
-                cells[i].textContent = val || '';
-                cells[i].className = 'cell' + (val ? ` tile-${val}` : '');
+            tileLayer.innerHTML = '';
+            board.forEach((row, r) => {
+                row.forEach((val, c) => {
+                    if (val !== 0) {
+                        const div = document.createElement('div');
+                        div.className = `tile t${val}`;
+                        div.textContent = val;
+                        // Calculate position: (gap 10px + cell 65px) * index + container padding 10px
+                        div.style.top = `${r * 75 + 10}px`;
+                        div.style.left = `${c * 75 + 10}px`;
+                        tileLayer.appendChild(div);
+                    }
+                });
             });
             scoreDisplay.textContent = score;
+            if (isGameOver()) gameOverScreen.style.display = 'flex';
         }
 
-        function slide(row) {
-            let arr = row.filter(val => val);
-            for (let i = 0; i < arr.length - 1; i++) {
-                if (arr[i] === arr[i + 1]) {
-                    arr[i] *= 2;
-                    score += arr[i];
-                    arr.splice(i + 1, 1);
+        function isGameOver() {
+            for (let r = 0; r < 4; r++) {
+                for (let c = 0; c < 4; c++) {
+                    if (board[r][c] === 0) return false;
+                    if (c < 3 && board[r][c] === board[r][c+1]) return false;
+                    if (r < 3 && board[r][c] === board[r+1][c]) return false;
                 }
             }
-            while (arr.length < 4) arr.push(0);
-            return arr;
+            return true;
         }
 
-        function move(direction) {
+        function move(dir) {
+            let moved = false;
             let oldBoard = JSON.stringify(board);
-            for (let i = 0; i < 4; i++) {
-                let row = [];
-                if (direction === 'L' || direction === 'R') {
-                    row = board[i];
-                    if (direction === 'R') row.reverse();
+
+            const slide = (row) => {
+                let filtered = row.filter(x => x);
+                for (let i = 0; i < filtered.length - 1; i++) {
+                    if (filtered[i] === filtered[i+1]) {
+                        filtered[i] *= 2;
+                        score += filtered[i];
+                        filtered.splice(i+1, 1);
+                    }
+                }
+                while (filtered.length < 4) filtered.push(0);
+                return filtered;
+            };
+
+            if (dir === 'L' || dir === 'R') {
+                for (let r = 0; r < 4; r++) {
+                    let row = [...board[r]];
+                    if (dir === 'R') row.reverse();
                     let newRow = slide(row);
-                    if (direction === 'R') newRow.reverse();
-                    board[i] = newRow;
-                } else {
-                    for (let j = 0; j < 4; j++) row.push(board[j][i]);
-                    if (direction === 'D') row.reverse();
-                    let newRow = slide(row);
-                    if (direction === 'D') newRow.reverse();
-                    for (let j = 0; j < 4; j++) board[j][i] = newRow[j];
+                    if (dir === 'R') newRow.reverse();
+                    board[r] = newRow;
+                }
+            } else {
+                for (let c = 0; c < 4; c++) {
+                    let col = [board[0][c], board[1][c], board[2][c], board[3][c]];
+                    if (dir === 'D') col.reverse();
+                    let newCol = slide(col);
+                    if (dir === 'D') newCol.reverse();
+                    for (let r = 0; r < 4; r++) board[r][c] = newCol[r];
                 }
             }
+
             if (oldBoard !== JSON.stringify(board)) {
                 addTile();
                 render();
             }
         }
 
-        document.addEventListener('keydown', (e) => {
+        window.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') move('L');
             if (e.key === 'ArrowRight') move('R');
             if (e.key === 'ArrowUp') move('U');
             if (e.key === 'ArrowDown') move('D');
         });
 
-        init();
+        resetGame();
     </script>
 </body>
 </html>

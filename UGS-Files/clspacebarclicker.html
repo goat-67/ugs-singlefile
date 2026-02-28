@@ -50,64 +50,65 @@ window.onload = function() {
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
 
-  <script type="text/javascript">
-    // 1. Force the game to start immediately, skipping all Ad SDK checks
-    window.onload = function() {
-        console.log("Skipping Ads... Starting Game.");
-        
-        // This ensures the 'init' function exists before calling it
-        if (typeof init === 'function') {
-            init(); 
-        } else {
-            console.error("The 'init' function is missing! Check your main game script.");
-        }
-    };
-
-    // 2. This cleans up the broken 'onClick' listener that was waiting for an ad
-    function onClick(e) {
-        // Just run the game start logic
-        if (typeof init === 'function') init();
-        window.removeEventListener("click", onClick); 
-    }
-</script>
-
-
-
-
-<script>
-// 1. Force the Shop to show up by removing the 'hide' class
+ <script>
+// 1. START THE GAME ENGINE
 window.onload = function() {
-    console.log("Forcing Game Start...");
+    console.log("Ultimate Fix Loading...");
     
-    // Remove 'hide' from all items so you can see the shop
-    let hiddenItems = document.querySelectorAll('.item.hide');
-    hiddenItems.forEach(item => item.classList.remove('hide'));
+    // Check if game is already running, if not, start it
+    if (typeof Game !== 'undefined' && !window.game) {
+        window.game = new Game();
+        window.game.init();
+    }
 
-    // 2. Fix the Spacebar Clicker manually
-    window.addEventListener("keydown", function(e) {
-        if (e.code === "Space") {
-            e.preventDefault();
-            
-            // Try to find the counter span
-            let counterSpan = document.querySelector("#counter span");
-            if (counterSpan) {
-                let currentScore = parseFloat(counterSpan.innerText) || 0;
-                counterSpan.innerText = Math.floor(currentScore + 1);
+    // 2. FIX THE MOUSE CLICK
+    const sbButton = document.getElementById('sb');
+    if (sbButton) {
+        sbButton.style.cursor = "pointer";
+        sbButton.onmousedown = function() {
+            // This 'tricks' the game into thinking you hit the spacebar key
+            window.dispatchEvent(new KeyboardEvent('keydown', {'code': 'Space'}));
+            // Visual feedback for the click
+            sbButton.classList.add("sb_active");
+            setTimeout(() => sbButton.classList.remove("sb_active"), 100);
+        };
+    }
+
+    // 3. FIX THE SHOP (MONKEY/BOOMER MOM)
+    function refreshShop() {
+        // Find your current score from the screen
+        let scoreSpan = document.querySelector("#counter span");
+        if (!scoreSpan) return;
+        let currentScore = parseFloat(scoreSpan.innerText) || 0;
+
+        // Look at every item in the shop
+        document.querySelectorAll('.item').forEach((item, index) => {
+            // Get the cost (the number 30 or 120 in the box)
+            let costText = item.innerText.match(/\d+/) || ["99999"];
+            let cost = parseInt(costText[0]);
+
+            if (currentScore >= cost) {
+                // LIGHT IT UP: Make it colorful and clickable
+                item.classList.remove('hide');
+                item.classList.add('item_buyable');
+                item.style.opacity = "1";
+                item.style.cursor = "pointer";
                 
-                // Trigger the 'active' look on the spacebar
-                let sb = document.getElementById("sb");
-                if (sb) {
-                    sb.classList.add("sb_active");
-                    setTimeout(() => sb.classList.remove("sb_active"), 100);
-                }
+                // Allow buying when clicked
+                item.onclick = function() {
+                    if (window.game && typeof window.game.buy === 'function') {
+                        window.game.buy(index);
+                    }
+                };
             }
-        }
-    });
+        });
+    }
 
-    // 3. Try to run the original game init if it exists
-    if (typeof init === 'function') init();
+    // Run the shop check every 200ms so it updates instantly when you click
+    setInterval(refreshShop, 200);
 };
 </script>
+
 
 
 

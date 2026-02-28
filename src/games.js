@@ -123,7 +123,7 @@ const allGames = [
   },
   {
     "name": "cl2048",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@73f1f74562db99f1ee76f64a1c8ebce9c82e70d9/UGS-Files/cl2048.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@052a757f336e993bef9e1cc840fb12667fa93a8d/UGS-Files/cl2048.html"
   },
   {
     "name": "cl2048cupcakes",

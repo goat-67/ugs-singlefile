@@ -5,32 +5,34 @@
     <title>2048</title>
     <style>
         body { background: #faf8ef; color: #776e65; font-family: "Clear Sans", sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; overflow: hidden; }
-        .header { width: 320px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        h1 { font-size: 48px; margin: 0; }
-        .score-box { background: #bbada0; padding: 5px 20px; border-radius: 6px; color: white; text-align: center; }
+        .header { width: 340px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        h1 { font-size: 56px; margin: 0; font-weight: bold; }
+        .score-box { background: #bbada0; padding: 10px 20px; border-radius: 6px; color: white; text-align: center; min-width: 60px; }
         
-        /* THE ANCHOR: This locks the tiles inside */
+        /* THE ANCHOR: All tiles stay inside this box */
         .game-container { 
             position: relative; 
-            width: 320px; height: 320px; 
+            width: 340px; height: 340px; 
             background: #bbada0; border-radius: 6px; 
             padding: 10px; box-sizing: border-box; 
         }
+        
         .grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; width: 100%; height: 100%; }
-        .grid-cell { background: rgba(238, 228, 218, 0.35); border-radius: 4px; width: 67.5px; height: 67.5px; }
+        .grid-cell { background: rgba(238, 228, 218, 0.35); border-radius: 4px; width: 72.5px; height: 72.5px; }
 
-        /* THE FIX: Absolute positioning makes them game objects, not text */
+        /* THE TILES: Forced to the top-left (0,0) of the grey box */
         .tile {
             position: absolute; 
-            width: 67.5px; height: 67.5px; 
+            top: 0; left: 0; 
+            width: 72.5px; height: 72.5px; 
             border-radius: 4px;
             display: flex; align-items: center; justify-content: center;
-            font-size: 30px; font-weight: bold; 
+            font-size: 32px; font-weight: bold; 
             transition: transform 100ms ease-in-out; 
             z-index: 10;
-            user-select: none; /* Stops it from being highlightable like text */
         }
 
+        /* Colors */
         .t2 { background: #eee4da; color: #776e65; }
         .t4 { background: #ede0c8; color: #776e65; }
         .t8 { background: #f2b179; color: white; }
@@ -40,47 +42,49 @@
         .t128 { background: #edcf72; color: white; font-size: 24px; }
         .t256 { background: #edcc61; color: white; font-size: 24px; }
         .t512 { background: #edc850; color: white; font-size: 24px; }
-        .t1024 { background: #edc53f; color: white; font-size: 20px; }
-        .t2048 { background: #edc22e; color: white; font-size: 20px; }
+        .t1024 { background: #edc53f; color: white; font-size: 18px; }
+        .t2048 { background: #edc22e; color: white; font-size: 18px; }
 
         #game-over {
             position: absolute; inset: 0; background: rgba(238, 228, 218, 0.8);
-            display: none; flex-direction: column; align-items: center; justify-content: center; z-index: 100; border-radius: 6px;
+            display: none; flex-direction: column; align-items: center; justify-content: center; 
+            z-index: 100; border-radius: 6px;
         }
-        button { background: #8f7a66; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 18px; }
+        .btn { background: #8f7a66; color: white; border: none; padding: 12px 24px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 18px; margin-top: 20px; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>2048</h1>
         <div class="score-box">
-            <div style="font-size: 10px;">SCORE</div>
-            <div id="score" style="font-size: 20px; font-weight: bold;">0</div>
+            <div style="font-size: 12px; text-transform: uppercase;">Score</div>
+            <div id="score" style="font-size: 24px; font-weight: bold;">0</div>
         </div>
     </div>
 
-    <div class="game-container" id="board-box">
+    <div class="game-container" id="game-box">
         <div id="game-over">
-            <h2 style="margin:0 0 10px 0;">Game Over!</h2>
-            <button onclick="init()">Try Again</button>
+            <h1 style="margin:0;">Game Over!</h1>
+            <button class="btn" onclick="init()">Try Again</button>
         </div>
         <div class="grid">
+            <!-- Background Cells -->
             <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
             <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
             <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
             <div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div>
         </div>
+        <div id="tile-layer"></div>
     </div>
 
     <script>
         let board = Array(16).fill(null), score = 0;
-        const box = document.getElementById('board-box');
+        const tileLayer = document.getElementById('tile-layer');
+        const scoreEl = document.getElementById('score');
 
         function init() {
-            document.querySelectorAll('.tile').forEach(t => t.remove());
-            board = Array(16).fill(null); score = 0;
-            document.getElementById('score').innerText = 0;
-            document.getElementById('game-over').style.display = 'none';
+            tileLayer.innerHTML = ''; board = Array(16).fill(null); score = 0;
+            scoreEl.innerText = 0; document.getElementById('game-over').style.display = 'none';
             addTile(); addTile();
         }
 
@@ -92,14 +96,15 @@
             let el = document.createElement('div');
             el.className = `tile t${val}`;
             el.innerText = val;
-            box.appendChild(el);
+            tileLayer.appendChild(el);
             board[idx] = { val, el };
             updatePos(el, idx);
         }
 
         function updatePos(el, idx) {
-            const x = (idx % 4) * 77.5 + 10;
-            const y = Math.floor(idx / 4) * 77.5 + 10;
+            // Precise positioning: Padding (10px) + Index * (Cell width (72.5px) + Gap (10px))
+            const x = (idx % 4) * 82.5 + 10;
+            const y = Math.floor(idx / 4) * 82.5 + 10;
             el.style.transform = `translate(${x}px, ${y}px)`;
         }
 
@@ -120,9 +125,11 @@
                         let v = line[j].val * 2; score += v;
                         updatePos(line[j].el, indices[newLine.length]);
                         updatePos(line[j+1].el, indices[newLine.length]);
-                        let s = line[j].el, l = line[j+1].el;
-                        setTimeout(() => { l.remove(); s.innerText = v; s.className = `tile t${v}`; }, 100);
-                        newLine.push({val: v, el: s}); j++; moved = true;
+                        let stay = line[j].el, leave = line[j+1].el;
+                        setTimeout(() => { 
+                            leave.remove(); stay.innerText = v; stay.className = `tile t${v}`;
+                        }, 100);
+                        newLine.push({val: v, el: stay}); j++; moved = true;
                     } else {
                         updatePos(line[j].el, indices[newLine.length]);
                         if (board[indices[newLine.length]] !== line[j]) moved = true;
@@ -132,7 +139,7 @@
                 indices.forEach((idx, k) => board[idx] = newLine[k] || null);
             }
             if (moved) {
-                document.getElementById('score').innerText = score;
+                scoreEl.innerText = score;
                 setTimeout(addTile, 110);
                 setTimeout(checkGameOver, 200);
             }
@@ -140,12 +147,12 @@
 
         function checkGameOver() {
             if (!board.includes(null)) {
-                let can = false;
+                let canMove = false;
                 for (let i = 0; i < 16; i++) {
-                    if (i % 4 < 3 && board[i].val === board[i+1].val) can = true;
-                    if (i < 12 && board[i].val === board[i+4].val) can = true;
+                    if (i % 4 < 3 && board[i].val === board[i+1].val) canMove = true;
+                    if (i < 12 && board[i].val === board[i+4].val) canMove = true;
                 }
-                if (!can) document.getElementById('game-over').style.display = 'flex';
+                if (!canMove) document.getElementById('game-over').style.display = 'flex';
             }
         }
 

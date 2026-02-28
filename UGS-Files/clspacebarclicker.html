@@ -74,6 +74,40 @@ window.onload = function() {
 
 
 
+<script>
+// 1. Force the Shop to show up by removing the 'hide' class
+window.onload = function() {
+    console.log("Forcing Game Start...");
+    
+    // Remove 'hide' from all items so you can see the shop
+    let hiddenItems = document.querySelectorAll('.item.hide');
+    hiddenItems.forEach(item => item.classList.remove('hide'));
+
+    // 2. Fix the Spacebar Clicker manually
+    window.addEventListener("keydown", function(e) {
+        if (e.code === "Space") {
+            e.preventDefault();
+            
+            // Try to find the counter span
+            let counterSpan = document.querySelector("#counter span");
+            if (counterSpan) {
+                let currentScore = parseFloat(counterSpan.innerText) || 0;
+                counterSpan.innerText = Math.floor(currentScore + 1);
+                
+                // Trigger the 'active' look on the spacebar
+                let sb = document.getElementById("sb");
+                if (sb) {
+                    sb.classList.add("sb_active");
+                    setTimeout(() => sb.classList.remove("sb_active"), 100);
+                }
+            }
+        }
+    });
+
+    // 3. Try to run the original game init if it exists
+    if (typeof init === 'function') init();
+};
+</script>
 
 
 

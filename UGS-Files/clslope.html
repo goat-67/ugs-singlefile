@@ -1,1 +1,24 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/style.css"> <script src="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/UnityProgress.js"></script> <script src="https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/TemplateData/unityloader41.js"></script> <script> var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/ReneTirado14/lbannana@3ad5bf7eab1a47660acd8fbe0c24d1119c7a0b6d/html/slope/Build/slope.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); </script> <script src="https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/addc4348-16c2-4645-9dff-f99b962e39ef%2Fscr.js"></script> <div class="webgl-content"> <div id="gameContainer" style="width: 100vw; height: 100vh"></div> </div>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Slope</title>
+    <!-- Correct jsDelivr path format: /gh/user/repo@branch/file -->
+    <script src="https://cdn.jsdelivr.net/gh/cgolden15/Slope-Game@main/TemplateData/unityloader41.js
+"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate(
+            "gameContainer", 
+            "https://cdn.jsdelivr.net/gh/cgolden15/Slope-Game@main/Build/slope.json", 
+            {onProgress: (gameInstance, progress) => {
+                console.log("Loading Slope: " + (progress * 100) + "%");
+            }}
+        );
+    </script>
+</head>
+<body style="margin: 0; overflow: hidden; background: #000;">
+    <div id="gameContainer" style="width: 100vw; height: 100vh"></div>
+</body>
+</html>
+
+

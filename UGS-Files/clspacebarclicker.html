@@ -3,150 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spacebar Empire: 10 Stages</title>
+    <title>Spacebar Empire: 100% Fixed Edition</title>
     <style>
         body { background: #050505; color: #00e5ff; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; margin: 0; overflow: hidden; user-select: none; }
-        .game-container { display: grid; grid-template-columns: 1fr 380px; width: 1100px; height: 100vh; background: #000; border-left: 1px solid #111; border-right: 1px solid #111; }
+        .game-container { display: grid; grid-template-columns: 1fr 380px; width: 1100px; height: 100vh; background: #000; }
         
-        /* Left: Clicking */
-        .click-area { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; text-align: center; position: relative; }
-        #counter { font-size: 5.5rem; font-weight: 900; margin: 0; color: #fff; text-shadow: 0 0 30px #00e5ff55; }
+        /* Left: Click Area */
+        .click-area { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px; text-align: center; }
+        #counter { font-size: 5.5rem; font-weight: 900; margin: 0; color: #fff; text-shadow: 0 0 20px #00e5ff55; }
         #cps { font-size: 1.3rem; color: #00e5ff; opacity: 0.7; margin-bottom: 40px; }
-        .space-bar { width: 85%; height: 90px; border: 4px solid #00e5ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; cursor: pointer; transition: 0.05s; box-shadow: 0 12px 0 #008ba3, 0 0 20px #00e5ff33; }
+        .space-bar { width: 85%; height: 90px; border: 4px solid #00e5ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: bold; cursor: pointer; transition: 0.05s; box-shadow: 0 12px 0 #008ba3; }
         .pressed { transform: translateY(10px); box-shadow: 0 2px 0 #008ba3; background: #00e5ff; color: #000; }
 
         /* Right: Shop */
-        .shop { background: #0a0a0a; padding: 20px; overflow-y: scroll; border-left: 2px solid #1a1a1a; }
-        .shop-header { text-align: center; color: #fff; text-transform: uppercase; letter-spacing: 4px; padding-bottom: 20px; border-bottom: 1px solid #222; margin-bottom: 20px; }
-        .item { background: #111; margin-bottom: 10px; padding: 16px; border-radius: 8px; cursor: pointer; border: 1px solid #222; transition: 0.2s; position: relative; }
-        .item:hover { background: #181818; border-color: #00e5ff; }
-        .item.locked { display: none; } /* Hide until discovered */
-        .item.cant-afford { opacity: 0.5; filter: grayscale(0.8); }
-        .item h3 { margin: 0; font-size: 1rem; color: #fff; display: flex; justify-content: space-between; }
-        .item p { margin: 4px 0 0; font-size: 0.75rem; color: #888; }
-        .price { font-weight: bold; font-family: monospace; }
-        .count { color: #00e5ff; font-size: 1.2rem; }
+        .shop { background: #0a0a0a; padding: 20px; overflow-y: auto; border-left: 2px solid #1a1a1a; }
+        .item { background: #111; margin-bottom: 10px; padding: 16px; border-radius: 8px; cursor: pointer; border: 1px solid #222; transition: 0.1s; }
+        .item:hover { border-color: #00e5ff; background: #181818; }
+        .item.disabled { opacity: 0.4; cursor: not-allowed; filter: grayscale(1); }
+        .item h3 { margin: 0; font-size: 1.1rem; color: #fff; }
+        .price { font-weight: bold; margin-top: 5px; font-family: monospace; }
         
+        #reset-btn { margin-top: 50px; background: none; border: 1px solid #444; color: #444; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: 0.2s; }
+        #reset-btn:hover { color: #ff3366; border-color: #ff3366; background: rgba(255, 51, 102, 0.1); }
+
         ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-thumb { background: #222; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: #222; }
     </style>
 </head>
 <body>
 
 <div class="game-container">
     <div class="click-area">
-        <h2 style="margin:0; opacity:0.4; letter-spacing:10px;">TOTAL CLICKS</h2>
+        <h2 style="margin:0; opacity:0.3; letter-spacing:5px;">CLICKS</h2>
         <div id="counter">0</div>
         <div id="cps">0.0 CPS</div>
         <div class="space-bar" id="bar">SPACEBAR</div>
-        <p style="color:#333; margin-top:50px; font-size:0.8rem;">HOLD SPACE TO AUTO-TAP MANUALLY</p>
-        <button onclick="reset()" style="margin-top:20px; background:none; border:none; color:#222; cursor:pointer;">Wipe Data</button>
+        <!-- Reset button is here -->
+        <button id="reset-btn" onclick="resetGame()">HARD RESET DATA</button>
     </div>
 
     <div class="shop" id="shop-ui">
-        <div class="shop-header">The Click Empire</div>
-        <!-- 10 Upgrades will appear here -->
+        <h2 style="text-align:center; letter-spacing:3px;">UPGRADES</h2>
     </div>
 </div>
 
 <script>
-    let clicks = 0;
+    // 1. DATA SETUP
+    let clicks = Number(localStorage.getItem('sb_clicks')) || 0;
+    let inv = JSON.parse(localStorage.getItem('sb_inv')) || {};
     let totalCPS = 0;
-
-    // 10 UNIQUE UPGRADES
-    const upgradeList = [
-        { id: 'u1', name: '🐒 Monkey', cost: 15, power: 0.2, desc: 'Taps the bar for a banana.' },
-        { id: 'u2', name: '📱 Gen Z Kid', cost: 100, power: 4, desc: 'Multi-tasking master.' },
-        { id: 'u3', name: '🖥️ Gaming PC', cost: 700, power: 20, desc: 'Automated clicking scripts.' },
-        { id: 'u4', name: '🏢 Tech Office', cost: 14000, power: 400, desc: 'A whole floor of clickers.' },
-        { id: 'u5', name: '🚀 Space Sat', cost: 180000, power: 2000, desc: 'Beams clicks from orbit.' },
-        { id: 'u6', name: '🤖 Neural Link', cost: 1900000, power: 2200, desc: 'Clicks with the power of thought.' },
-        { id: 'u7', name: '🌀 Black Hole', cost: 22000000, power: 15000, desc: 'Pulls clicks from other timelines.' },
-        { id: 'u8', name: '✨ Galactic Core', cost: 300000000, power: 450000, desc: 'Harnesses a whole galaxy.' },
-        { id: 'u9', name: '🌌 Universe Bot', cost: 4500000000, power: 1000000, desc: 'The entire universe is clicking.' },
-        { id: 'u10', name: '👁️ The Matrix', cost: 60000000000, power: 20000000, desc: 'Reality itself is now a click.' }
+    
+    const upgrades = [
+        { id: 'u1', name: '🐒 Monkey', cost: 15, power: 0.2 },
+        { id: 'u2', name: '📱 Gen Z Kid', cost: 100, power: 1.5 },
+        { id: 'u3', name: '🖥️ Gaming PC', cost: 1200, power: 10 },
+        { id: 'u4', name: '🏢 Tech Office', cost: 14000, power: 55 },
+        { id: 'u5', name: '🚀 Space Sat', cost: 180000, power: 320 },
+        { id: 'u6', name: '🤖 Neural Link', cost: 1900000, power: 1800 },
+        { id: 'u7', name: '🌀 Black Hole', cost: 22000000, power: 9500 },
+        { id: 'u8', name: '✨ Galactic Core', cost: 300000000, power: 45000 },
+        { id: 'u9', name: '🌌 Universe Bot', cost: 4500000000, power: 250000 },
+        { id: 'u10', name: '👁️ The Matrix', cost: 60000000000, power: 1500000 }
     ];
 
-    let inventory = {};
-    upgradeList.forEach(u => inventory[u.id] = 0);
+    upgrades.forEach(u => { if(inv[u.id] === undefined) inv[u.id] = 0; });
 
-    // Load
-    if(localStorage.getItem('spacebarSaveV3')) {
-        const save = JSON.parse(localStorage.getItem('spacebarSaveV3'));
-        clicks = save.clicks || 0;
-        inventory = save.inventory || inventory;
+    // 2. SHOP CONSTRUCTION
+    function buildShop() {
+        const shop = document.getElementById('shop-ui');
+        upgrades.forEach(item => {
+            const div = document.createElement('div');
+            div.className = 'item';
+            div.id = `item-${item.id}`;
+            div.onclick = () => buy(item.id);
+            shop.appendChild(div);
+        });
     }
 
+    // 3. CORE FUNCTIONS
     function buy(id) {
-        const item = upgradeList.find(u => u.id === id);
-        const cost = Math.floor(item.cost * Math.pow(1.15, inventory[id]));
+        const item = upgrades.find(u => u.id === id);
+        const cost = Math.floor(item.cost * Math.pow(1.15, inv[id]));
         if (clicks >= cost) {
             clicks -= cost;
-            inventory[id]++;
+            inv[id]++;
             save();
             updateUI();
         }
     }
 
     function updateUI() {
-        // Calculate CPS
-        totalCPS = upgradeList.reduce((acc, u) => acc + (inventory[u.id] * u.power), 0);
-        
+        totalCPS = upgrades.reduce((acc, u) => acc + (inv[u.id] * u.power), 0);
         document.getElementById('counter').innerText = Math.floor(clicks).toLocaleString();
-        document.getElementById('cps').innerText = `${totalCPS.toLocaleString(undefined, {minimumFractionDigits: 1})} per second`;
+        document.getElementById('cps').innerText = `${totalCPS.toFixed(1)} per second`;
 
-        const shop = document.getElementById('shop-ui');
-        // Clear except header
-        const header = shop.querySelector('.shop-header');
-        shop.innerHTML = '';
-        shop.appendChild(header);
-
-        upgradeList.forEach(item => {
-            const cost = Math.floor(item.cost * Math.pow(1.15, inventory[item.id]));
-            // Only show item if you've had at least 70% of its cost or already own 1
-            const isDiscovered = clicks >= (item.cost * 0.7) || inventory[item.id] > 0;
+        upgrades.forEach(item => {
+            const cost = Math.floor(item.cost * Math.pow(1.15, inv[item.id]));
+            const el = document.getElementById(`item-${item.id}`);
+            const canAfford = clicks >= cost;
             
-            if(isDiscovered) {
-                const div = document.createElement('div');
-                div.className = `item ${clicks < cost ? 'cant-afford' : ''}`;
-                div.onclick = () => buy(item.id);
-                div.innerHTML = `
-                    <h3>${item.name} <span class="count">${inventory[item.id]}</span></h3>
-                    <p>${item.desc}</p>
-                    <p class="price" style="color:${clicks >= cost ? '#00e5ff' : '#ff3366'}">Cost: ${cost.toLocaleString()}</p>
-                `;
-                shop.appendChild(div);
-            }
+            el.className = `item ${canAfford ? '' : 'disabled'}`;
+            el.innerHTML = `
+                <h3>${item.name} <span style="float:right; color:#00e5ff;">${inv[item.id]}</span></h3>
+                <p class="price" style="color:${canAfford ? '#00e5ff' : '#ff3366'}">Cost: ${cost.toLocaleString()}</p>
+            `;
         });
     }
 
-    // Controls
+    // 4. INPUTS
     window.addEventListener('keydown', (e) => {
         if (e.code === 'Space') {
             e.preventDefault();
-            // Manual click power grows slightly with your total CPS
-            const manualPower = 1 + (totalCPS * 0.05); 
-            clicks += manualPower;
+            clicks += (1 + (totalCPS * 0.03));
             document.getElementById('bar').classList.add('pressed');
             updateUI();
         }
     });
+
     window.addEventListener('keyup', (e) => {
         if (e.code === 'Space') document.getElementById('bar').classList.remove('pressed');
     });
 
-    // Game Loop (Smooth 10fps)
-    setInterval(() => {
-        clicks += (totalCPS / 10);
-        updateUI();
-    }, 100);
+    // 5. TIMERS (Variables so we can clear them)
+    let autoClicker = setInterval(() => { clicks += (totalCPS / 10); updateUI(); }, 100);
+    let autoSaver = setInterval(save, 5000);
 
-    function save() { localStorage.setItem('spacebarSaveV3', JSON.stringify({clicks, inventory})); }
-    function reset() { if(confirm("Erase all progress?")) { localStorage.clear(); location.reload(); } }
+    function save() {
+        localStorage.setItem('sb_clicks', clicks);
+        localStorage.setItem('sb_inv', JSON.stringify(inv));
+    }
 
+    // 6. THE RESET FIX
+    function resetGame() {
+        if(confirm("WIPE EVERYTHING? (This cannot be undone)")) {
+            // STOP EVERYTHING FIRST
+            clearInterval(autoClicker);
+            clearInterval(autoSaver);
+            
+            // CLEAR MEMORY
+            localStorage.removeItem('sb_clicks');
+            localStorage.removeItem('sb_inv');
+            localStorage.clear();
+            
+            // RELOAD FRESH
+            window.location.reload(true);
+        }
+    }
+
+    buildShop();
     updateUI();
 </script>
-
 </body>
 </html>
-

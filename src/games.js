@@ -7123,7 +7123,7 @@ const allGames = [
   },
   {
     "name": "clspacebarclicker",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@5f02d3cac987ac7a89c79ad5f61afe3083921c07/UGS-Files/clspacebarclicker.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@9390f72f8086bf26c359eb5bccbf22e600452f48/UGS-Files/clspacebarclicker.html"
   },
   {
     "name": "clspacecompany",

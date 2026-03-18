@@ -4401,6 +4401,10 @@ const allGames = [
     "name": "clmarvelvsstreetfighterjp",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarvelvsstreetfighterjp.html"
   },
+   {
+    "name": "clLastSwing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clLastSwing.html"
+  },
   {
     "name": "clmaskedforcesunlimited",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaskedforcesunlimited.html"

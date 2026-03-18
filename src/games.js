@@ -4403,7 +4403,7 @@ const allGames = [
   },
    {
     "name": "clLastSwing",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clLastSwing.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@2eda02925421e0cecfc382a80665d1a8a7a17f99/UGS-Files/clLastSwing.html"
   },
   {
     "name": "clmaskedforcesunlimited",

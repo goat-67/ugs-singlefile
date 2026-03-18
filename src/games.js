@@ -4050,6 +4050,10 @@ const allGames = [
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegoindianajones.html"
   },
   {
+    "name": "clLastSwing",
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@7c0e249f27e81db09761da3feb2d095ff6311627/UGS-Files/clLastSwing.html"
+  },
+  {
     "name": "cllegoindianajones2",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cllegoindianajones2.html"
   },

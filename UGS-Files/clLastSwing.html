@@ -435,18 +435,26 @@
     }
   </style>
   <script>
-  // This "fakes" the IP API so the game doesn't hang
-  window.fetch = (originalFetch => {
-    return (...args) => {
-      if (args[0] && args[0].includes('ipapi.co')) {
-        return Promise.resolve(new Response(JSON.stringify({ 
-          city: "Local", country_name: "World" 
-        }), { 
-          status: 200, 
-          headers: { 'Content-Type': 'application/json' } 
+  window.fetch = (function(orig) {
+    return function() {
+      var args = arguments;
+      // Use args[0] to ensure we're looking at the right part of the request
+      var url = typeof args[0] === 'string' ? args[0] : (args[0] ? args[0].url : "");
+
+      // Fix 1: Redirect the title image to your GitHub/jsDelivr path
+      if (url && url.indexOf('title_page') > -1) {
+        var path = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/images/last-swing/title_page.webp";
+        if (typeof args[0] === 'object') args[0].url = path; else args[0] = path;
+      }
+
+      // Fix 2: Fake the IP API so the game doesn't hang on the title screen
+      if (url && url.indexOf('ipapi.co') > -1) {
+        return Promise.resolve(new Response(JSON.stringify({city:"Local",country_name:"World"}), {
+          status: 200, headers: {'Content-Type':'application/json'}
         }));
       }
-      return originalFetch(...args);
+
+      return orig.apply(this, args);
     };
   })(window.fetch);
 </script>

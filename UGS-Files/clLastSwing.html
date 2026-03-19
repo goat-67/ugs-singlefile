@@ -440,53 +440,64 @@
 
 
 
+
+
+
 <script>
 (function() {
-  // 1. THE MASTER LINK (Using @main with a cache-buster)
+  // 1. THE ONLY LINK THAT MATTERS
   const GITHUB = "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@latest/UGS-Files/assets/";
 
   const forceFix = (u) => {
-    if (typeof u !== 'string' || u.includes('data:')) return u;
-    
-    // THE STRIPPER: Removes subfolders (like bluedusck/)
+    if (typeof u !== 'string' || u.includes('data:') || u.includes('blob:')) return u;
+
+    // 🚀 THE STRIPPER: Turns "bluedusck/title_page.webp" into "title_page.webp"
     const filename = u.split('/').pop().toLowerCase();
 
-    // IF IT'S AN IMAGE: Kidnap it and force it to your GitHub assets
+    // IF IT'S AN IMAGE: Force it to your GitHub assets
     if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
-      // ?v=101 forces jsDelivr to stop showing the old black screen
-      const finalUrl = GITHUB + filename + "?v=101"; 
-      console.log("%c🚀 HIJACKED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
+      // ⚡ CACHE BUSTER: Forces a fresh download every single time
+      const finalUrl = GITHUB + filename + "?t=" + new Date().getTime();
+      console.log("%c🚀 HIJACKED & STRIPPED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
       return finalUrl;
     }
     return u;
   };
 
-  // 2. HIJACK IMAGE OBJECTS (Includes the Stickman/CORS fix)
+  // 2. HIJACK IMAGE OBJECTS (Main Loader)
   const desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
     set: function(v) { 
         this.crossOrigin = "anonymous"; 
+        // 🏗️ MAP-SWAP FORCE: When a new map image arrives, tell the game to show it!
+        this.onload = function() { window.dispatchEvent(new Event('resize')); };
         desc.set.call(this, forceFix(v)); 
     },
     get: function() { return desc.get.call(this); }
   });
 
-  // 3. HIJACK FETCH (Includes the IPAPI Shield for a clean console)
+  // 3. HIJACK FETCH (Modern Loader + IPAPI Shield)
   const oF = window.fetch;
   window.fetch = function(i, s) {
     let u = (typeof i === "string") ? i : (i.url || "");
-    
     // 🛡️ SHIELD: Stops the red ipapi.co errors
-    if (u.includes("ipapi.co")) {
-      return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
-    }
-
+    if (u.includes("ipapi.co")) return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
     let nU = forceFix(u);
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
+
+  // 4. SELF-CORRECTION LOOP (Emergency Recovery)
+  window.addEventListener('error', function(e) {
+    if (e.target.tagName === 'IMG' && !e.target.src.includes('jsdelivr')) {
+      const name = e.target.src.split('/').pop();
+      console.log("%c🔄 AUTO-CORRECTING: " + name, "color: yellow; background: black;");
+      e.target.src = GITHUB + name;
+    }
+  }, true);
 })();
 </script>
+
 
 
 

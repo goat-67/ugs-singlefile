@@ -435,36 +435,48 @@
     }
   </style>
  <script>
-(function(){
-  // This is the "magic link" to your GitHub folder
-  var cdn = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/images/last-swing/";
+(function() {
+  // 1. The Master GitHub link
+  var cdn = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/
+";
 
-  var fixUrl = function(u) {
-    // If the game asks for ANY image (webp, png, or svg), send it to GitHub
-    if (u && (u.indexOf(".webp")>-1 || u.indexOf(".png")>-1 || u.indexOf(".svg")>-1)) {
-      var fileName = u.split("/").pop();
-      return cdn + fileName;
+  var fix = function(u) {
+    if (typeof u === 'string' && u.indexOf("assets/") > -1) {
+      // This strips the local path and forces the GitHub path
+      var name = u.split("assets/").pop();
+      return cdn + "assets/" + name;
     }
     return u;
   };
 
-  // Fix for 'fetch' (modern browsers)
+  // 2. Fix Images (Hijack the browser's "eyes")
+  var desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
+  Object.defineProperty(Image.prototype, 'src', {
+    set: function(v) { desc.set.call(this, fix(v)); },
+    get: function() { return desc.get.call(this); }
+  });
+
+  // 3. Fix Audio and IP API (Fetch/XHR)
   var oF = window.fetch;
   window.fetch = function(i, s) {
     var u = (typeof i === "string") ? i : (i.url || "");
-    if (u.indexOf("ipapi.co")>-1) return Promise.resolve(new Response(JSON.stringify({city:"Local"}),{status:200}));
-    var newU = fixUrl(u);
-    if (newU !== u) i = (typeof i === "string") ? newU : new Request(newU, i);
+    // Fixes the ipapi.co hang
+    if (u.indexOf("ipapi.co") > -1) {
+      return Promise.resolve(new Response(JSON.stringify({city:"Local"}),{status:200}));
+    }
+    // Fixes the audio/fetch paths
+    var nU = fix(u);
+    if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
 
-  // Fix for 'XMLHttpRequest' (older style loading)
   var oX = window.XMLHttpRequest.prototype.open;
   window.XMLHttpRequest.prototype.open = function(m, u) {
-    return oX.call(this, m, fixUrl(u), true);
+    return oX.call(this, m, fix(u), true);
   };
 })();
 </script>
+
 
 
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/index-s2yOcOky.js"></script>

@@ -434,42 +434,52 @@
       .picker-btn-cancel, .picker-btn-confirm { padding: 6px 14px; font-size: 10px; }
     }
   </style>
-  <script>
+  
+
+ <script>
 (function() {
-  // 1. The ONLY destination that matters
+  // 1. THE DIRECT LINK: Everything is in this folder on GitHub
   const GITHUB = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/";
 
   const forceFix = (u) => {
     if (typeof u !== 'string' || u.includes('data:')) return u;
 
-    // Grab the actual filename (e.g., bg_mid_d.webp)
-    const filename = u.split('/').pop();
+    // 🚀 THE STRIPPER: This cuts off folder names like 'bluedusck/' 
+    // It keeps only the filename (e.g., 'title_page.webp')
+    const filename = u.split('/').pop().toLowerCase();
 
-    // IF IT LOOKS LIKE AN IMAGE, REDIRECT IT. PERIOD.
+    // IF IT'S AN IMAGE: Redirect it to the main GitHub assets folder
     if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
-      console.log("%c🚀 HIJACKED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
+      console.log("%c🚀 HIJACKED & STRIPPED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
       return GITHUB + filename;
     }
     return u;
   };
 
-  // 2. Hijack the 'Image' object (The old way games load)
+  // 2. HIJACK IMAGE OBJECTS: (Includes the Stickman/CORS fix)
   const desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
-    set: function(v) { desc.set.call(this, forceFix(v)); },
+    set: function(v) { 
+        this.crossOrigin = "anonymous"; 
+        desc.set.call(this, forceFix(v)); 
+    },
     get: function() { return desc.get.call(this); }
   });
 
-  // 3. Hijack 'Fetch' (The modern way games load)
+  // 3. HIJACK FETCH: (Includes the IPAPI Shield for clean console)
   const oF = window.fetch;
   window.fetch = function(i, s) {
     let u = (typeof i === "string") ? i : (i.url || "");
+    if (u.includes("ipapi.co")) {
+      return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
+    }
     let nU = forceFix(u);
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
 })();
 </script>
+
 
 
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/index-s2yOcOky.js"></script>

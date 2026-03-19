@@ -4051,7 +4051,7 @@ const allGames = [
   },
   {
     "name": "clLastSwing",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@d3638891fd70b1ed4fef5af4eb29e6b52bdee2fc/UGS-Files/clLastSwing.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@c8a51f2a1f1e7bc49d99569c8604dcbdaf0605ea/UGS-Files/clLastSwing.html"
   },
   {
     "name": "cllegoindianajones2",

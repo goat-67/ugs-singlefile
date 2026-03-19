@@ -435,47 +435,6 @@
     }
   </style>
 
-<script>
-(function() {
-  // 1. YOUR GITHUB LINK
-  var github = "https://cdn.jsdelivr.netgh/goat-67/ugs-singlefile@main/UGS-Files/assets/";
-
-  var fix = function(u) {
-    if (typeof u !== 'string' || u.includes('jsdelivr')) return u;
-
-    // Grab just the filename (like player.webp)
-    var filename = u.split('/').pop();
-
-    // If it's an image, force it to YOUR GitHub
-    if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
-      // LOOK FOR THIS YELLOW TEXT IN YOUR CONSOLE (F12)
-      console.log("%c🌟 Redirecting to GitHub: " + filename, "color: yellow; background: black; font-weight: bold; padding: 2px;");
-      return github + filename;
-    }
-    return u;
-  };
-
-  // 2. Hijack the standard Image loader
-  var desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
-  Object.defineProperty(Image.prototype, 'src', {
-    set: function(v) { desc.set.call(this, fix(v)); },
-    get: function() { return desc.get.call(this); }
-  });
-
-  // 3. Hijack Fetch (for modern game engines)
-  var oF = window.fetch;
-  window.fetch = function(i, s) {
-    var u = (typeof i === "string") ? i : (i.url || "");
-    var nU = fix(u);
-    if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
-    return oF(i, s);
-  };
-})();
-</script>
-
-
-
-
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/index-s2yOcOky.js"></script>
 </head>
 <body>

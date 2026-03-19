@@ -434,6 +434,23 @@
       .picker-btn-cancel, .picker-btn-confirm { padding: 6px 14px; font-size: 10px; }
     }
   </style>
+  <script>
+  // This "fakes" the IP API so the game doesn't hang
+  window.fetch = (originalFetch => {
+    return (...args) => {
+      if (args[0] && args[0].includes('ipapi.co')) {
+        return Promise.resolve(new Response(JSON.stringify({ 
+          city: "Local", country_name: "World" 
+        }), { 
+          status: 200, 
+          headers: { 'Content-Type': 'application/json' } 
+        }));
+      }
+      return originalFetch(...args);
+    };
+  })(window.fetch);
+</script>
+
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/index-s2yOcOky.js"></script>
 </head>
 <body>

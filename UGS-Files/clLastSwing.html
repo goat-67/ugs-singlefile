@@ -437,48 +437,67 @@
   
 
 
+
+ 
 <script>
 (function() {
-  // 1. THE ONLY SOURCE: Direct to your GitHub via Statically
-  const GITHUB_BASE = "https://cdn.statically.io/gh/goat-67/ugs-singlefile/main/UGS-Files/assets";
+  // 1. THE ONLY LINK (Statically /main/ path)
+  const BASE = "https://cdn.statically.io/gh/goat-67/ugs-singlefile/main/UGS-Files/assets";
 
-  const forceFix = (u) => {
-    // 🛡️ THE STOP SIGN: Prevents the "assetsassetsassets" loop
+  const cleanFix = (u) => {
+    // 🛡️ THE TRIPLE-SHIELD: Stop the loop before it starts
     if (typeof u !== 'string' || u.includes('statically') || u.includes('github') || u.includes('data:')) return u;
 
-    // 🚀 THE STRIPPER: Grab ONLY the filename (e.g. title_page.webp)
+    // 🚀 THE STRIPPER: Get only the filename (e.g. title_page.webp)
     const filename = u.split('/').pop().toLowerCase();
 
-    // 🖼️ HIJACK: Force every image extension to your GitHub assets
-    if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
+    // 🖼️ HIJACK: Force it to Statically
+    if (filename.includes('.') && /\.(webp|png|jpg|gif)$/i.test(filename)) {
+      const finalUrl = BASE + "/" + filename;
       console.log("%c🚀 HIJACKED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
-      return GITHUB_BASE + "/" + filename;
+      return finalUrl;
     }
     return u;
   };
 
-  // 2. HIJACK IMAGE OBJECTS (Main Loader)
+  // 2. HIJACK IMAGE SRC (Main Loader)
   const desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
     set: function(v) { 
         this.crossOrigin = "anonymous"; 
-        // 🏗️ This forces the game to 'refresh' when a map image arrives
-        this.onload = function() { window.dispatchEvent(new Event('resize')); };
-        desc.set.call(this, forceFix(v)); 
+        const nU = cleanFix(v);
+        // Force the engine to "refresh" when the image arrives
+        this.addEventListener('load', () => window.dispatchEvent(new Event('resize')), {once: true});
+        desc.set.call(this, nU); 
     },
     get: function() { return desc.get.call(this); }
   });
 
-  // 3. HIJACK FETCH (Modern Loader + IPAPI Shield)
+  // 3. HIJACK FETCH (Modern Loaders)
   const oF = window.fetch;
   window.fetch = function(i, s) {
     let u = (typeof i === "string") ? i : (i.url || "");
-    // 🛡️ SHIELD: Stops the red ipapi.co errors
     if (u.includes("ipapi.co")) return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
-    let nU = forceFix(u);
+    let nU = cleanFix(u);
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
+
+  // 4. HIJACK XHR (Legacy Loaders)
+  const oX = window.XMLHttpRequest.prototype.open;
+  window.XMLHttpRequest.prototype.open = function(m, u) {
+    return oX.apply(this, [m, cleanFix(u), ...Array.prototype.slice.call(arguments, 2)]);
+  };
+
+  // 5. 🚨 THE "UNSTUCK" TIMER: If it hangs for 5s, kill the loading screen
+  setTimeout(() => {
+    const loader = document.querySelector('[id*="load"], [class*="load"], [id*="loading"]');
+    if (loader) {
+      loader.style.display = 'none';
+      loader.style.opacity = '0';
+      console.log("⏰ Force-starting game...");
+    }
+  }, 5000);
 })();
 </script>
 

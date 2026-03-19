@@ -434,48 +434,42 @@
       .picker-btn-cancel, .picker-btn-confirm { padding: 6px 14px; font-size: 10px; }
     }
   </style>
- <script>
+<script>
 (function() {
-  // 1. The Master GitHub link
-  var cdn = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/
-";
+  // 1. The Master Link to your assets
+  var github = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/";
 
   var fix = function(u) {
-    if (typeof u === 'string' && u.indexOf("assets/") > -1) {
-      // This strips the local path and forces the GitHub path
-      var name = u.split("assets/").pop();
-      return cdn + "assets/" + name;
+    if (typeof u !== 'string') return u;
+    // This catches ANY image or sound and forces it to GitHub
+    if (/\.(webp|png|jpg|mp3|ogg)$/i.test(u) && !u.includes('jsdelivr')) {
+      var name = u.split('/').pop();
+      return github + name;
     }
     return u;
   };
 
-  // 2. Fix Images (Hijack the browser's "eyes")
+  // 2. Hijack Images (Fixes the stickman and backgrounds)
   var desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
     set: function(v) { desc.set.call(this, fix(v)); },
     get: function() { return desc.get.call(this); }
   });
 
-  // 3. Fix Audio and IP API (Fetch/XHR)
+  // 3. Hijack Audio/Fetch (Fixes the music and ip-api hang)
   var oF = window.fetch;
   window.fetch = function(i, s) {
     var u = (typeof i === "string") ? i : (i.url || "");
-    // Fixes the ipapi.co hang
     if (u.indexOf("ipapi.co") > -1) {
       return Promise.resolve(new Response(JSON.stringify({city:"Local"}),{status:200}));
     }
-    // Fixes the audio/fetch paths
     var nU = fix(u);
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
-
-  var oX = window.XMLHttpRequest.prototype.open;
-  window.XMLHttpRequest.prototype.open = function(m, u) {
-    return oX.call(this, m, fix(u), true);
-  };
 })();
 </script>
+
 
 
 

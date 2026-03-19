@@ -437,29 +437,22 @@
   
 
 
-
-
-
-
-
-
 <script>
 (function() {
-  // 1. THE ONLY LINK THAT MATTERS
-  const GITHUB = "https://cdn.statically.io/gh/goat-67/ugs-singlefile/main/UGS-Files/assets";
+  // 1. THE ONLY SOURCE: Direct to your GitHub via Statically
+  const GITHUB_BASE = "https://cdn.statically.io/gh/goat-67/ugs-singlefile/main/UGS-Files/assets";
 
   const forceFix = (u) => {
-    if (typeof u !== 'string' || u.includes('data:') || u.includes('blob:')) return u;
+    // 🛡️ THE STOP SIGN: Prevents the "assetsassetsassets" loop
+    if (typeof u !== 'string' || u.includes('statically') || u.includes('github') || u.includes('data:')) return u;
 
-    // 🚀 THE STRIPPER: Turns "bluedusck/title_page.webp" into "title_page.webp"
+    // 🚀 THE STRIPPER: Grab ONLY the filename (e.g. title_page.webp)
     const filename = u.split('/').pop().toLowerCase();
 
-    // IF IT'S AN IMAGE: Force it to your GitHub assets
+    // 🖼️ HIJACK: Force every image extension to your GitHub assets
     if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
-      // ⚡ CACHE BUSTER: Forces a fresh download every single time
-      const finalUrl = GITHUB + filename + "?t=" + new Date().getTime();
-      console.log("%c🚀 HIJACKED & STRIPPED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
-      return finalUrl;
+      console.log("%c🚀 HIJACKED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
+      return GITHUB_BASE + "/" + filename;
     }
     return u;
   };
@@ -469,7 +462,7 @@
   Object.defineProperty(Image.prototype, 'src', {
     set: function(v) { 
         this.crossOrigin = "anonymous"; 
-        // 🏗️ MAP-SWAP FORCE: When a new map image arrives, tell the game to show it!
+        // 🏗️ This forces the game to 'refresh' when a map image arrives
         this.onload = function() { window.dispatchEvent(new Event('resize')); };
         desc.set.call(this, forceFix(v)); 
     },
@@ -486,17 +479,9 @@
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
-
-  // 4. SELF-CORRECTION LOOP (Emergency Recovery)
-  window.addEventListener('error', function(e) {
-    if (e.target.tagName === 'IMG' && !e.target.src.includes('jsdelivr')) {
-      const name = e.target.src.split('/').pop();
-      console.log("%c🔄 AUTO-CORRECTING: " + name, "color: yellow; background: black;");
-      e.target.src = GITHUB + name;
-    }
-  }, true);
 })();
 </script>
+
 
 
 

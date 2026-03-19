@@ -434,30 +434,38 @@
       .picker-btn-cancel, .picker-btn-confirm { padding: 6px 14px; font-size: 10px; }
     }
   </style>
-  <script>
-  window.fetch = (function(orig) {
-    return function() {
-      var args = arguments;
-      // Use args[0] to ensure we're looking at the right part of the request
-      var url = typeof args[0] === 'string' ? args[0] : (args[0] ? args[0].url : "");
+ <script>
+(function(){
+  // This is the "magic link" to your GitHub folder
+  var cdn = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/images/last-swing/";
 
-      // Fix 1: Redirect the title image to your GitHub/jsDelivr path
-      if (url && url.indexOf('title_page') > -1) {
-        var path = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/images/last-swing/title_page.webp";
-        if (typeof args[0] === 'object') args[0].url = path; else args[0] = path;
-      }
+  var fixUrl = function(u) {
+    // If the game asks for ANY image (webp, png, or svg), send it to GitHub
+    if (u && (u.indexOf(".webp")>-1 || u.indexOf(".png")>-1 || u.indexOf(".svg")>-1)) {
+      var fileName = u.split("/").pop();
+      return cdn + fileName;
+    }
+    return u;
+  };
 
-      // Fix 2: Fake the IP API so the game doesn't hang on the title screen
-      if (url && url.indexOf('ipapi.co') > -1) {
-        return Promise.resolve(new Response(JSON.stringify({city:"Local",country_name:"World"}), {
-          status: 200, headers: {'Content-Type':'application/json'}
-        }));
-      }
+  // Fix for 'fetch' (modern browsers)
+  var oF = window.fetch;
+  window.fetch = function(i, s) {
+    var u = (typeof i === "string") ? i : (i.url || "");
+    if (u.indexOf("ipapi.co")>-1) return Promise.resolve(new Response(JSON.stringify({city:"Local"}),{status:200}));
+    var newU = fixUrl(u);
+    if (newU !== u) i = (typeof i === "string") ? newU : new Request(newU, i);
+    return oF(i, s);
+  };
 
-      return orig.apply(this, args);
-    };
-  })(window.fetch);
+  // Fix for 'XMLHttpRequest' (older style loading)
+  var oX = window.XMLHttpRequest.prototype.open;
+  window.XMLHttpRequest.prototype.open = function(m, u) {
+    return oX.call(this, m, fixUrl(u), true);
+  };
+})();
 </script>
+
 
   <script type="module" crossorigin src="https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/index-s2yOcOky.js"></script>
 </head>

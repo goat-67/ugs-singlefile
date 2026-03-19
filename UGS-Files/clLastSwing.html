@@ -436,19 +436,21 @@
   </style>
   
 
- <script>
+
+
+  <script>
 (function() {
-  // 1. THE DIRECT LINK: Everything is in this folder on GitHub
+  // 1. THE MAIN HUB: Everything is here now!
   const GITHUB = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/assets/";
 
   const forceFix = (u) => {
-    if (typeof u !== 'string' || u.includes('data:')) return u;
+    if (typeof u !== 'string' || u.includes('jsdelivr') || u.includes('data:')) return u;
 
-    // 🚀 THE STRIPPER: This cuts off folder names like 'bluedusck/' 
-    // It keeps only the filename (e.g., 'title_page.webp')
+    // ✅ THE SUBFOLDER STRIPPER: 
+    // This turns "bluedusck/title_page.webp" into just "title_page.webp"
     const filename = u.split('/').pop().toLowerCase();
 
-    // IF IT'S AN IMAGE: Redirect it to the main GitHub assets folder
+    // IF IT'S AN IMAGE: Force it to your main GitHub assets folder
     if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
       console.log("%c🚀 HIJACKED & STRIPPED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
       return GITHUB + filename;
@@ -456,7 +458,7 @@
     return u;
   };
 
-  // 2. HIJACK IMAGE OBJECTS: (Includes the Stickman/CORS fix)
+  // 2. HIJACK IMAGE OBJECTS (Main Loader)
   const desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
     set: function(v) { 
@@ -466,19 +468,29 @@
     get: function() { return desc.get.call(this); }
   });
 
-  // 3. HIJACK FETCH: (Includes the IPAPI Shield for clean console)
+  // 3. HIJACK FETCH (Modern Loader + IPAPI Shield)
   const oF = window.fetch;
   window.fetch = function(i, s) {
     let u = (typeof i === "string") ? i : (i.url || "");
-    if (u.includes("ipapi.co")) {
-      return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
-    }
+    if (u.includes("ipapi.co")) return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
     let nU = forceFix(u);
     if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
+
+  // 4. ✅ THE SELF-CORRECTION LOOP (Emergency Recovery):
+  // If an image still tries to load from CodeProjects and fails (404), 
+  // this "catches" the error and forces it to GitHub immediately.
+  window.addEventListener('error', function(e) {
+    if (e.target.tagName === 'IMG' && !e.target.src.includes('jsdelivr')) {
+      const name = e.target.src.split('/').pop();
+      console.log("%c🔄 AUTO-CORRECTING: " + name, "color: yellow; background: black;");
+      e.target.src = GITHUB + name;
+    }
+  }, true);
 })();
 </script>
+
 
 
 

@@ -4051,7 +4051,7 @@ const allGames = [
   },
   {
     "name": "clLastSwing",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@6fba7b47daa416f717c5bdfab6cba75ce08abea1/UGS-Files/clLastSwing.html"
+    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@64793111e509aab63e5227c1e5ff2d9dd94b8c27/UGS-Files/clLastSwing.html"
   },
   {
     "name": "cllegoindianajones2",
@@ -4405,10 +4405,7 @@ const allGames = [
     "name": "clmarvelvsstreetfighterjp",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmarvelvsstreetfighterjp.html"
   },
-   {
-    "name": "clLastSwing",
-    "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@2eda02925421e0cecfc382a80665d1a8a7a17f99/UGS-Files/clLastSwing.html"
-  },
+   
   {
     "name": "clmaskedforcesunlimited",
     "gameUrl": "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clmaskedforcesunlimited.html"

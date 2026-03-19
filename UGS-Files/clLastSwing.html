@@ -438,49 +438,55 @@
 
 
 
- <script>
-(function() {
-  // 1. YOUR COMMIT HASH LINK (Ensure there is NO slash at the end)
-  const BASE = "https://cdn.jsdelivr.net/gh/goat-67/ugs-singlefile@lastest/UGS-Files/assets/";
 
-  const fixUrl = (u) => {
-    if (typeof u !== 'string' || u.includes('data:') || u.includes('blob:')) return u;
+
+<script>
+(function() {
+  // 1. THE MASTER LINK (Using @main with a cache-buster)
+  const GITHUB = "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@latest/UGS-Files/assets/";
+
+  const forceFix = (u) => {
+    if (typeof u !== 'string' || u.includes('data:')) return u;
+    
+    // THE STRIPPER: Removes subfolders (like bluedusck/)
     const filename = u.split('/').pop().toLowerCase();
+
+    // IF IT'S AN IMAGE: Kidnap it and force it to your GitHub assets
     if (/\.(webp|png|jpg|gif)$/i.test(filename)) {
-      return BASE + "/" + filename;
+      // ?v=101 forces jsDelivr to stop showing the old black screen
+      const finalUrl = GITHUB + filename + "?v=101"; 
+      console.log("%c🚀 HIJACKED: " + filename, "color: #00ff00; background: black; font-weight: bold;");
+      return finalUrl;
     }
     return u;
   };
 
-  // 2. THE BLOB LOADER: This downloads the image and "fakes" it as a local file
-  const originalSrc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
+  // 2. HIJACK IMAGE OBJECTS (Includes the Stickman/CORS fix)
+  const desc = Object.getOwnPropertyDescriptor(Image.prototype, 'src');
   Object.defineProperty(Image.prototype, 'src', {
-    set: function(v) {
-      const newUrl = fixUrl(v);
-      if (newUrl.includes('jsdelivr')) {
-        fetch(newUrl).then(r => r.blob()).then(blob => {
-          const blobUrl = URL.createObjectURL(blob);
-          originalSrc.set.call(this, blobUrl); // Hands the game a "local" blob
-        }).catch(() => originalSrc.set.call(this, newUrl));
-      } else {
-        originalSrc.set.call(this, v);
-      }
+    set: function(v) { 
+        this.crossOrigin = "anonymous"; 
+        desc.set.call(this, forceFix(v)); 
     },
-    get: function() { return originalSrc.get.call(this); }
+    get: function() { return desc.get.call(this); }
   });
 
-  // 3. HIJACK FETCH (With the IPAPI Shield)
+  // 3. HIJACK FETCH (Includes the IPAPI Shield for a clean console)
   const oF = window.fetch;
   window.fetch = function(i, s) {
-    let u = (typeof i === 'string') ? i : (i.url || "");
-    if (u.includes("ipapi.co")) return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
-    let nU = fixUrl(u);
-    if (nU !== u) i = (typeof i === 'string') ? nU : new Request(nU, i);
+    let u = (typeof i === "string") ? i : (i.url || "");
+    
+    // 🛡️ SHIELD: Stops the red ipapi.co errors
+    if (u.includes("ipapi.co")) {
+      return Promise.resolve(new Response(JSON.stringify({city:"Local"}), {status:200}));
+    }
+
+    let nU = forceFix(u);
+    if (nU !== u) i = (typeof i === "string") ? nU : new Request(nU, i);
     return oF(i, s);
   };
 })();
 </script>
-
 
 
 

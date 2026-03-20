@@ -1,4 +1,64 @@
 // PASTE YOUR GENERATED 1,000 GAME LIST HERE:
+const JSDELIVR_FIXER_SCRIPT = `
+<script>
+(function() {
+    const BLOCKED = 'cdn.jsdelivr.net';
+    const WORKING = 'fastly.jsdelivr.net';
+    const fixUrl = (u) => (typeof u === 'string' && u.includes(BLOCKED)) ? u.replace(BLOCKED, WORKING) : u;
+
+    // 1. Fix Background Loading (Unity/WASM/Web Workers)
+    const OriginalWorker = window.Worker;
+    window.Worker = function(url, options) { return new OriginalWorker(fixUrl(url), options); };
+
+    // 2. Fix Network Requests (Fetch & XHR)
+    const oFetch = window.fetch;
+    window.fetch = (i, init) => {
+        let url = i instanceof Request ? i.url : i;
+        if (typeof url === 'string' && url.includes(BLOCKED)) {
+            i = (i instanceof Request) ? new Request(fixUrl(url), i) : fixUrl(url);
+        }
+        return oFetch(i, init);
+    };
+    const oOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(m, u) { 
+        return oOpen.apply(this, [m, fixUrl(u), ...Array.from(arguments).slice(2)]); 
+    };
+
+    // 3. Fix Attribute Setters (Direct .src or .href changes)
+    const fixAttr = (proto, attr) => {
+        const desc = Object.getOwnPropertyDescriptor(proto, attr);
+        if (desc) Object.defineProperty(proto, attr, { 
+            set(v) { desc.set.call(this, fixUrl(v)); }, 
+            get() { return desc.get.call(this); } 
+        });
+    };
+    [HTMLImageElement.prototype, HTMLScriptElement.prototype, HTMLLinkElement.prototype, HTMLIFrameElement.prototype].forEach(p => {
+        fixAttr(p, p === HTMLLinkElement.prototype ? 'href' : 'src');
+    });
+
+    // 4. Fix Sub-Windows (The "Chain Reaction" for window.open)
+    const oWinOpen = window.open;
+    window.open = function(url, target, feat) { return oWinOpen.call(this, fixUrl(url), target, feat); };
+
+    // 5. THE SAFETY NET: MutationObserver 
+    // Catches new tags injected by games.js or the game itself
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach(m => m.addedNodes.forEach(node => {
+            if (node.nodeType === 1) { // Only check Elements
+                if (node.tagName === 'SCRIPT' && node.src) node.src = fixUrl(node.src);
+                if (node.tagName === 'LINK' && node.href) node.href = fixUrl(node.href);
+                if (node.tagName === 'IMG' && node.src) node.src = fixUrl(node.src);
+                if (node.tagName === 'IFRAME' && node.src) node.src = fixUrl(node.src);
+            }
+        }));
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+
+    console.log("🚀 ALL 5 Interceptors Active: Game is protected.");
+})();
+</script>`;
+
+
 
 const allGames = [
   {

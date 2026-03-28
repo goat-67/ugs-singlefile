@@ -8819,71 +8819,35 @@ function buildStash() {
     const searchBar = document.getElementById('game-search');
     if (!container) return;
 
-    // 1. INITIAL BUILD & SORT
     container.innerHTML = '';
-    // Ensure 'allGames' matches the name of your array above
+    // Sort games A-Z
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
     allGames.forEach(game => {
-        // Strip 'cl' prefix for the clean display name (e.g., clgranny -> Granny)
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
-        const firstChar = cleanName.charAt(0).toUpperCase();
 
-        // Find or create the alphabetical/numerical section (A, B, C...)
-        let section = document.getElementById(`section-${firstChar}`);
-        if (!section) {
-            section = document.createElement('div');
-            section.id = `section-${firstChar}`;
-            section.className = 'game-section';
-            section.style.width = "100%";
-            // Adding a header for each letter section
-            section.innerHTML = `<div class="letter-header" style="color: #666; font-size: 12px; margin-bottom: 10px; border-bottom: 1px solid #333; padding-bottom: 5px;">${firstChar}</div>`;
-            container.appendChild(section);
-        }
-
-        // Create the game button (The Squircles)
         const btn = document.createElement('button');
         btn.className = 'game-btn';
         btn.innerText = cleanName;
         
-        // THE BRIDGE TO PLAY.HTML
         btn.onclick = () => {
-            // Get the filename (e.g., granny.html)
             const fileName = game.gameUrl.split('/').pop();
-            const currentHash = window.GAME_HASH || "main";
-            
-            // Build the source URL for the game file
-            const finalGameUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@${currentHash}/UGS-Files/${fileName}`;
-            
-            // Redirect to your custom player page with the name and URL
+            // Using a cleaner URL structure for the player
+            const finalGameUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/{fileName}`;
             window.location.href = `play.html?name=${encodeURIComponent(cleanName)}&url=${encodeURIComponent(finalGameUrl)}`;
         };
 
-        section.appendChild(btn);
+        container.appendChild(btn);
     });
 
-    // 2. THE STRICT PREFIX SEARCH LOGIC
+    // Simple search logic
     if (searchBar) {
         searchBar.oninput = () => {
             const val = searchBar.value.trim().toLowerCase();
-            const sections = document.querySelectorAll('div[id^="section-"]');
-
-            sections.forEach(sec => {
-                const buttons = sec.querySelectorAll('.game-btn');
-                let visibleCount = 0;
-
-                buttons.forEach(btn => {
-                    const btnText = btn.innerText.toLowerCase();
-                    
-                    // Logic: Visible only if search is empty OR starts with typed text
-                    const isMatch = val === "" || btnText.startsWith(val);
-                    
-                    btn.style.display = isMatch ? "flex" : "none";
-                    if (isMatch) visibleCount++;
-                });
-
-                // Hide the whole letter section (A, B, C) if no games match
-                sec.style.display = (visibleCount > 0) ? "block" : "none";
+            const buttons = container.querySelectorAll('.game-btn');
+            buttons.forEach(btn => {
+                const isMatch = val === "" || btn.innerText.toLowerCase().startsWith(val);
+                btn.style.display = isMatch ? "flex" : "none";
             });
         };
     }

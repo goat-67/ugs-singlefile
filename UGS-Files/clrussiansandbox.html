@@ -20,7 +20,7 @@
     }
 
     .fullscreen {
-        background: url('https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/background.png') no-repeat center center;
+        background: url('https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/background.png') no-repeat center center;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -99,11 +99,11 @@
 <canvas id="canvas" class="fullscreen"></canvas>
 <div id="banner-container" style="display: none"></div>
 <div id="loading-overlay" class="fullscreen">
-    <img id="icon" src="https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/icon.png"/>
+    <img id="icon" src="https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/icon.png"/>
     <div id="progress-bar"><div id="progress-bar-fill"></div></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/playgama-bridge.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/playgama-bridge.js"></script>
 <script>
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     let meta = document.createElement('meta');
@@ -202,7 +202,7 @@ bridge
 
 function loadUnity() {
     const unityLoader = document.createElement('script');
-    unityLoader.src = 'https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/9853637125e801e9aae48e78dbbdcfca.loader.js';
+    unityLoader.src = 'https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/9853637125e801e9aae48e78dbbdcfca.loader.js';
     unityLoader.onload = () => {
         mergeUnityParts()
             .then(combinedUrl => {
@@ -210,8 +210,8 @@ function loadUnity() {
                     canvas,
                     {
                         dataUrl: combinedUrl,
-                        frameworkUrl: 'https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/e815116136ed52edcece0045868a8c59.framework.js.unityweb',
-                        codeUrl: 'https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/b270b869aa3574a445974e6001ee281c.wasm.unityweb',
+                        frameworkUrl: 'https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/e815116136ed52edcece0045868a8c59.framework.js.unityweb',
+                        codeUrl: 'https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/b270b869aa3574a445974e6001ee281c.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'Khadiev',
                         productName: 'Сандбокс Плейграунд - Песочница в 3д!',
@@ -237,8 +237,8 @@ function loadUnity() {
 
 function mergeUnityParts() {
     const partFiles = [
-        'https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/1c785020142f320d95c44f979cf2d3fe.data.part1.unityweb',
-        'https://cdn.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/1c785020142f320d95c44f979cf2d3fe.data.part2.unityweb'
+        'https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/1c785020142f320d95c44f979cf2d3fe.data.part1.unityweb',
+        'https://fastly.jsdelivr.net/gh/shayderrr/portsv2@main/sandbox/Build/1c785020142f320d95c44f979cf2d3fe.data.part2.unityweb'
     ];
 
     return Promise.all(partFiles.map(file => fetch(file).then(res => res.arrayBuffer())))

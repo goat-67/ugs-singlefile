@@ -8,7 +8,7 @@
     <script>
       window.gameconfig = {
         name: "Super Mario 64 Land",
-        url: "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/SM64Land/Super%20Mario%2064%20Land.z64",
+        url: "https://fastly.jsdelivr.net/gh/schoolstuff1337/supplies@main/n64/SM64Land/Super%20Mario%2064%20Land.z64",
         core: "n64",
         min: 1,
         max: 4,
@@ -106,14 +106,14 @@
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://fastly.jsdelivr.net/gh/genizy/emu@master/";
           EJS_gameUrl = gameUrl;
           EJS_defaultOptions = {
         vsync: "disabled"
 }
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://fastly.jsdelivr.net/gh/genizy/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {

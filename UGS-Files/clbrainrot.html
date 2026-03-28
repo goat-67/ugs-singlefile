@@ -8,7 +8,7 @@
 
 
 
-<html lang="en"><head><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" id="analytics" async="" src="https://cdn.jsdelivr.net/gh/st39/sdk@main/ga.js"></script><script type="text/javascript" async="" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script><script id="gamemonetize-sdk" src="https://cdn.jsdelivr.net/gh/st39/sdk@main/sdkjs.js"></script><script src="//www.google.com/jsapi"></script><script>window.parent.maeExportApis_();</script>
+<html lang="en"><head><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" id="analytics" async="" src="https://fastly.jsdelivr.net/gh/st39/sdk@main/ga.js"></script><script type="text/javascript" async="" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script><script id="gamemonetize-sdk" src="https://fastly.jsdelivr.net/gh/st39/sdk@main/sdkjs.js"></script><script src="//www.google.com/jsapi"></script><script>window.parent.maeExportApis_();</script>
 
 
 <meta charset="utf-8">
@@ -46,7 +46,7 @@ window.console = {
         if (!a.getElementById(c)) {
             var e = a.createElement(b);
             e.id = c;
-            e.src = "https://cdn.jsdelivr.net/gh/st39/sdk@main/sdkjs.js";
+            e.src = "https://fastly.jsdelivr.net/gh/st39/sdk@main/sdkjs.js";
             d.parentNode.insertBefore(e, d);
         }
     })(document, "script", "gamemonetize-sdk");
@@ -88,13 +88,13 @@ window.console = {
 
 <script>
                 const hideFullScreenButton = "";
-                const buildUrl = "https://cdn.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api";
+                const buildUrl = "https://fastly.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api";
                 const loaderUrl = buildUrl + "/loa.js";
                 const config = {
                     dataUrl: buildUrl + "/stabd.js",
                     frameworkUrl: buildUrl + "/stabf.js",
                     codeUrl: buildUrl + "/stabw.js",
-                streamingAssetsUrl: "https://cdn.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api/StreamingAssets",
+                streamingAssetsUrl: "https://fastly.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api/StreamingAssets",
                 };
 
   const container = document.querySelector("#unity-container");
@@ -536,6 +536,6 @@ function GetLeaderboard(nameLB, quantityTop, quantityAround, photoSize, auth) {
   function OpenAuthDialog(){ if(myGameInstance){ myGameInstance.SendMessage('YandexGame','GetDataInvoke'); } }
   function InitGame(){ initGame=true; if(nowFullAdOpen) myGameInstance?.SendMessage('YandexGame','OpenFullAd'); }
   function GameReadyAPI(){}
-</script><script src="https://cdn.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api/loa.js"></script>
+</script><script src="https://fastly.jsdelivr.net/gh/xana-cmd/dev@9ad47f8f218670462fcbbcc98dceb26641768af6/src/app/api/loa.js"></script>
 
 </script></body></html>

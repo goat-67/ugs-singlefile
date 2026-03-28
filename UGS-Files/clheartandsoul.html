@@ -10,7 +10,7 @@
     <script>
       window.gameconfig = {
         name: "Pokemon - Heart and Soul",
-        url: "https://cdn.jsdelivr.net/gh/bubbls/ugss@main/heartandsoul/Pokemon%20-%20Heart%20and%20Soul.gba",
+        url: "https://fastly.jsdelivr.net/gh/bubbls/ugss@main/heartandsoul/Pokemon%20-%20Heart%20and%20Soul.gba",
         core: "gba",
         min: 1,
         max: 2,
@@ -110,11 +110,11 @@ getParts("asd.js", 0, 100)
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://fastly.jsdelivr.net/gh/genizy/emu@master/";
           EJS_gameUrl = gameUrl;
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://fastly.jsdelivr.net/gh/genizy/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {

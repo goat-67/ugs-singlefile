@@ -59,11 +59,11 @@
 <canvas id="canvas" class="fullscreen"></canvas>
 <div id="banner-container"></div>
 <div id="loading-overlay" class="fullscreen">
-    <img id="icon" src="https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/icon.png"/>
+    <img id="icon" src="https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/icon.png"/>
     <div id="progress-bar"><div id="progress-bar-fill"></div></div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/gh/Deformed-steve/brawl-stars@main/howler.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/Deformed-steve/brawl-stars@main/howler.js"></script>
 <script>
     // Mobil viewport ayarı
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -246,13 +246,13 @@
 
     // === UNITY LOADER DOĞRUDAN BAŞLIYOR ===
     const unityLoader = document.createElement('script');
-    unityLoader.src = 'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.loader.js';
+    unityLoader.src = 'https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.loader.js';
     unityLoader.onload = () => {
         createUnityInstance(canvas, {
-            dataUrl: 'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.data.unityweb',
-            frameworkUrl: 'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.framework.js.unityweb',
-            codeUrl: 'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.wasm.unityweb',
-            streamingAssetsUrl: 'https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/StreamingAssets/',
+            dataUrl: 'https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.data.unityweb',
+            frameworkUrl: 'https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.framework.js.unityweb',
+            codeUrl: 'https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/Build/web.wasm.unityweb',
+            streamingAssetsUrl: 'https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/StreamingAssets/',
             companyName: 'DefaultCompany',
             productName: 'Clicker',
             productVersion: '0.1',
@@ -278,7 +278,7 @@
     var isSound = 1;
 
     sound = new Howl({
-        src: ['https://cdn.jsdelivr.net/gh/ragdoi-archers/zort@main/StreamingAssets/SongInMenu.mp3'],
+        src: ['https://fastly.jsdelivr.net/gh/ragdoi-archers/zort@main/StreamingAssets/SongInMenu.mp3'],
         loop: true,
         volume: 0
     });

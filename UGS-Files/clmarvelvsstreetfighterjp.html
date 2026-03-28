@@ -10,7 +10,7 @@
 	alert("Look, I'm going to be honest with you. EmuJS does not emulate the Sega Saturn that well. Or at least, this game anyway. In my testing, I couldn't get functional sound. Additionally, the graphics are VERY glitchy. This is known and there's absolutely nothing I can do about that. This may improve if the graphics emulation improves, but until then, there's absolutely nothing I can do. There is a Japanese error that you'll get at boot. An (inconsistent) fix is by following these steps: go to Settings > Core Options > yabause addon cartridge > 4M_ram. Then close and reopen the game.");
       window.gameconfig = {
         name: "Marvel Superheroes Vs Street Fighter",
-        url: "https://cdn.jsdelivr.net/gh/schoolstuff1337/supplies@main/saturn/MarvelVSStreetFighterJP/MarvelVsStreetFighterJP.iso",
+        url: "https://fastly.jsdelivr.net/gh/schoolstuff1337/supplies@main/saturn/MarvelVSStreetFighterJP/MarvelVsStreetFighterJP.iso",
         core: "segaSaturn",
         min: 1,
         max: 22
@@ -110,11 +110,11 @@ getParts("asd.js", 0, 100)
           EJS_gameName = window.gameconfig.name;
           EJS_color = "#0064ff";
           EJS_startOnLoaded = true;
-          EJS_pathtodata = "https://cdn.jsdelivr.net/gh/genizy/emu@master/";
+          EJS_pathtodata = "https://fastly.jsdelivr.net/gh/genizy/emu@master/";
           EJS_gameUrl = gameUrl;
           const script = document.createElement("script");
           script.src =
-            "https://cdn.jsdelivr.net/gh/genizy/emu@master/loader.js";
+            "https://fastly.jsdelivr.net/gh/genizy/emu@master/loader.js";
           document.body.appendChild(script);
         })
         .catch((error) => {

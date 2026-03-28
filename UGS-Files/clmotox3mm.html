@@ -84,7 +84,7 @@
                 shimScriptTag.textContent = shimCode;
                 doc.head.prepend(shimScriptTag);
                 const allScripts = Array.from(doc.querySelectorAll('script[src]'));
-                const gameScripts = allScripts.filter(s => !s.src.toLowerCase().includes('imasdk.googleapis.com') && !s.src.toLowerCase().includes('cdn.jsdelivr.net') && !s.src.toLowerCase().includes('googletagmanager'));
+                const gameScripts = allScripts.filter(s => !s.src.toLowerCase().includes('imasdk.googleapis.com') && !s.src.toLowerCase().includes('fastly.jsdelivr.net') && !s.src.toLowerCase().includes('googletagmanager'));
                 const mainScriptTag = gameScripts.pop();
                 if (!mainScriptTag) {
                     const baseTag = doc.createElement('base');

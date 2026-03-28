@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
     <meta name="author" content="GamePix">
-       <base href = "https://cdn.jsdelivr.net/gh/faralong/all@main/wwdd/">
+       <base href = "https://fastly.jsdelivr.net/gh/faralong/all@main/wwdd/">
     <style>
         :root {
             --gpx-rt-background: url(background.jpg), linear-gradient(to top, #00395e, #004978);
@@ -279,7 +279,7 @@ window.Audio.prototype = OriginalAudio.prototype;
 
 
 function rewriteURL(original) {
-if (original.includes("gpx.json")) return "https://cdn.jsdelivr.net/gh/faralong/all@main/wwdd/gpx.json";
+if (original.includes("gpx.json")) return "https://fastly.jsdelivr.net/gh/faralong/all@main/wwdd/gpx.json";
   var trimmed = original.split("/").pop();
   //console.log(trimmed)
   if (trimmed.includes("?")) trimmed = trimmed.split("?")[0]

@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Slope</title>
     <!-- Correct jsDelivr path format: /gh/user/repo@branch/file -->
-    <script src="https://cdn.jsdelivr.net/gh/cgolden15/Slope-Game@main/TemplateData/unityloader41.js
+    <script src="https://fastly.jsdelivr.net/gh/cgolden15/Slope-Game@main/TemplateData/unityloader41.js
 "></script>
     <script>
         var gameInstance = UnityLoader.instantiate(
             "gameContainer", 
-            "https://cdn.jsdelivr.net/gh/cgolden15/Slope-Game@main/Build/slope.json", 
+            "https://fastly.jsdelivr.net/gh/cgolden15/Slope-Game@main/Build/slope.json", 
             {onProgress: (gameInstance, progress) => {
                 console.log("Loading Slope: " + (progress * 100) + "%");
             }}

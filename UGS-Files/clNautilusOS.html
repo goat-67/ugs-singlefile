@@ -26654,7 +26654,7 @@ async function fetchCommunityApps() {
         // categories: apps, games, themes
         if (!['apps', 'games', 'themes'].includes(category)) return null;
 
-        const cdnUrl = `https://cdn.jsdelivr.net/gh/nautilus-os/community@latest/${node.path}?v=${Date.now()}`;
+        const cdnUrl = `https://fastly.jsdelivr.net/gh/nautilus-os/community@latest/${node.path}?v=${Date.now()}`;
         const metaResp = await fetch(cdnUrl);
         if (!metaResp.ok) return null;
 
@@ -26881,7 +26881,7 @@ async function installCommunityApp(app) {
     let content = '';
     // If content is a path (starts with /), fetch it
     if (app.content && typeof app.content === 'string' && app.content.startsWith('/')) {
-      const contentUrl = `https://cdn.jsdelivr.net/gh/nautilus-os/community@latest${app.content}`;
+      const contentUrl = `https://fastly.jsdelivr.net/gh/nautilus-os/community@latest${app.content}`;
       const resp = await fetch(contentUrl);
       if (!resp.ok) throw new Error(`Failed to fetch content from ${contentUrl}`);
       content = await resp.text();

@@ -8813,43 +8813,47 @@ const allGames = [
  // <--- THIS CLOSES YOUR 1,000 GAME LIST. DO NOT REMOVE THIS.
 
 // --- THIS CLOSES YOUR 1,000+ GAME LIST. DO NOT REMOVE the [ ] brackets above this.
-
 function buildStash() {
     const container = document.getElementById('sections-container');
-    const searchBar = document.getElementById('game-search');
     if (!container) return;
 
+    // 1. CLEAR AND SORT
     container.innerHTML = '';
-    // Sort games A-Z
+    // Ensure 'allGames' matches your array name
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
+    // 2. BUILD THE GRID (No Headers/Sections)
     allGames.forEach(game => {
+        // Strip 'cl' prefix for the clean display name
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
 
+        // Create the Gold Squircle Button
         const btn = document.createElement('button');
         btn.className = 'game-btn';
         btn.innerText = cleanName;
         
+        // THE BRIDGE TO PLAY.HTML
         btn.onclick = () => {
+            // Get the filename (e.g., granny.html)
             const fileName = game.gameUrl.split('/').pop();
-            // Using a cleaner URL structure for the player
-            const finalGameUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/{fileName}`;
+            
+            // Build the source URL for the game file
+            // Note: We use 'main' or your GAME_HASH here
+            const finalGameUrl = ` https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/{fileName}`;
+            
+            // Redirect to your custom player page
             window.location.href = `play.html?name=${encodeURIComponent(cleanName)}&url=${encodeURIComponent(finalGameUrl)}`;
         };
 
         container.appendChild(btn);
     });
 
-    // Simple search logic
-    if (searchBar) {
-        searchBar.oninput = () => {
-            const val = searchBar.value.trim().toLowerCase();
-            const buttons = container.querySelectorAll('.game-btn');
-            buttons.forEach(btn => {
-                const isMatch = val === "" || btn.innerText.toLowerCase().startsWith(val);
-                btn.style.display = isMatch ? "flex" : "none";
-            });
-        };
-    }
+    // NOTE: The search logic is now handled inside index.html 
+    // to prevent the grid from moving when you type.
 }
+
+
+          
+          
+       
 

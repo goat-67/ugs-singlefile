@@ -8812,45 +8812,28 @@ const allGames = [
 
  // <--- THIS CLOSES YOUR 1,000 GAME LIST. DO NOT REMOVE THIS.
 
-// --- THIS CLOSES YOUR 1,000+ GAME LIST. DO NOT REMOVE the [ ] brackets above this.
 function buildStash() {
     const container = document.getElementById('sections-container');
     if (!container) return;
 
-    // 1. CLEAR AND SORT
     container.innerHTML = '';
-    // Ensure 'allGames' matches your array name
-    allGames.sort((a, b) => a.name.localeCompare(b.name));
-
-    // 2. BUILD THE GRID (No Headers/Sections)
-    allGames.forEach(game => {
-        // Strip 'cl' prefix for the clean display name
+    // Use the index (i) to give each game a unique ID
+    allGames.forEach((game, i) => {
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
 
-        // Create the Gold Squircle Button
         const btn = document.createElement('button');
         btn.className = 'game-btn';
         btn.innerText = cleanName;
         
-        // THE BRIDGE TO PLAY.HTML
         btn.onclick = () => {
-            // Get the filename (e.g., granny.html)
-            const fileName = game.gameUrl.split('/').pop();
-            
-            // Build the source URL for the game file
-            // Note: We use 'main' or your GAME_HASH here
-            const finalGameUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/${fileName}`;
-            
-            // Redirect to your custom player page
-            window.location.href = `play.html?name=${encodeURIComponent(cleanName)}&url=${encodeURIComponent(finalGameUrl)}`;
+            // Redirect using the ID (index) instead of the long URL
+            window.location.href = `play.html?id=${i}`;
         };
 
         container.appendChild(btn);
     });
-
-    // NOTE: The search logic is now handled inside index.html 
-    // to prevent the grid from moving when you type.
 }
+
 
 
           

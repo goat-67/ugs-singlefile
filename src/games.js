@@ -8839,7 +8839,7 @@ function buildStash() {
             
             // Build the source URL for the game file
             // Note: We use 'main' or your GAME_HASH here
-            const finalGameUrl = ` https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/{fileName}`;
+            const finalGameUrl = ` https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/${fileName}`;
             
             // Redirect to your custom player page
             window.location.href = `play.html?name=${encodeURIComponent(cleanName)}&url=${encodeURIComponent(finalGameUrl)}`;

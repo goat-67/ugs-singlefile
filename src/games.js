@@ -8870,6 +8870,8 @@ const allGames = [
 
  // <--- THIS CLOSES YOUR 1,000 GAME LIST. DO NOT REMOVE THIS.
 
+// --- THIS CLOSES YOUR 1,000+ GAME LIST. DO NOT REMOVE the [ ] brackets above this.
+
 function buildStash() {
     const container = document.getElementById('sections-container');
     const searchBar = document.getElementById('game-search');
@@ -8877,45 +8879,42 @@ function buildStash() {
 
     // 1. INITIAL BUILD & SORT
     container.innerHTML = '';
+    // Ensure 'allGames' matches the name of your array above
     allGames.sort((a, b) => a.name.localeCompare(b.name));
 
     allGames.forEach(game => {
-        // Strip 'cl' prefix for the clean display name
+        // Strip 'cl' prefix for the clean display name (e.g., clgranny -> Granny)
         let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
         const firstChar = cleanName.charAt(0).toUpperCase();
 
-        // Find or create the alphabetical/numerical section
+        // Find or create the alphabetical/numerical section (A, B, C...)
         let section = document.getElementById(`section-${firstChar}`);
         if (!section) {
             section = document.createElement('div');
             section.id = `section-${firstChar}`;
             section.className = 'game-section';
             section.style.width = "100%";
-            section.innerHTML = `<div class="letter-header">${firstChar}</div>`;
+            // Adding a header for each letter section
+            section.innerHTML = `<div class="letter-header" style="color: #666; font-size: 12px; margin-bottom: 10px; border-bottom: 1px solid #333; padding-bottom: 5px;">${firstChar}</div>`;
             container.appendChild(section);
         }
 
-        // Create the game button
+        // Create the game button (The Squircles)
         const btn = document.createElement('button');
         btn.className = 'game-btn';
         btn.innerText = cleanName;
         
+        // THE BRIDGE TO PLAY.HTML
         btn.onclick = () => {
-            const currentHash = window.GAME_HASH || "main";
+            // Get the filename (e.g., granny.html)
             const fileName = game.gameUrl.split('/').pop();
-            const finalUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@${currentHash}/UGS-Files/${fileName}?t=${Date.now()}`;
+            const currentHash = window.GAME_HASH || "main";
             
-            fetch(finalUrl)
-                .then(r => r.ok ? r.text() : Promise.reject())
-                .then(html => {
-                    const newWin = window.open("about:blank", "_blank");
-                    if (newWin) {
-                        newWin.document.open();
-                        newWin.document.write(html);
-                        newWin.document.close();
-                    }
-                })
-                .catch(err => console.error("Fetch error:", err));
+            // Build the source URL for the game file
+            const finalGameUrl = `https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@${currentHash}/UGS-Files/${fileName}`;
+            
+            // Redirect to your custom player page with the name and URL
+            window.location.href = `play.html?name=${encodeURIComponent(cleanName)}&url=${encodeURIComponent(finalGameUrl)}`;
         };
 
         section.appendChild(btn);
@@ -8934,15 +8933,14 @@ function buildStash() {
                 buttons.forEach(btn => {
                     const btnText = btn.innerText.toLowerCase();
                     
-                    // Logic: Button is visible ONLY if search is empty 
-                    // OR if the game name STARTS with exactly what you typed
+                    // Logic: Visible only if search is empty OR starts with typed text
                     const isMatch = val === "" || btnText.startsWith(val);
                     
-                    btn.style.display = isMatch ? "block" : "none";
+                    btn.style.display = isMatch ? "flex" : "none";
                     if (isMatch) visibleCount++;
                 });
 
-                // Section (and its header) is visible ONLY if it has matching games
+                // Hide the whole letter section (A, B, C) if no games match
                 sec.style.display = (visibleCount > 0) ? "block" : "none";
             });
         };

@@ -111,10 +111,7 @@ const allGames = [
     "name": "cl99balls",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl99balls.html"
   },
-  {
-    "name": "cl99nightsitf",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl99nightsitf.html"
-  },
+  
   {
     "name": "cl234playergame",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl234playergame.html"
@@ -2027,10 +2024,7 @@ const allGames = [
     "name": "cldrifthuntersmerge",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldrifthuntersmerge.html"
   },
-  {
-    "name": "cldrivemady",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldrivemady.html"
-  },
+  
   {
     "name": "cldrivenwild",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldrivenwild.html"

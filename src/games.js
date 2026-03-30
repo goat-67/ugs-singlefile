@@ -8813,13 +8813,18 @@ function buildStash() {
     container.innerHTML = '';
     
     allGames.forEach((game) => {
+        // This checks if the name starts with 'cl' and chops those 2 letters off
+        let cleanName = game.name;
+        if (cleanName.toLowerCase().startsWith('cl')) {
+            cleanName = cleanName.substring(2);
+        }
+
         const btn = document.createElement('button');
         btn.className = 'game-btn';
-        // FIXED: Using game.name directly so names aren't cut off
-        btn.innerText = game.name;
+        btn.innerText = cleanName.toUpperCase(); // Makes it look clean like "ACHILLES"
         
         btn.onclick = () => {
-            // Use the filename (e.g., 'achilles.html') as the ID
+            // This still uses the filename so the CORRECT game loads
             const fileName = game.gameUrl.split('/').pop();
             window.location.href = `play.html?id=${fileName}`;
         };

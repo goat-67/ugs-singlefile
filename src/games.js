@@ -8811,26 +8811,20 @@ function buildStash() {
     if (!container) return;
 
     container.innerHTML = '';
-    // Use the index (i) to give each game a unique ID
-    allGames.forEach((game, i) => {
-        let cleanName = game.name.startsWith('cl') ? game.name.substring(2) : game.name;
-
+    
+    allGames.forEach((game) => {
         const btn = document.createElement('button');
         btn.className = 'game-btn';
-        btn.innerText = cleanName;
+        // FIXED: Using game.name directly so names aren't cut off
+        btn.innerText = game.name;
         
         btn.onclick = () => {
-            // Redirect using the ID (index) instead of the long URL
-            window.location.href = `play.html?id=${i}`;
+            // Use the filename (e.g., 'achilles.html') as the ID
+            const fileName = game.gameUrl.split('/').pop();
+            window.location.href = `play.html?id=${fileName}`;
         };
 
         container.appendChild(btn);
     });
 }
-
-
-
-          
-          
-       
 

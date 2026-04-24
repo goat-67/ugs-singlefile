@@ -8813,7 +8813,6 @@ function buildStash() {
     container.innerHTML = '';
     
     allGames.forEach((game) => {
-        // This checks if the name starts with 'cl' and chops those 2 letters off
         let cleanName = game.name;
         if (cleanName.toLowerCase().startsWith('cl')) {
             cleanName = cleanName.substring(2);
@@ -8821,25 +8820,28 @@ function buildStash() {
 
         const btn = document.createElement('button');
         btn.className = 'game-btn';
-        btn.innerText = cleanName.toUpperCase(); // Makes it look clean like "ACHILLES"
+        btn.innerText = cleanName.toUpperCase();
         
-       btn.onclick = () => {
-    fetch(game.gameUrl + "?t=" + Date.now())
-        .then(res => res.text())
-        .then(html => {
-            const win = window.open("about:blank", "_blank");
+        btn.onclick = () => {
+            fetch(game.gameUrl + "?t=" + Date.now())
+                .then(res => res.text())
+                .then(html => {
+                    const win = window.open("about:blank", "_blank");
 
-            if (!win) {
-                alert("Enable popups");
-                return;
-            }
+                    if (!win) {
+                        alert("Enable popups");
+                        return;
+                    }
 
-            win.document.open();
-            win.document.write(html);
-            win.document.close();
-        })
-        .catch(err => {
-            console.error("Game failed to load:", err);
-        });
-};
+                    win.document.open();
+                    win.document.write(html);
+                    win.document.close();
+                })
+                .catch(err => {
+                    console.error("Game failed to load:", err);
+                });
+        };
 
+        container.appendChild(btn);
+    });
+}

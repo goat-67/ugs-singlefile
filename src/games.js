@@ -8823,13 +8823,23 @@ function buildStash() {
         btn.className = 'game-btn';
         btn.innerText = cleanName.toUpperCase(); // Makes it look clean like "ACHILLES"
         
-        btn.onclick = () => {
-            // This still uses the filename so the CORRECT game loads
-            const fileName = game.gameUrl.split('/').pop();
-            window.location.href = `play.html?id=${fileName}`;
-        };
+       btn.onclick = () => {
+    fetch(game.gameUrl + "?t=" + Date.now())
+        .then(res => res.text())
+        .then(html => {
+            const win = window.open("about:blank", "_blank");
 
-        container.appendChild(btn);
-    });
-}
+            if (!win) {
+                alert("Enable popups");
+                return;
+            }
+
+            win.document.open();
+            win.document.write(html);
+            win.document.close();
+        })
+        .catch(err => {
+            console.error("Game failed to load:", err);
+        });
+};
 

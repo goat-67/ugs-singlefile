@@ -12,6 +12,10 @@ const allGames = [
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl1on1soccer.html"
   },
   {
+    "name": "cldrivemady",
+    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cldrivemady.html"
+  },
+  {
     "name": "cl1v1lol",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/cl1v1lol.html"
   },

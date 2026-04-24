@@ -13,7 +13,7 @@ const allGames = [
   },
   {
     "name": "cldrivemady",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@c22e13605c9e147346b50f3955fd06262ed52995/UGS-Files/cldrivemady.html"
+    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@7fe5dba21ecc673405aeaaacf279a5c1fd9f741a/UGS-Files/cldrivemady.html"
   },
   {
     "name": "cl1v1lol",

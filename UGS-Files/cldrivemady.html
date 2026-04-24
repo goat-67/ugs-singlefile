@@ -36,7 +36,17 @@
     <div id="gradient"></div>
     <div id="webview_content"></div>
   </div>
-
+<script>
+  var Module = {
+    locateFile: function(path, prefix) {
+      if (path.endsWith(".data") || path.endsWith(".wasm")) {
+        // This is the full path to your data files
+        return "https://jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/webapp/" + path;
+      }
+      return prefix + path;
+    }
+  };
+</script>
   <!-- FIXED PATHS -->
   <script src="https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@latest/UGS-Files/webapp/source_min.js"></script>
   <script src="https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@latest/UGS-Files/webapp/index.js"></script>

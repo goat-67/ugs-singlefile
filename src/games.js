@@ -3261,17 +3261,14 @@ const allGames = [
     "name": "clgranny",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny.html"
   },
-  {
-    "name": "clgranny2",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny2.html"
-  },
+ 
   {
     "name": "clgranny3",
     "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny3.html"
   },
   {
-    "name": "clgranny22",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny22.html"
+    "name": "clgranny2",
+    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@main/UGS-Files/clgranny2.html"
   },
   {
     "name": "clgrannycreepy",

@@ -8805,62 +8805,7 @@ const allGames = [
 
 
 
-function buildStash() {
-    const container = document.getElementById('sections-container');
-    if (!container) return;
-
-    container.innerHTML = '';
-
-    allGames.forEach((game) => {
-        let cleanName = game.name;
-
-        if (cleanName.toLowerCase().startsWith('cl')) {
-            cleanName = cleanName.substring(2);
-        }
-
-        const btn = document.createElement('button');
-        btn.className = 'game-btn';
-        btn.innerText = cleanName.toUpperCase();
-
-        btn.onclick = () => {
-            fetch(game.gameUrl + "?t=" + Date.now())
-                .then(res => res.text())
-                .then(html => {
-
-                    const win = window.open("about:blank", "_blank");
-
-                    if (!win) {
-                        alert("Enable popups");
-                        return;
-                    }
-
-                    // IMPORTANT FIX
-                    const baseUrl =
-                        game.gameUrl.substring(
-                            0,
-                            game.gameUrl.lastIndexOf("/") + 1
-                        );
-
-                    const baseTag = `<base href="${baseUrl}">`;
-
-                    html = html.replace(
-                        "<head>",
-                        `<head>${baseTag}`
-                    );
-
-                    win.document.open();
-                    win.document.write(html);
-                    win.document.close();
-                })
-                .catch(err => {
-                    console.error("Game failed to load:", err);
-                });
-        };
-
-        container.appendChild(btn);
-    });
-}
-
+function buildStash() { const container = document.getElementById('sections-container'); if (!container) return; container.innerHTML = ''; allGames.forEach((game) => { let cleanName = game.name; if (cleanName.toLowerCase().startsWith('cl')) { cleanName = cleanName.substring(2); } const btn = document.createElement('button'); btn.className = 'game-btn'; btn.innerText = cleanName.toUpperCase(); btn.onclick = () => { fetch(game.gameUrl + "?t=" + Date.now()) .then(res => res.text()) .then(html => { const win = window.open("about:blank", "_blank"); if (!win) { alert("Enable popups"); return; } win.document.open(); win.document.write(html); win.document.close(); }) .catch(err => { console.error("Game failed to load:", err); }); }; container.appendChild(btn); }); }
 
 
 

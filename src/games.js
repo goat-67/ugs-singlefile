@@ -8803,12 +8803,77 @@ const allGames = [
 
     
 
+function buildStash() {
+    const container = document.getElementById('sections-container');
+    if (!container) return;
 
+    container.innerHTML = '';
 
-function buildStash() { const container = document.getElementById('sections-container'); if (!container) return; container.innerHTML = ''; allGames.forEach((game) => { let cleanName = game.name; if (cleanName.toLowerCase().startsWith('cl')) { cleanName = cleanName.substring(2); } const btn = document.createElement('button'); btn.className = 'game-btn'; btn.innerText = cleanName.toUpperCase(); btn.onclick = () => { fetch(game.gameUrl + "?t=" + Date.now()) .then(res => res.text()) .then(html => { const win = window.open("about:blank", "_blank"); if (!win) { alert("Enable popups"); return; } win.document.open(); win.document.write(html); win.document.close(); }) .catch(err => { console.error("Game failed to load:", err); }); }; container.appendChild(btn); }); }
+    allGames.forEach((game) => {
 
+        let cleanName = game.name;
 
+        if (cleanName.toLowerCase().startsWith('cl')) {
+            cleanName = cleanName.substring(2);
+        }
 
+        const btn = document.createElement('button');
+
+        btn.className = 'game-btn';
+        btn.innerText = cleanName.toUpperCase();
+
+        btn.onclick = () => {
+
+            fetch(game.gameUrl + "?t=" + Date.now(), {
+                cache: "no-store"
+            })
+
+            .then(res => res.text())
+
+            .then(html => {
+
+                const win = window.open("about:blank", "_blank");
+
+                if (!win) {
+                    alert("Enable popups");
+                    return;
+                }
+
+                // anti-cache meta tags
+                const antiCache = `
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+`;
+
+                // preserve correct relative paths
+                const baseUrl = game.gameUrl.substring(
+                    0,
+                    game.gameUrl.lastIndexOf("/") + 1
+                );
+
+                const baseTag = `<base href="${baseUrl}">`;
+
+                // inject fixes into <head>
+                html = html.replace(
+                    "<head>",
+                    "<head>" + antiCache + baseTag
+                );
+
+                win.document.open();
+                win.document.write(html);
+                win.document.close();
+
+            })
+
+            .catch(err => {
+                console.error("Game failed to load:", err);
+            });
+        };
+
+        container.appendChild(btn);
+    });
+}
 
 
 

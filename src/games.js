@@ -3532,7 +3532,7 @@ const allGames = [
   },
   {
     "name": "clhighwaytraffic3d",
-    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@23b868fe138db84804663de2ac1622168b49072a/UGS-Files/clhighwaytraffic3d.html?v=293"
+    "gameUrl": "https://fastly.jsdelivr.net/gh/goat-67/ugs-singlefile@a8ffb64c8344beb691ca792add1d5f51bfd27a3b/UGS-Files/clhighwaytraffic3d.html?v=893"
   },
   {
     "name": "clHil ClimbRacing2",
